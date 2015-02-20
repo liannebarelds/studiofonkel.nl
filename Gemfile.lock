@@ -1,0 +1,124 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.3.7)
+    animation (0.1.alpha.3)
+      compass (>= 0.12.0)
+      sass (>= 3.2.0.alpha.95)
+    blankslate (2.1.2.4)
+    breakpoint (2.5.0)
+      sass (~> 3.3)
+      sassy-maps (< 1.0.0)
+    celluloid (0.16.0)
+      timers (~> 4.0.0)
+    chunky_png (1.3.4)
+    classifier-reborn (2.0.3)
+      fast-stemmer (~> 1.0)
+    coffee-script (2.3.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.9.1)
+    colorator (0.1)
+    compass (1.0.3)
+      chunky_png (~> 1.2)
+      compass-core (~> 1.0.2)
+      compass-import-once (~> 1.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      sass (>= 3.3.13, < 3.5)
+    compass-core (1.0.3)
+      multi_json (~> 1.0)
+      sass (>= 3.3.0, < 3.5)
+    compass-import-once (1.0.5)
+      sass (>= 3.2, < 3.5)
+    css_parser (1.3.6)
+      addressable
+    execjs (2.3.0)
+    fast-stemmer (1.0.2)
+    ffi (1.9.6)
+    growl (1.0.3)
+    hitimes (1.2.2)
+    i18n (0.7.0)
+    jekyll (2.5.3)
+      classifier-reborn (~> 2.0)
+      colorator (~> 0.1)
+      jekyll-coffeescript (~> 1.0)
+      jekyll-gist (~> 1.0)
+      jekyll-paginate (~> 1.0)
+      jekyll-sass-converter (~> 1.0)
+      jekyll-watch (~> 1.1)
+      kramdown (~> 1.3)
+      liquid (~> 2.6.1)
+      mercenary (~> 0.3.3)
+      pygments.rb (~> 0.6.0)
+      redcarpet (~> 3.1)
+      safe_yaml (~> 1.0)
+      toml (~> 0.1.0)
+    jekyll-coffeescript (1.0.1)
+      coffee-script (~> 2.2)
+    jekyll-gist (1.1.0)
+    jekyll-paginate (1.1.0)
+    jekyll-sass-converter (1.3.0)
+      sass (~> 3.2)
+    jekyll-sitemap (0.8.0)
+    jekyll-watch (1.2.1)
+      listen (~> 2.7)
+    kramdown (1.5.0)
+    liquid (2.6.2)
+    listen (2.8.5)
+      celluloid (>= 0.15.2)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+    mercenary (0.3.5)
+    mini_magick (4.1.0)
+    multi_json (1.10.1)
+    oily_png (1.1.2)
+      chunky_png (~> 1.3.1)
+    parslet (1.5.0)
+      blankslate (~> 2.0)
+    posix-spawn (0.3.10)
+    pygments.rb (0.6.2)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.2.0)
+    rb-fsevent (0.9.4)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
+    redcarpet (3.2.2)
+    ruby-oembed (0.8.12)
+    rubysl-rexml (2.0.4)
+    safe_yaml (1.0.4)
+    sass (3.4.12)
+    sass-globbing (1.1.1)
+      sass (>= 3.1)
+    sassy-maps (0.4.0)
+      sass (~> 3.3)
+    singularitygs (1.5.1)
+      breakpoint (~> 2.4)
+      sass (~> 3.3)
+    timers (4.0.1)
+      hitimes
+    toml (0.1.2)
+      parslet (~> 1.5.0)
+    toolkit (2.7.0)
+      sass (~> 3.3)
+    yajl-ruby (1.2.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  animation
+  breakpoint
+  css_parser
+  growl
+  i18n
+  jekyll (~> 2.0)
+  jekyll-sitemap
+  mini_magick
+  oily_png
+  ruby-oembed
+  rubysl-rexml
+  sass (~> 3.3)
+  sass-globbing
+  singularitygs (~> 1.4)
+  toolkit
