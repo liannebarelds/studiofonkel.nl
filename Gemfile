@@ -8,7 +8,7 @@ gem 'breakpoint'              # Manages CSS media queries.
 gem 'oily_png'                # Faster Compass sprite generation.
 gem 'css_parser'              # Helps `compass stats` output statistics.
 gem 'animation'               # Mixin for creating animations and keyframes
-gem 'sass-globbing'
+gem 'sass-globbing', '~> 1.0.0'
 gem 'jekyll-sitemap'
 gem 'ruby-oembed'
 gem 'growl'

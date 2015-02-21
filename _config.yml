@@ -24,3 +24,18 @@ markdown: redcarpet
 #   extensions: ['fenced_code_blocks', 'smart']
 
 pygments: true
+
+collections:
+  cases:
+    output: true
+    permalink: /cases/:path/
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "page"
