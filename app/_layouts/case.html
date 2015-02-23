@@ -1,0 +1,12 @@
+---
+layout: html
+---
+<h1 class="page-title">{{ page.title }}</h1>
+
+{{ page.introduction }}
+
+{% if page.header %}
+  {% picture header {{ page.header }} %}
+{% endif %}
+
+{{ content }}
