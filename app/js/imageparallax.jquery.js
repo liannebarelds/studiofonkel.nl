@@ -33,10 +33,15 @@
               })
             }
           })
+
+          that.scroll(that)
         },
 
         scroll: function(that) {
-          that.imageHeight = that.image.innerHeight()
+          if (!that.imageHeight) {
+            that.imageHeight = that.image.innerHeight()
+          }
+
           var scrollPercentage = (window.scrollY - (that.scrollImageMin - that.windowHeight)) / (that.scrollImageMax - (that.scrollImageMin - that.windowHeight))
 
           if (that.scrollImageMax > window.scrollY && that.scrollImageMin < (that.windowHeight + window.scrollY)) {

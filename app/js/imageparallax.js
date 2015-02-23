@@ -1,6 +1,6 @@
 $(function() {
- 'use strict'
+  'use strict'
 
- $( ".scrollimage" ).imageparallax()
+  $( ".scrollimage" ).imageparallax()
 
 });
