@@ -1,3 +1,5 @@
 <ul>
-  <li>Het menu</li>
+  {% for item in site.collections.pages.docs | where: "menu-weight" %}
+    <li>{{ item.title }}</li>
+  {% endfor %}
 </ul>
