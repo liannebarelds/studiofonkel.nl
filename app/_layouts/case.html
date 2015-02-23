@@ -1,12 +1,22 @@
 ---
 layout: html
 ---
-<h1 class="page-title">{{ page.title }}</h1>
+<div class="case full">
+  <h1 class="case-title">{{ page.title }}</h1>
 
-{{ page.introduction }}
+  <a class="case-overview-link" href="/cases/">Terug naar het overzicht</a>
 
-{% if page.header %}
-  {% picture header {{ page.header }} %}
-{% endif %}
+  <div class="case-introduction">
+    {{ page.introduction }}
+  </div>
 
-{{ content }}
+  {% if page.header %}
+    <div class="case-header">
+      {% picture header {{ page.header }} %}
+    </div>
+  {% endif %}
+
+  <div class="case-body">
+    {{ content }}
+  </div>
+</div>
