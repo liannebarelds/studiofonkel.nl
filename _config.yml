@@ -45,19 +45,11 @@ picture:
   output: "generated"
   markup: "picture"
   presets:
-    home:
-      ppi: [1]
+    team_member:
+      ppi: [1, 1.5, 2]
       attr:
-        class: "home-background"
+        class: "team_member-icon"
         itemprop: "image"
-      source_medium:
-        media: "(min-width: 36em)"
-        width: "1200"
-        height: "1200"
-      source_small:
-        media: "(min-width: 18.5em)"
-        width: "600"
-        height: "600"
       source_default:
-        width: "300"
-        height: "300"
+        width: "72"
+        height: "72"

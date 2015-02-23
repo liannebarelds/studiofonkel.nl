@@ -1,0 +1,67 @@
+.team_widget {
+  width: 600px;
+  height: 600px;
+
+  .axes {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    // x-axis
+    &:before {
+      content: ' ';
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      background: #ddd;
+    }
+
+    // y-axis
+    &:after {
+      content: ' ';
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background: #ddd;
+    }
+  }
+
+  .team_member {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .team_member-info {
+    display: none;
+  }
+}
+
+.team_member-icon-wrapper {
+  display: block;
+  transition: transform .2s ease-out 0s;
+
+  > * {
+    display: block;
+    width: 72px !important;
+    height: 72px !important;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(.75);
+    transform-origin: 50% 50%;
+    transition: transform .2s ease-out 0s;
+    overflow: hidden;
+
+    &:hover {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
+
+.team_member-icon {
+  width: 100%;
+  height: 100%;
+}
