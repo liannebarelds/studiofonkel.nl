@@ -1,7 +1,7 @@
-<ul>
+<ul class="navigation">
   {% for item in site.collections.pages.docs | sort: 'author' %}
     {% if item.menu-weight %}
-      <li>{{ item.title }}</li>
+      <li><a href="#" style="background-image: url('http://lorempixel.com/1200/800/sports/1/')">{{ item.title }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
