@@ -2,7 +2,7 @@
   <div class="axes">
     <section class="team_members">
     {% for team_member in site.data.team %}
-      <article class="team_member" id="{{ team_member.key }}">
+      <article class="team_member" id="team_member-member-{{ team_member.key }}">
         <span class="team_member-icon-wrapper">{% picture team_member team_members/{{ team_member.key }}.jpg alt="{{ team_member.name }}" title="{{ team_member.name }}" %}</span>
 
         <div class="team_member-info">
@@ -17,7 +17,7 @@
   <select id="team_widget_selectX">
     {% for option in site.data.team[0].preferences %}
       {% if forloop.index0 == 0 %}
-        <option value="{{ option[0] }}" selected="selected">{{ option[0] }}</option>
+        <option value="{{ option[0] }}" selected>{{ option[0] }}</option>
       {% else %}
         <option value="{{ option[0] }}">{{ option[0] }}</option>
       {% endif %}
@@ -27,7 +27,7 @@
   <select id="team_widget_selectY">
     {% for option in site.data.team[0].preferences %}
       {% if forloop.index0 == 1 %}
-        <option value="{{ option[0] }}" selected="selected">{{ option[0] }}</option>
+        <option value="{{ option[0] }}" selected>{{ option[0] }}</option>
       {% else %}
         <option value="{{ option[0] }}">{{ option[0] }}</option>
       {% endif %}

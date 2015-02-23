@@ -58,8 +58,8 @@ picture:
         class: "team_member-icon"
         itemprop: "image"
       source_default:
-        width: "72"
-        height: "72"
+        width: "50"
+        height: "50"
     header:
       ppi: [1]
       attr:
