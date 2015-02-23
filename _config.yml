@@ -29,7 +29,7 @@ collections:
   cases:
     output: true
     permalink: /cases/:path/
-  pages2:
+  pages:
     output: true
     permalink: /:path/
 
