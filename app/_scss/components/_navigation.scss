@@ -1,19 +1,57 @@
 .navigation {
+    
     li {
-        // transform: rotate(45deg);
         overflow: hidden;
+        position: relative;
         width: 50vw;
         height: 50vh;
-        background: red;
         float: left;
 
         a {
-            // transform: rotate(-45deg);
             display: block;
-            height: 50vh;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
             background-repeat: no-repeat;
+            background-size: cover;
             color: $color_white;
             text-decoration: none;
+        }
+        &:nth-child(1) {
+            width: 100vw;
+            height: 50vh;
+            margin-bottom: -50vh;
+
+            a {
+                clip-path: polygon(18% 0%, 82% 0%, 50% 100%);
+            }
+        }
+        &:nth-child(2) {
+            width: 50vw;
+            height: 100vh;
+
+            a {
+                clip-path: polygon(0% 0%, 36% 0%, 100% 50%, 36% 100%, 0% 100%);
+            }
+        }
+        &:nth-child(3) {
+            width: 50vw;
+            height: 100vh;
+
+            a {
+                clip-path: polygon(100% 0%, 100% 100%, 64% 100%, 0% 50%, 64% 0%);
+            }
+        }
+        &:nth-child(4) {
+            width: 100vw;
+            height: 50vh;
+            margin-top: -50vh;
+
+            a {
+                clip-path: polygon(18% 100%, 82% 100%, 50% 0%);
+            }
         }
     }
 }
