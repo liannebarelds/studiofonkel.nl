@@ -1,0 +1,14 @@
+.case.full {
+  .case-overview-link,
+  .case-title,
+  .case-introduction,
+  .case-body {
+    @include grid-span(12, 2);
+    clear: both;
+  }
+
+  .case-header {
+    @include grid-span(14, 1);
+    clear: both;
+  }
+}
