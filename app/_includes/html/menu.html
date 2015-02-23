@@ -1,7 +1,11 @@
 <ul>
-  {% for item in site.collections.pages.docs | sort: 'author' %}
+
+  {% assign menuItems = site.pages2 | sort: "menu-weight" | within: "menu-weight" %}
+
+  {% for item in menuItems %}
     {% if item.menu-weight %}
       <li>{{ item.title }}</li>
     {% endif %}
   {% endfor %}
+
 </ul>

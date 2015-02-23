@@ -23,13 +23,13 @@ show_drafts: true
 markdown: redcarpet
 #   extensions: ['fenced_code_blocks', 'smart']
 
-pygments: true
+highlighter: pygments
 
 collections:
   cases:
     output: true
     permalink: /cases/:path/
-  pages:
+  pages2:
     output: true
     permalink: /:path/
 
