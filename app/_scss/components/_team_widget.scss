@@ -1,4 +1,5 @@
 .team_widget {
+  margin: 30px auto 0;
   width: 600px;
   height: 600px;
 
@@ -44,6 +45,10 @@
 .team_member-icon-wrapper {
   display: block;
   transition: transform .2s ease-out 0s;
+
+  // &:hover {
+  //   z-index: 100;
+  // }
 
   > * {
     display: block;
