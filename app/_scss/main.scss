@@ -3,9 +3,11 @@
 @import "breakpoint";
 
 @import "singularitygs";
+@import "toolkit";
 
 
 @import "variables/variables";
+
 @import "variables/colors";
 
 @import "base/reset";
@@ -16,4 +18,10 @@
 @import "layouts/case-full";
 
 
+@import "components/team_widget";
 // @import "components/navigation";
+@import "components/scrollimage";
+
+#__bs_notify__ {
+  display: none !important;
+}

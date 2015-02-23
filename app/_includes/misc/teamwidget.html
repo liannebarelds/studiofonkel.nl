@@ -1,0 +1,16 @@
+<div class="team_widget">
+  <div class="axes">
+    <section class="team_members">
+    {% for team_member in site.data.team %}
+      <article class="team_member" id="{{ team_member.key }}">
+        <span class="team_member-icon-wrapper">{% picture team_member team_members/{{ team_member.key }}.jpg alt="{{ team_member.key }}" title="{{ team_member.key }}" %}</span>
+
+        <div class="team_member-info">
+          <h3 class="team_member-name">{{ team_member.name }}</h3>
+          <span class="team_member-bio">Bio: {{ team_member.bio }}</span>
+        </div>
+      </article>
+    {% endfor %}
+    </section>
+  </div>
+</div>

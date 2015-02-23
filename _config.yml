@@ -52,6 +52,14 @@ picture:
   output: "generated"
   markup: "picture"
   presets:
+    team_member:
+      ppi: [1, 1.5, 2]
+      attr:
+        class: "team_member-icon"
+        itemprop: "image"
+      source_default:
+        width: "72"
+        height: "72"
     header:
       ppi: [1]
       attr:
