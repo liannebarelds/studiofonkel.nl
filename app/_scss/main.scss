@@ -1,4 +1,8 @@
 @charset "utf-8";
 
-@import "base/*";
-@import "components/*";
+@import "variables/colors";
+
+@import "base/reset";
+@import "base/elements";
+
+@import "components/navigation";

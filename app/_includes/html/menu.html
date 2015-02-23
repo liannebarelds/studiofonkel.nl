@@ -1,11 +1,9 @@
 <ul>
-
   {% assign menuItems = site.pages2 | sort: "menu-weight" | within: "menu-weight" %}
 
   {% for item in menuItems %}
     {% if item.menu-weight %}
-      <li>{{ item.title }}</li>
+      <li><a href="#" style="background-image: url('http://lorempixel.com/1200/800/sports/1/')">{{ item.title }}</a></li>
     {% endif %}
   {% endfor %}
-
 </ul>
