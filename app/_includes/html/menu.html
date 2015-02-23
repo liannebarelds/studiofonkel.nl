@@ -1,9 +1,13 @@
-<ul>
+<ul class="navigation">
   {% assign menuItems = site.collections.pages.docs | sort: "menu-weight" %}
 
   {% for item in menuItems %}
     {% if item.menu-weight %}
-      <li><a href="#" style="background-image: url('http://lorempixel.com/1200/800/sports/1/')">{{ item.title }}</a></li>
+      <li class="navigation-item">
+        <a href="{{ item.url }}" class="navigation-item-link">
+          <h2 class="navigation-item-title">{{ item.title }}</h2>
+        </a>
+      </li>
     {% endif %}
   {% endfor %}
 </ul>

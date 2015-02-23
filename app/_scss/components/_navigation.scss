@@ -1,19 +1,58 @@
 .navigation {
-    li {
-        // transform: rotate(45deg);
+    .navigation-item {
         overflow: hidden;
+        position: relative;
         width: 50vw;
         height: 50vh;
-        background: red;
         float: left;
 
-        a {
-            // transform: rotate(-45deg);
+        .navigation-item-link {
             display: block;
-            height: 50vh;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
             background-repeat: no-repeat;
+            background-size: cover;
             color: $color_white;
             text-decoration: none;
+        }
+        &:nth-child(1) {
+            width: 100vh;
+            height: 50vh;
+            background-position: center top;
+
+            .navigation-item-link {
+                background-image: url('http://lorempixel.com/1200/800/sports/1');
+            }
+        }
+        &:nth-child(2) {
+            width: 50vw;
+            height: 100vh;
+            background-position: left center;
+
+            .navigation-item-link {
+                background-image: url('http://lorempixel.com/1200/800/sports/2');
+            }
+        }
+        &:nth-child(3) {
+            width: 50vw;
+            background-position: right center;
+            height: 100vh;
+
+            .navigation-item-link {
+                background-image: url('http://lorempixel.com/1200/800/sports/3');
+            }
+        }
+        &:nth-child(4) {
+            width: 100vw;
+            height: 50vh;
+            background-position: center bottom;
+
+            .navigation-item-link {
+                background-image: url('http://lorempixel.com/1200/800/sports/4');
+            }
         }
     }
 }
