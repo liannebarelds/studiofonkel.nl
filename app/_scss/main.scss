@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import "toolkit";
+
 @import "variables/colors";
 
 @import "base/reset";
@@ -7,3 +9,8 @@
 
 @import "components/team_widget";
 // @import "components/navigation";
+@import "components/scrollimage";
+
+#__bs_notify__ {
+    display: none !important;
+}

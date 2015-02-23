@@ -39,6 +39,13 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "page"
+  -
+    scope:
+      path: "cases" # an empty string here means all files in the project
+    values:
+      layout: "case"
+
+
 
 picture:
   source: "img/_source"
@@ -53,3 +60,19 @@ picture:
       source_default:
         width: "72"
         height: "72"
+    header:
+      ppi: [1]
+      attr:
+        class: "header"
+        itemprop: "image"
+      source_medium:
+        media: "(min-width: 36em)"
+        width: "1200"
+        height: "300"
+      source_small:
+        media: "(min-width: 18.5em)"
+        width: "600"
+        height: "300"
+      source_default:
+        width: "300"
+        height: "300"
