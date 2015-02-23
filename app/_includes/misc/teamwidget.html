@@ -1,9 +1,15 @@
 <div class="team_widget">
   <div class="axes">
-    {% for member in site.data.team %}
-      <span class="team_member">
-      {{ member }}
-      </span>
+    <section class="team_members">
+    {% for team_member in site.data.team %}
+      <article class="team_member" id="{{ team_member.key }}">
+        <img src="members/{{ team_member.key }}.jpg" class="team_member-icon" alt="{{ team_member.name }}" title="{{ team_member.name }}">
+        <div class="team_member-info">
+          <h3 class="team_member-name">{{ team_member.name }}</h3>
+          <span class="team_member-bio">Bio: {{ team_member.bio }}</span>
+        </div>
+      </article>
     {% endfor %}
+    </section>
   </div>
 </div>
