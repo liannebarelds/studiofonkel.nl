@@ -1,34 +1,36 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ page.description }}" />
-  <meta itemprop="url" content="{{ page.url | prepend: site.url }}" />
-  <!-- Schema.org markup for Google+ -->
-  <meta itemprop="name" content="{{ page.metatitle }}">
-  <meta itemprop="description" content="{{ page.metadescription }}">
-  <link rel="author" href="https://plus.google.com/+StudioFonkelAmersfoort/" />
-  <!-- <meta itemprop="image" content="http://www.example.com/image.jpg"> -->
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{{ page.description }}" />
+<meta itemprop="url" content="{{ page.url | prepend: site.url }}" />
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="{{ page.metatitle }}">
+<meta itemprop="description" content="{{ page.metadescription }}">
+<link rel="author" href="https://plus.google.com/+StudioFonkelAmersfoort/" />
+<!-- <meta itemprop="image" content="http://www.example.com/image.jpg"> -->
 
-  <!-- Twitter Card data -->
-  <!-- <meta name="twitter:card" content="summary_large_image"> -->
-  <meta name="twitter:site" content="@StudioFonkel">
-  <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:creator" content="@StudioFonkel">
-  <!-- Twitter summary card with large image must be at least 280x150px -->
-  <!-- <meta name="twitter:image:src" content="http://www.example.com/image.html"> -->
+<!-- Twitter Card data -->
+<!-- <meta name="twitter:card" content="summary_large_image"> -->
+<meta name="twitter:site" content="@StudioFonkel">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.description }}">
+<meta name="twitter:creator" content="@StudioFonkel">
+<!-- Twitter summary card with large image must be at least 280x150px -->
+<!-- <meta name="twitter:image:src" content="http://www.example.com/image.html"> -->
 
-  <!-- Open Graph data -->
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
-  <!-- <meta property="og:image" content="http://example.com/image.jpg" /> -->
-  <meta property="og:description" content="{{ page.description }}" />
-  <meta property="og:site_name" content="Studio Fonkel" />
+<!-- Open Graph data -->
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ page.url | prepend: site.url }}" />
+<!-- <meta property="og:image" content="http://example.com/image.jpg" /> -->
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:site_name" content="Studio Fonkel" />
+
+<script src="/_bower_components/picturefill/dist/picturefill.js"></script>
