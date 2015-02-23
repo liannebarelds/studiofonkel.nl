@@ -1,0 +1,19 @@
+.navigation {
+    li {
+        // transform: rotate(45deg);
+        overflow: hidden;
+        width: 50vw;
+        height: 50vh;
+        background: red;
+        float: left;
+
+        a {
+            // transform: rotate(-45deg);
+            display: block;
+            height: 50vh;
+            background-repeat: no-repeat;
+            color: $color_white;
+            text-decoration: none;
+        }
+    }
+}
