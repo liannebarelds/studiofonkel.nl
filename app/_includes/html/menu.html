@@ -1,5 +1,5 @@
 <ul>
-  {% assign menuItems = site.pages2 | sort: "menu-weight" | within: "menu-weight" %}
+  {% assign menuItems = site.collections.pages.docs | sort: "menu-weight" %}
 
   {% for item in menuItems %}
     {% if item.menu-weight %}
