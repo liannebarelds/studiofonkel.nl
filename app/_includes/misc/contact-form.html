@@ -1,0 +1,35 @@
+<form id="mail-form">
+  <div class="form-item form-item-name">
+    <label for="name">Naam</label>
+    <input type="text" maxlength="128" size="60" name="name" placeholder="Uw naam">
+    <span class="error-message">Het veld 'Naam' is verplicht.</span>
+  </div>
+
+  <div class="form-item form-item-organisation">
+    <label for="organisation">Organisatie</label>
+    <input type="text" maxlength="128" size="60" name="organisation" placeholder="Organisatie">
+    <span class="error-message">Het veld 'Organisatie' is verplicht.</span>
+  </div>
+
+  <div class="form-item form-item-phone">
+    <label for="phone">Telefoon</label>
+    <input type="tel" maxlength="128" size="60" name="phone" placeholder="Telefoon">
+    <span class="error-message">Het veld 'Telefoon' is verplicht en moet een correct telefoon nummer bevatten.</span>
+  </div>
+
+  <div class="form-item form-item-mail">
+    <label for="mail">Email adres</label>
+    <input type="email" maxlength="128" size="60" name="mail" placeholder="Email">
+    <span class="error-message">Het veld 'Email adres' is verplicht en moet een correct email adres bevatten.</span>
+  </div>
+
+  <div class="form-item form-item-message">
+    <label for="message">Bericht</label>
+    <textarea name="message" placeholder="Uw bericht"></textarea>
+    <span class="error-message">Het veld 'Bericht' is verplicht.</span>
+  </div>
+
+  <div class="form-item">
+    <input class="button button-blue" type="submit" id="sent-mail" value="Versturen">
+  </div>
+</form>
