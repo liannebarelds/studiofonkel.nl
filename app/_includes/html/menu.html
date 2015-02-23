@@ -3,10 +3,9 @@
 
   {% for item in menuItems %}
     {% if item.menu-weight %}
-      <li>
-        <a href="{{ item.url }}">
-          <h2 class="link-title">{{ item.title }}</h2>
-          {% picture home {{ item.background }} %}
+      <li class="navigation-item">
+        <a href="{{ item.url }}" class="navigation-item-link">
+          <h2 class="navigation-item-title">{{ item.title }}</h2>
         </a>
       </li>
     {% endif %}
