@@ -4,7 +4,10 @@
   {% for item in menuItems %}
     {% if item.menu-weight %}
       <li>
-        <a href="#" style="background-image: url('http://lorempixel.com/1200/800/sports/1/')">{{ item.title }}</a>
+        <a href="{{ item.url }}">
+          <h2 class="link-title">{{ item.title }}</h2>
+          {% picture home {{ item.background }} %}
+        </a>
       </li>
     {% endif %}
   {% endfor %}
