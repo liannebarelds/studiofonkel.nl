@@ -39,3 +39,25 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "page"
+
+picture:
+  source: "img/_source"
+  output: "generated"
+  markup: "picture"
+  presets:
+    home:
+      ppi: [1]
+      attr:
+        class: "home-background"
+        itemprop: "image"
+      source_medium:
+        media: "(min-width: 36em)"
+        width: "1200"
+        height: "1200"
+      source_small:
+        media: "(min-width: 18.5em)"
+        width: "600"
+        height: "600"
+      source_default:
+        width: "300"
+        height: "300"
