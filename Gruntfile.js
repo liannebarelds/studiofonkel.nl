@@ -31,7 +31,7 @@ module.exports = function (grunt) {
       },
       jekyll: {
         files: [
-          '<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
+          '<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown,rb}',
           '!<%= yeoman.app %>/_bower_components/**/*'
         ],
         tasks: ['jekyll:server']
@@ -110,7 +110,7 @@ module.exports = function (grunt) {
       options: {
         debugInfo: false,
         lineNumbers: false,
-        require: ['singularitygs', 'breakpoint', 'sass-globbing'],
+        require: ['toolkit', 'singularitygs', 'breakpoint', 'sass-globbing'],
         loadPath: 'app/_bower_components'
       },
       dist: {
