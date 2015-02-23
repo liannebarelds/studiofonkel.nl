@@ -12,6 +12,7 @@ $(function() {
 
     setTimeout(function () {
       $('body').removeClass('has-loading-state')
+      $('.overview [href="' + previousUrl + '"]').removeClass('active')
     }, 100)
   }
   else {
