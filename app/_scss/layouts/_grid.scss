@@ -12,7 +12,7 @@
   pointer-events: none;
   @include background-grid($color: blue);
   opacity: 0;
-  transition: opacity $speed $ease-in-out;
+  transition: opacity $speed-fast $ease-in-out;
 }
 
 .has-grid-overlay-enabled {

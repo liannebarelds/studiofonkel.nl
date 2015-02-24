@@ -34,7 +34,7 @@
     font-size: 30px;
     pointer-events: none;
     z-index: 100000;
-    transition: color .25s, text-shadow .25s;
+    transition: color $speed-fast, text-shadow $speed-fast;
     text-shadow: 0px 1px 4px rgba($black, 0);
   }
 
@@ -157,7 +157,7 @@
       .navigation-item-background {
         opacity: 0;
         filter: blur(10px);
-        transition: all .5s;
+        transition: all $speed-medium;
         right: 0;
         bottom: 0;
         left: 0;
