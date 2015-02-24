@@ -128,7 +128,7 @@
   }
 
   &:nth-child(1) .navigation-item-inner, &:nth-child(4) .navigation-item-inner {
-    box-shadow: 0 0 3px -1px black;
+    box-shadow: 0 0 3px -1px $black;
     width: 70.710678118vh;
     height: 70.710678118vh;
     transform: translate(-50%, -50%) rotate(-45deg);
@@ -196,7 +196,7 @@
   .navigation-item-inner:after {
     content: '';
     opacity: 0;
-    transition: opacity .5s;
+    transition: opacity $speed-medium;
     display: block;
     background-image: url('https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/29395/594543/r3sd7sr4Tz6YZwr/grid4x4%402x.png');
     background-size: 4px 4px;
