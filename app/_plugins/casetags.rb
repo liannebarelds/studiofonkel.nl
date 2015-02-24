@@ -7,14 +7,14 @@ module Jekyll
 
     def render(context)
 
-      @categories = context.registers[:page]["categories"].split(" ")
+      @categories = context.registers[:page]["categories"]
       @output = ''
 
       for @category in @categories
-        @output += "<div class='case-categories-tag'>#{@category}</div>"
+        @output += "<div class='categories-item'>#{@category}</div>"
       end
 
-      "<div class='case-categories'>#{@output}</div>"
+      "<div class='categories'>#{@output}</div>"
     end
   end
 end

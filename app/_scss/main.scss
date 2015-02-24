@@ -19,11 +19,8 @@
 @import "components/navigation";
 @import "components/scrollimage";
 @import "components/tags";
+@import "components/circlebutton";
 
-// #__bs_notify__ {
-//   display: none !important;
-// }
-
-// .navigation {
-//   display: none;
-// }
+#__bs_notify__ {
+  // display: none !important;
+}

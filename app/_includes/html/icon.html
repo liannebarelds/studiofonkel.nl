@@ -1,0 +1,14 @@
+  {% assign menuItems = site.collections.pages.docs | sort: "menu-weight" %}
+
+  {% for item in menuItems %}
+    {% if item.menu-weight %}
+
+      {% assign page_path_exploded = page.url | split:'/' %}
+      {% assign item_path_exploded = item.url | split:'/' %}
+
+      {% if page_path_exploded[1] == item_path_exploded[1] %}
+      <a href="/" class="circlebutton circlebutton-{{ forloop.index0 }}"></a> 
+      {% endif %}
+
+    {% endif %}
+  {% endfor %}

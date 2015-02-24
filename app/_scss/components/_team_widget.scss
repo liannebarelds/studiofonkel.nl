@@ -44,7 +44,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    transition: transform $speed-slow cubic-bezier(.56, .12, .33, .91) 0s;
     z-index: 90;
     cursor: pointer;
   }
@@ -60,7 +59,7 @@
 
 .team_member {
   position: relative;
-  
+
   &:hover {
     z-index: 200;
   }
@@ -88,7 +87,6 @@
       left: 50%;
       border-radius: 50%;
       transform: translate(-50%, -50%) scale(1);
-      transition: all $speed-fast ease-out 0s;
       z-index: 40;
     }
 
@@ -111,5 +109,17 @@
         border-radius: 0%;
       }
     }
+  }
+}
+
+body:not(.has-loading-state) {
+  .team_widget {
+    .team_member {
+      transition: transform $speed-slow $ease-in-out 0s;
+    }
+  }
+
+  .team_member-icon-wrapper:before {
+    transition: transform $speed-fast ease-out 0s;
   }
 }

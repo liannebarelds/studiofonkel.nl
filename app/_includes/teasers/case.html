@@ -1,0 +1,11 @@
+<a class="case teaser" href="{{ case.url }}">
+  <article>
+    <h1>{{ case.title }}</h1>
+    <span class="button line yellow">Bekijk case</span>
+    <div class="categories">
+      {% for category in case.categories %}
+        <div class="categories-item">{{ category }}</div>
+      {% endfor %}
+    </div>
+  </article>
+</a>

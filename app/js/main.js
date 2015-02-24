@@ -16,7 +16,9 @@ $(function() {
     }, 100)
   }
   else {
-    $('body').removeClass('has-loading-state')
+    setTimeout(function () {
+      $('body').removeClass('has-loading-state')
+    }, 300)
   }
 
 });
