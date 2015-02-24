@@ -179,13 +179,32 @@
   }
 
   &:hover {
-    .navigation-item-link-inner .navigation-item-background {
-      opacity: 1;
-      filter: blur(0px);
+    .navigation-item-link-inner {
+      .navigation-item-background {
+        opacity: 1;
+        filter: blur(0px);
+      }
     }
     .navigation-item-title {
       color: $white;
       text-shadow: 0px 1px 4px rgba($black, 1);
     }
+    .navigation-item-inner:after {
+      opacity: 1;
+    }
+  }
+  .navigation-item-inner:after {
+    content: '';
+    opacity: 0;
+    transition: opacity .5s;
+    display: block;
+    background-image: url('https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/29395/594543/r3sd7sr4Tz6YZwr/grid4x4%402x.png');
+    background-size: 4px 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
   }
 }
