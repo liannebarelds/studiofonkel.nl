@@ -1,5 +1,6 @@
 ---
-title: "Over ons"
+title: "Studio Fonkel"
+subtitle: "Gewone jongens die mooie dingen maken"
 background: over-ons.jpg
 menu-weight: 1
 ---

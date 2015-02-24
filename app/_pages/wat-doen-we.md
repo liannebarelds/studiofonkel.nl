@@ -1,5 +1,6 @@
 ---
 title: "Wat doen we"
+subtitle: ""
 background: wat-doen-we.jpg
 menu-weight: 3
 ---

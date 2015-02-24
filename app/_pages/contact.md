@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+subtitle: ""
 background: contact.jpg
 menu-weight: 4
 ---
