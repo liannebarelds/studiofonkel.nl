@@ -12,7 +12,7 @@ module Jekyll
     end
 
     def render(context)
-      "<div class='image #{@type}'><img src='#{@url}' alt='#{@alt}' title=''><div class='image-description'>#{@description}</div></div>"
+      "<div class='image #{@type}'><img src='#{@url}' alt='#{@alt}' title='#{@alt}'><div class='image-description'>#{@description}</div></div>"
     end
   end
 end

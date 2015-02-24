@@ -44,11 +44,7 @@ $(function() {
 
   updateSelects('x')
   updateSelects('y')
-  $('.team_widget').addClass('no-transitions')
   updatePositions($('#team_widget_selectY option:selected')[0].value, 'y')
-  setTimeout(function() {
-    $('.team_widget').removeClass('no-transitions')
-  }, 10)
 
   $('.team_widget').on('change', 'select', function(e) {
     var select_id = $(this).attr('id')

@@ -3,10 +3,13 @@ layout: html
 ---
 {% if page.url == '/index.html' %}
   {% include html/menu.html %}
+{% else %}
+  <header class="pageheader">
+    <h1 class="pageheader-title">{{ page.title }}</h1>
+    {% include html/icon.html %}
+    {% include misc/close.html %}
+  </header>
 {% endif %}
 
-{% unless page.url == '/index.html' %}
-  {% include html/icon.html %}
-{% endunless %}
 
 {{ content }}
