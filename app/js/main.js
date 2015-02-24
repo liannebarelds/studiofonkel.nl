@@ -21,4 +21,12 @@ $(function() {
     }, 300)
   }
 
+
+  $('.frontpage-item-link').on('click', function () {
+    $(this).addClass('active')
+    $('body').addClass('has-loading-state')
+
+
+  })
+
 });
