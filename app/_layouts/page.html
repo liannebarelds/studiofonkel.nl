@@ -1,6 +1,12 @@
 ---
 layout: html
 ---
-{% include html/menu.html %}
+{% if page.url == '/index.html' %}
+  {% include html/menu.html %}
+{% endif %}
+
+{% unless page.url == '/index.html' %}
+  {% include html/icon.html %}
+{% endunless %}
 
 {{ content }}
