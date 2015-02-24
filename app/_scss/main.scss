@@ -5,7 +5,6 @@
 @import "singularitygs";
 @import "toolkit";
 
-
 @import "variables/variables";
 
 @import "variables/colors";
@@ -17,7 +16,6 @@
 @import "layouts/grid";
 @import "layouts/case-full";
 
-
 @import "components/team_widget";
 @import "components/navigation";
 @import "components/scrollimage";
@@ -27,5 +25,5 @@
 }
 
 .navigation {
-  display: none;
+  // display: none;
 }
