@@ -1,4 +1,3 @@
-<div class="circlebutton">
   {% assign menuItems = site.collections.pages.docs | sort: "menu-weight" %}
 
   {% for item in menuItems %}
@@ -8,10 +7,8 @@
       {% assign item_path_exploded = item.url | split:'/' %}
 
       {% if page_path_exploded[1] == item_path_exploded[1] %}
-        <div class="circlebutton-part active"></div>
-      {% else %}
-        <div class="circlebutton-part"></div>
+      <div class="circlebutton circlebutton-{{ forloop.index }}"></div> 
       {% endif %}
+
     {% endif %}
   {% endfor %}
-</div>
