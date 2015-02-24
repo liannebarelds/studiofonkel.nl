@@ -40,7 +40,7 @@
     height: 100%;
 
     // circle
-    $circle-size: 2vmin;
+    $circle-size: 12px;
     &:before {
       content: " ";
       display: block;
@@ -51,8 +51,8 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%) translate(4vmin, 4vmin);
-      border: .75vmin solid $yellow;
+      transform: translate(-50%, -50%) translate(4vmin, 4vmin) translate(0.5px, 0.5px);
+      border: $circle-size/3 solid $yellow;
     }
   }
 
@@ -120,9 +120,14 @@
     z-index: 300;
 
     .teamwidget-member-icon-wrapper {
+      > * {
+        width: 24vmin !important;
+        height: 24vmin !important;
+      }
+
       &:before {
-        transform: translate(-50%, -50%) scale(1) !important;
-        border-radius: 0%;
+        transform: translate(-50%, -50%) scale(0.95) !important;
+        // border-radius: 0%;
       }
     }
   }
@@ -132,16 +137,26 @@ body:not(.has-loading-state) {
   .teamwidget {
     .teamwidget-member {
       transition: transform $speed-slow $ease-in-out 0s;
+
+      > * {
+        transition: transform $speed-fast $ease-in-out 0s;
+      }
     }
   }
 
   .teamwidget-member-icon-wrapper {
     > * {
-      transition: width $speed-slow $ease-in-out 0s, height $speed-slow $ease-in-out 0s;
+      transition: width $speed-fast $ease-in-out 0s, height $speed-fast $ease-in-out 0s;
     }
 
     &:before {
       transition: transform $speed-fast ease-out 0s;
     }
+  }
+}
+
+body.teamwidget-no-transitions {
+  .teamwidget * {
+    transition: none !important;
   }
 }

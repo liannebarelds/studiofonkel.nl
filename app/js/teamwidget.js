@@ -43,6 +43,20 @@ $(function() {
     })
   }
 
+  function detailsOnMember(item) {
+    item.addClass('teamwidget-member-active')
+    var thisPosition = item.offset()
+    var axesPosition = $('.axes').offset()
+    var translateString = 'translate(' + (axesPosition.left - thisPosition.left) + 'px, ' + (axesPosition.top - thisPosition.top) + 'px) translate(4vmin, 4vmin)'
+    
+    item.find('> .teamwidget-member-icon-wrapper').css({
+      transform: translateString,
+        MozTransform: translateString,
+        WebkitTransform: translateString,
+        msTransform: translateString
+    })
+  }
+
   updateSelects('x')
   updateSelects('y')
   updatePositions($('#teamwidget-selectY option:selected')[0].value, 'y')
@@ -56,14 +70,22 @@ $(function() {
   })
 
   $('.teamwidget-members').on('click touch', '.teamwidget-member', function() {
-    $(this).addClass('teamwidget-member-active')
+    detailsOnMember($(this), false)
   })
 
   var timeout
   $(window).resize(function() {
+    $('body').addClass('teamwidget-no-transitions')
+
     clearTimeout(timeout)
     timeout = setTimeout(function(){
       updatePositions($('#teamwidget-selectX option:selected')[0].value, 'x')
+      
+      if ($('.teamwidget-member-active').length > 0) {
+        detailsOnMember($('.teamwidget-member-active'))
+      }
+      
+      $('body').removeClass('teamwidget-no-transitions')
     }, 400)
   })
 

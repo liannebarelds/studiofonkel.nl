@@ -58,8 +58,8 @@ picture:
         class: "teamwidget-member-icon"
         itemprop: "image"
       source_default:
-        width: "50"
-        height: "50"
+        width: "300"
+        height: "300"
     header:
       ppi: [1]
       attr:
