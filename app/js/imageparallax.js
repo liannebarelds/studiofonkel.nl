@@ -1,6 +1,6 @@
 $(function() {
   'use strict'
 
-  $( ".scrollimage" ).imageparallax()
+  $('.image.scroll').imageparallax()
 
 });
