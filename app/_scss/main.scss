@@ -14,11 +14,13 @@
 @import "layouts/layout";
 @import "layouts/grid";
 @import "layouts/case-full";
+@import "layouts/cases-overview";
 
 @import "components/team_widget";
 @import "components/navigation";
 @import "components/scrollimage";
 @import "components/tags";
+@import "components/case-teaser";
 @import "components/circlebutton";
 
 #__bs_notify__ {

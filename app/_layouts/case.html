@@ -7,12 +7,14 @@ layout: html
   {% include misc/close.html %}
 </header>
 
-<div class="case full">
+<div class="case-full">
   <a class="case-overview-link" href="/cases/">Terug naar het overzicht</a>
 
   <div class="case-introduction">
     {{ page.introduction }}
   </div>
+
+  <h2 class="pageheader-title">{{ page.title }}</h2>
 
   {% if page.header %}
     <div class="case-header">
