@@ -11,7 +11,7 @@ module Jekyll
       @output = ''
 
       for @category in @categories
-        @output += "<div class='case-categories-tag'>#{@category}</div>"
+        @output += "<div class='case-categories-item'>#{@category}</div>"
       end
 
       "<div class='case-categories'>#{@output}</div>"
