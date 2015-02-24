@@ -12,10 +12,18 @@
         position: absolute;
         bottom: 80px;
     }
-    .categories {
-        position: absolute;
-        bottom: 25px;
-        left: 30px;
+    .cast-teaser-categories {
+        position: relative;
+
+        .cast-teaser-categories-item {
+            color: $yellow;
+            display: block;
+            float: left;
+
+            + .cast-teaser-categories-item {
+                margin-left: 20px;
+            }
+        }
     }
     &:before, &:after {
         content: '';
