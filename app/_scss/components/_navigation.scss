@@ -7,7 +7,7 @@
   &:before, &:after {
     content: '';
     display: block;
-    background-color: $color_white;
+    background-color: $white;
     pointer-events: none;
     border-radius: 50%;
     top: 50%;
@@ -22,7 +22,7 @@
   &:before {
     width: 130px;
     height: 130px;
-    background-color: $color_yellow-alpha;
+    background-color: $yellow-alpha;
   }
 }
 
@@ -34,8 +34,8 @@
     font-size: 30px;
     pointer-events: none;
     z-index: 100000;
-    transition: color .25s, text-shadow .25s;
-    text-shadow: 0px 1px 4px rgba($color_black, 0);
+    transition: color $speed-fast, text-shadow $speed-fast;
+    text-shadow: 0px 1px 4px rgba($black, 0);
   }
 
   .navigation-item-inner {
@@ -148,7 +148,7 @@
     display: block;
     position: absolute;
     overflow: hidden;
-    background-color: $color_white;
+    background-color: $white;
 
     .navigation-item-link-inner {
       position: absolute;
@@ -157,7 +157,7 @@
       .navigation-item-background {
         opacity: 0;
         filter: blur(10px);
-        transition: all .5s;
+        transition: all $speed-medium;
         right: 0;
         bottom: 0;
         left: 0;
@@ -184,8 +184,8 @@
       filter: blur(0px);
     }
     .navigation-item-title {
-      color: $color_white;
-      text-shadow: 0px 1px 4px rgba($color_black, 1);
+      color: $white;
+      text-shadow: 0px 1px 4px rgba($black, 1);
     }
   }
 }

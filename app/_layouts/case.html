@@ -1,9 +1,13 @@
 ---
 layout: html
 ---
-<div class="case full">
+<div class="case-header">
   <h1 class="case-title">{{ page.title }}</h1>
+  {% include html/icon.html %}
+  {% include misc/close.html class="case-closebutton" %}
+</div>
 
+<div class="case full">
   <a class="case-overview-link" href="/cases/">Terug naar het overzicht</a>
 
   <div class="case-introduction">
