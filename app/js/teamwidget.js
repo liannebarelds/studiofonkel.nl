@@ -32,7 +32,6 @@ $(function() {
       else {
         translateString = 'translate(' + (other_axis_value * widget_width / 100) + 'px, ' + (this_axis_value * widget_width / 100) + 'px)'
       }
-      console.log($('#team_member-member-' + key))
 
       $('#team_member-member-' + key).css({
         transform: translateString,
@@ -56,6 +55,13 @@ $(function() {
     var axis = select_id.charAt(select_id.length - 1).toLowerCase()
     updateSelects(axis)
     updatePositions($('#' + select_id + ' option:selected')[0].value, axis)
+  })
+
+  $('.team_members').on('click touch', '.team_member', function() {
+    $(this).addClass('team_member-active')
+    // var id = $(this).attr('id')
+    // id = id.substr(19, id.length) // strip off "team_member-member-"
+    // console.log(id)
   })
 
   // ON RESIZE RECALCULATE POSITIONS

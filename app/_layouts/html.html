@@ -8,14 +8,13 @@
         <!-- endbuild -->
 
     </head>
-    <body class="has-loading-state">
+    <body class="has-loading-state layout-{{ page.layout }}">
 
     <div class="grid"></div>
 
     {{ content }}
 
     <!-- build:js(app) /js/scripts.js -->
-    <script src="/_bower_components/jquery/dist/jquery.js"></script>
     <script src="/js/imageparallax.jquery.js"></script>
     <script src="/js/grid.js"></script>
     <script src="/js/imageparallax.js"></script>
