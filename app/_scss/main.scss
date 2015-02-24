@@ -1,13 +1,10 @@
 @charset "utf-8";
 
 @import "breakpoint";
-
 @import "singularitygs";
 @import "toolkit";
 
-
 @import "variables/variables";
-
 @import "variables/colors";
 
 @import "base/reset";
@@ -17,14 +14,13 @@
 @import "layouts/grid";
 @import "layouts/case-full";
 
-
 @import "components/team_widget";
 @import "components/navigation";
 @import "components/scrollimage";
 
-#__bs_notify__ {
-  display: none !important;
-}
+// #__bs_notify__ {
+//   display: none !important;
+// }
 
 .navigation {
   display: none;
