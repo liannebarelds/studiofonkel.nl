@@ -1,5 +1,5 @@
 <div class="cases-overview overview">
   {% for case in site.cases %}
-    <a href="{{ case.url }}">{{ case.title }}</a>
+    {% include teasers/case.html %}
   {% endfor %}
 </div>
