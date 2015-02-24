@@ -1,0 +1,21 @@
+.pageheader {
+  @include isolation-span(14, 1, 'both');
+  height: 79px;
+  padding: 18px 22px;
+  position: relative;
+  
+  &:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+    right: 22px;
+    height: 1px;
+    background: $light-grey;
+  }
+
+  .pageheader-title {
+    @include isolation-span(9, 3, 'both')
+  }
+}

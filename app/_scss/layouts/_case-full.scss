@@ -13,14 +13,6 @@
     margin-bottom: 30px;
   }
 
-  .case-title {
-    @include isolation-span(9, 3, 'both')
-  }
-
-  .case-header {
-    @include isolation-span(14, 1, 'both');
-  }
-
   .case-body {
     > * {
       @include isolation-span(9, 3, 'both', $grid: 12);
