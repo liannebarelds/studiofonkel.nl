@@ -14,6 +14,7 @@ $(function() {
   }
 
   function updatePositions(characteristic, axis) {
+    console.log('hahaha')
     var other_axis
     axis == 'x' ? other_axis = 'y' : other_axis = 'x'
     var other_axis_characteristic = $('#teamwidget-select' + other_axis.toUpperCase() + ' option:selected')[0].value,
@@ -46,6 +47,7 @@ $(function() {
   updateSelects('y')
   updatePositions($('#teamwidget-selectY option:selected')[0].value, 'y')
 
+  // Event handlers
   $('.teamwidget').on('change', 'select', function(e) {
     var select_id = $(this).attr('id')
     var axis = select_id.charAt(select_id.length - 1).toLowerCase()
@@ -57,6 +59,12 @@ $(function() {
     $(this).addClass('teamwidget-member-active')
   })
 
-  // ON RESIZE RECALCULATE POSITIONS
+  var timeout
+  $(window).resize(function() {
+    clearTimeout(timeout)
+    timeout = setTimeout(function(){
+      updatePositions($('#teamwidget-selectX option:selected')[0].value, 'x')
+    }, 400)
+  })
 
 });

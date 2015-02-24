@@ -1,7 +1,5 @@
 .teamwidget {
-  margin: 30px auto 0;
-  width: 600px;
-  height: 600px;
+  margin: 0 auto;
 
   .axes {
     position: relative;
@@ -30,14 +28,32 @@
       left: 50%;
       background: $yellow;
       z-index: 120;
+
     }
   }
 
   .teamwidget-members {
-    transform: translate(-25px, -25px);
+    transform: translate(-4vmin, -4vmin); // fix for everything not being exactly on the right position (since the origin can't be the middle)
     position: relative;
     z-index: 130;
-    // fix for everything not being exactly on the right position (since the origin can't be the middle)
+    width: 100%;
+    height: 100%;
+
+    // circle
+    $circle-size: 2vmin;
+    &:before {
+      content: " ";
+      display: block;
+      border-radius: 50%;
+      width: $circle-size;
+      height: $circle-size;
+      background: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) translate(4vmin, 4vmin);
+      border: .75vmin solid $yellow;
+    }
   }
 
   .teamwidget-member {
@@ -69,8 +85,8 @@
 
     > * {
       display: block;
-      width: 50px !important;
-      height: 50px !important;
+      width: 8vmin !important;
+      height: 8vmin !important;
       border-radius: 50%;
       overflow: hidden;
       position: relative;
@@ -80,18 +96,18 @@
     &:before {
       content: " ";
       background: $yellow;
-      height: 48px;
-      width: 48px;
+      height: 100%;
+      width: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
       border-radius: 50%;
-      transform: translate(-50%, -50%) scale(1);
+      transform: translate(-50%, -50%) scale(0.95);
       z-index: 40;
     }
 
     &:hover:before {
-      transform: translate(-50%, -50%) scale(1.2);
+      transform: translate(-50%, -50%) scale(1.15);
     }
   }
 
@@ -119,7 +135,13 @@ body:not(.has-loading-state) {
     }
   }
 
-  .teamwidget-member-icon-wrapper:before {
-    transition: transform $speed-fast ease-out 0s;
+  .teamwidget-member-icon-wrapper {
+    > * {
+      transition: width $speed-slow $ease-in-out 0s, height $speed-slow $ease-in-out 0s;
+    }
+
+    &:before {
+      transition: transform $speed-fast ease-out 0s;
+    }
   }
 }
