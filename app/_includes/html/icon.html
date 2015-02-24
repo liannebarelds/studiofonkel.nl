@@ -1,0 +1,17 @@
+<div class="circlebutton">
+  {% assign menuItems = site.collections.pages.docs | sort: "menu-weight" %}
+
+  {% for item in menuItems %}
+    {% if item.menu-weight %}
+
+      {% assign page_path_exploded = page.url | split:'/' %}
+      {% assign item_path_exploded = item.url | split:'/' %}
+
+      {% if page_path_exploded[1] == item_path_exploded[1] %}
+        <div class="circlebutton-part active"></div>
+      {% else %}
+        <div class="circlebutton-part"></div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>

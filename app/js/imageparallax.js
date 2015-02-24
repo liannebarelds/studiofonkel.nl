@@ -1,6 +1,6 @@
 $(function() {
   'use strict'
 
-  $('.image.scroll').imageparallax()
+  $('.image.scroll:not(.processed').addClass('processed').imageparallax()
 
 });
