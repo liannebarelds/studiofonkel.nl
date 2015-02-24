@@ -7,11 +7,12 @@ module Jekyll
       @url = @params[0]
       @type = @params[1]
       @description = @params[2]
+      @alt = @params[3]
 
     end
 
     def render(context)
-      "<div class='image #{@type}'><img src='#{@url}'><div class='image-description'>#{@description}</div></div>"
+      "<div class='image #{@type}'><img src='#{@url}' alt='#{@alt}' title=''><div class='image-description'>#{@description}</div></div>"
     end
   end
 end
