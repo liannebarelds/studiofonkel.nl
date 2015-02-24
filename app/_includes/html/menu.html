@@ -4,13 +4,15 @@
   {% for item in menuItems %}
     {% if item.menu-weight %}
       <li class="navigation-item">
-        <a href="{{ item.url }}" class="navigation-item-link">
-          <div class="navigation-item-inner">
-            <div class="navigation-item-background">
-              <h2 class="navigation-item-title">{{ item.title }}</h2>
+        <h2 class="navigation-item-title">{{ item.title }}</h2>
+        <div class="navigation-item-inner">
+          <a href="{{ item.url }}" class="navigation-item-link">
+            <div class="navigation-item-link-inner">
+              <div class="navigation-item-background">
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </li>
     {% endif %}
   {% endfor %}
