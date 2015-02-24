@@ -5,11 +5,12 @@ module Jekyll
 
       @params = text.split(' ')
       @url = @params[0]
+      @description = @params[0]
 
     end
 
     def render(context)
-      "<div class='detailimage'><img src='#{@url}'></div>"
+      "<div class='detailimage'><img src='#{@url}'><div class='detailimage-description'></div></div>"
     end
   end
 end
