@@ -1,4 +1,8 @@
-<div class="closebutton">
-  <div class="closebutton-bar"></div>
-  <div class="closebutton-bar"></div>
-</div>
+{% assign page_url_exploded = page.url | split:'/' %}
+{% assign depth = page_url_exploded | size %}
+{% if depth == 3 %}
+  <a class="closebutton" href="/{{ page_url_exploded[1] }}">
+    <div class="closebutton-bar"></div>
+    <div class="closebutton-bar"></div>
+  </a>
+{% endif %}
