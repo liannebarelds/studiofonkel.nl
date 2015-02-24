@@ -1,21 +1,33 @@
 .case.full {
+  @include isolation-span(14, 1, 'both');
+
   .case-overview-link,
-  .case-title,
   .case-body {
-    @include grid-span(12, 2);
-    clear: both;
+    @include isolation-span(12, 2, 'both');
   }
 
   .case-introduction {
-    @include grid-span(8, 4);
-    clear: both;
+    @include isolation-span(8, 4, 'clear: both');
     padding-bottom: 15px;
     border-bottom: 1px solid $yellow;
     margin-bottom: 30px;
   }
 
+  .case-title {
+    @include isolation-span(9, 3, 'both')
+  }
+
   .case-header {
-    @include grid-span(14, 1);
-    clear: both;
+    @include isolation-span(14, 1, 'both');
+  }
+
+  .case-body {
+    > * {
+      @include isolation-span(9, 3, 'both', $grid: 12);
+    }
+
+    > .case-categories {
+      @include isolation-span(7, 4, 'both', $grid: 12);
+    }
   }
 }

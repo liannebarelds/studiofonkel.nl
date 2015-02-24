@@ -1,6 +1,6 @@
 @include add-grid(4 1 1 1 1 1 1 1 1 1 1 1 1 4);
 @include add-gutter(1 / 3);
-
+@include sgs-change('output', 'isolation');
 @include sgs-change('debug', true);
 
 .grid {

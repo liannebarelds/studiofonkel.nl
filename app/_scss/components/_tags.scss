@@ -1,0 +1,22 @@
+.case-categories-tag {
+  display: inline-block;
+  border: 1px solid $yellow;
+  padding: 5px 10px;
+  margin: 0 9px;
+  color: $yellow;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 18px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+_:-moz-tree-row(hover), .case-categories-tag {
+  padding: 6px 10px 4px;
+}
