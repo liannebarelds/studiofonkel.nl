@@ -7,8 +7,10 @@ layout: html
     <h1 class="pageheader-title">{{ page.title }}</h1>
     {% include misc/close.html %}
   </header>
+<div class="pagewrapper">
 {% endunless %}
 
-<div class="pagewrapper">
   {{ content }}
+{% unless page.url == '/index.html' %}
 </div>
+{% endunless %}

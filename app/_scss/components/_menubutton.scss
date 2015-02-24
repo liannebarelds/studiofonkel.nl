@@ -3,11 +3,11 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 8px solid $yellow;
-  border-color: $yellow;
+  border: 8px solid $yellow-alpha;
+  border-color: $yellow-alpha;
   float: left;
-  transform: translate(0vw, 0vh) translate(0, 0) scale(1);
-  transition: transform $speed-slow $ease-in-out, border-color $speed-slow $ease-in-out;
+  transform: translate(0vw, 0vh) translate(20px, 20px) scale(1);
+  transition: transform $speed-medium $ease-in-out;
 
   &.menubutton-1 {
     border-top-color: $black;
@@ -25,7 +25,6 @@
 
 .has-loading-state {
   .menubutton {
-    border-color: $yellow-alpha;
-    transform: translate(50vw, 50vh) translate(-50%, -50%) scale(3.25);
+    transform: translate(50vw, 50vh) translate(-50%, -50%) scale(3.53);
   }
 }
