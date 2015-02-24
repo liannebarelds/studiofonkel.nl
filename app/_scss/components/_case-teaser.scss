@@ -1,3 +1,49 @@
 .case-teaser {
-    background-image: url('http://placehold.it/350x150');
+    position: relative;
+    background-image: url('http://lorempixel.com/1400/800/people/9/');
+    background-size: cover;
+    min-height: 300px;
+    padding: 25px 30px;
+
+    .cast-teaser-title {
+        color: $white;
+        font-weight: 600;
+        font-size: 30px;
+        position: absolute;
+        bottom: 80px;
+    }
+    .categories {
+        position: absolute;
+        bottom: 25px;
+        left: 30px;
+    }
+    &:before, &:after {
+        content: '';
+        opacity: 0;
+        display: block;
+        position: absolute;
+        transition: opacity $speed-medium;
+    }
+    &:before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($black, .6);
+    }
+    &:after {
+        content: 'Bekijk deze case';
+        font-weight: 300;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $yellow;
+        padding: 7px 15px;
+        color: $yellow;
+    }
+    &:hover {
+        &:before, &:after {
+            opacity: 1;
+        }
+    }
 }

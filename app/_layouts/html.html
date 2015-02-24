@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
     {% include html/head.html %}
+    
+    <!-- build:css({app,.tmp}) /css/main.css -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- endbuild -->
+  </head>
 
-        <!-- build:css({app,.tmp}) /css/main.css -->
-        <link rel="stylesheet" href="/css/main.css">
-        <!-- endbuild -->
-
-    </head>
-    <body class="has-loading-state layout-{{ page.layout }}">
-
+  <body class="has-loading-state layout-{{ page.layout }}">
     <div class="grid"></div>
 
     {{ content }}
@@ -22,7 +21,6 @@
     {% if page.url == '/over-ons/' %}
     <script src="/js/teamwidget.js"></script>
     {% endif %}
-
     <!-- endbuild -->
-    </body>
+  </body>
 </html>
