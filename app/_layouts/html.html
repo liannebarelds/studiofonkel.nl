@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
     {% include html/head.html %}
 
-        <!-- build:css({app,.tmp}) /css/main.css -->
-        <link rel="stylesheet" href="/css/main.css">
-        <!-- endbuild -->
+    <!-- build:css({app,.tmp}) /css/main.css -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- endbuild -->
+  </head>
 
-    </head>
-    <body class="has-loading-state layout-{{ page.layout }}">
-
+  <body class="has-loading-state layout-{{ page.layout }} {% if page.url == '/index.html' %} front {% endif %}">
     <div class="grid"></div>
 
     {{ content }}
@@ -18,11 +17,9 @@
     <script src="/js/imageparallax.jquery.js"></script>
     <script src="/js/grid.js"></script>
     <script src="/js/imageparallax.js"></script>
-    <script src="/js/main.js"></script>
     {% if page.url == '/over-ons/' %}
     <script src="/js/teamwidget.js"></script>
     {% endif %}
-
     <!-- endbuild -->
-    </body>
+  </body>
 </html>

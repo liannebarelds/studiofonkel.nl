@@ -16,12 +16,14 @@
 @import "layouts/case-full";
 @import "layouts/cases-overview";
 
-@import "components/team_widget";
-@import "components/navigation";
+@import "components/frontpage";
+@import "components/pageheader";
+@import "components/categories";
 @import "components/scrollimage";
 @import "components/tags";
 @import "components/case-teaser";
-@import "components/circlebutton";
+@import "components/menubutton";
+@import "components/teamwidget";
 
 #__bs_notify__ {
   // display: none !important;

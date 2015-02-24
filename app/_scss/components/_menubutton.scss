@@ -1,0 +1,30 @@
+.menubutton {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 8px solid $yellow-alpha;
+  border-color: $yellow-alpha;
+  float: left;
+  transform: translate(0vw, 0vh) translate(20px, 20px) scale(1);
+  transition: transform $speed-medium $ease-in-out;
+
+  &.menubutton-1 {
+    border-top-color: $black;
+  }
+  &.menubutton-2 {
+    border-left-color: $black;
+  }
+  &.menubutton-3 {
+    border-right-color: $black;
+  }
+  &.menubutton-4 {
+    border-bottom-color: $black;
+  }
+}
+
+.has-loading-state {
+  .menubutton {
+    transform: translate(50vw, 50vh) translate(-50%, -50%) scale(3.53);
+  }
+}

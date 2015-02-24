@@ -1,4 +1,4 @@
-.team_widget {
+.teamwidget {
   margin: 30px auto 0;
   width: 600px;
   height: 600px;
@@ -16,7 +16,7 @@
       position: absolute;
       top: 50%;
       left: 0;
-      background: #ddd;
+      background: $yellow;
       z-index: 110;
     }
 
@@ -28,19 +28,19 @@
       position: absolute;
       top: 0;
       left: 50%;
-      background: #ddd;
+      background: $yellow;
       z-index: 120;
     }
   }
 
-  .team_members {
+  .teamwidget-members {
     transform: translate(-25px, -25px);
     position: relative;
     z-index: 130;
     // fix for everything not being exactly on the right position (since the origin can't be the middle)
   }
 
-  .team_member {
+  .teamwidget-member {
     position: absolute;
     top: 0;
     left: 0;
@@ -48,23 +48,23 @@
     cursor: pointer;
   }
 
-  .team_member-info {
+  .teamwidget-member-info {
     display: none;
   }
 
-  &.no-transitions .team_member {
+  &.no-transitions .teamwidget-member {
     transition: none !important;
   }
 }
 
-.team_member {
+.teamwidget-member {
   position: relative;
 
   &:hover {
     z-index: 200;
   }
 
-  .team_member-icon-wrapper {
+  .teamwidget-member-icon-wrapper {
     display: block;
 
     > * {
@@ -95,15 +95,15 @@
     }
   }
 
-  .team_member-icon {
+  .teamwidget-member-icon {
     width: 100%;
     height: 100%;
   }
 
-  &.team_member-active {
+  &.teamwidget-member-active {
     z-index: 300;
 
-    .team_member-icon-wrapper {
+    .teamwidget-member-icon-wrapper {
       &:before {
         transform: translate(-50%, -50%) scale(1) !important;
         border-radius: 0%;
@@ -113,13 +113,13 @@
 }
 
 body:not(.has-loading-state) {
-  .team_widget {
-    .team_member {
+  .teamwidget {
+    .teamwidget-member {
       transition: transform $speed-slow $ease-in-out 0s;
     }
   }
 
-  .team_member-icon-wrapper:before {
+  .teamwidget-member-icon-wrapper:before {
     transition: transform $speed-fast ease-out 0s;
   }
 }

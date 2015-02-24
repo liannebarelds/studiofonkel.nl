@@ -1,20 +1,20 @@
-<div class="team_widget">
+<div class="teamwidget">
   <div class="axes">
-    <section class="team_members">
+    <section class="teamwidget-members">
     {% for team_member in site.data.team %}
-      <article class="team_member" id="team_member-member-{{ team_member.key }}">
-        <span class="team_member-icon-wrapper">{% picture team_member team_members/{{ team_member.key }}.jpg alt="{{ team_member.name }}" title="{{ team_member.name }}" %}</span>
+      <article class="teamwidget-member" id="teamwidget-member-member-{{ team_member.key }}">
+        <span class="teamwidget-member-icon-wrapper">{% picture teamwidget_member team_members/{{ team_member.key }}.jpg alt="{{ team_member.name }}" title="{{ team_member.name }}" %}</span>
 
-        <div class="team_member-info">
-          <h3 class="team_member-name">{{ team_member.name }}</h3>
-          <span class="team_member-bio">Bio: {{ team_member.bio }}</span>
+        <div class="teamwidget-member-info">
+          <h3 class="teamwidget-member-name">{{ team_member.name }}</h3>
+          <span class="teamwidget-member-bio">Bio: {{ team_member.bio }}</span>
         </div>
       </article>
     {% endfor %}
     </section>
   </div>
 
-  <select id="team_widget_selectX">
+  <select id="teamwidget-selectX">
     {% for option in site.data.team[0].preferences %}
       {% if forloop.index0 == 0 %}
         <option value="{{ option[0] }}" selected>{{ option[0] }}</option>
@@ -24,7 +24,7 @@
     {% endfor %}
   </select>
 
-  <select id="team_widget_selectY">
+  <select id="teamwidget-selectY">
     {% for option in site.data.team[0].preferences %}
       {% if forloop.index0 == 1 %}
         <option value="{{ option[0] }}" selected>{{ option[0] }}</option>

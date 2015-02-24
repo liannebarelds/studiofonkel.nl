@@ -1,3 +1,22 @@
 ---
 title: Studio Fonkel
 ---
+<ul class="frontpage">
+  {% assign menuItems = site.collections.pages.docs | sort: "menu-weight" %}
+
+  {% for item in menuItems %}
+    {% if item.menu-weight %}
+      <li class="frontpage-item">
+        <h2 class="frontpage-item-title">{{ item.title }}</h2>
+        <div class="frontpage-item-inner">
+          <a href="{{ item.url }}" class="frontpage-item-link">
+            <div class="frontpage-item-link-inner">
+              <div class="frontpage-item-background">
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

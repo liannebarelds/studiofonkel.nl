@@ -52,10 +52,10 @@ picture:
   output: "generated"
   markup: "picture"
   presets:
-    team_member:
+    teamwidget_member:
       ppi: [1, 1.5, 2]
       attr:
-        class: "team_member-icon"
+        class: "teamwidget-member-icon"
         itemprop: "image"
       source_default:
         width: "50"

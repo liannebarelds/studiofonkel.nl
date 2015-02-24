@@ -21,4 +21,33 @@ $(function() {
     }, 300)
   }
 
+  $('.menubutton').on('click', function () {
+    var that = this
+    $('body').addClass('has-loading-state')
+
+    $('.pagewrapper').one('transitionend', function () {
+      window.location = $(that).attr('href')
+    })
+
+    return false
+  })
+
+
+  $('.frontpage-item-link').on('click', function () {
+    var that = this
+    if (!$('body').hasClass('has-loading-state')) {
+      var index = $(this).parents('.frontpage-item').index() + 1
+
+      $('.frontpage').addClass('active-' + index)
+
+      $('body').addClass('has-loading-state')
+
+      $('.frontpage-item-background').one('transitionend', function () {
+        window.location = $(that).attr('href')
+      })
+    }
+
+    return false
+  })
+
 });

@@ -1,15 +1,16 @@
 ---
 layout: html
 ---
-{% if page.url == '/index.html' %}
-  {% include html/menu.html %}
-{% else %}
+{% unless page.url == '/index.html' %}
   <header class="pageheader">
-    {% include html/icon.html %}
+    {% include html/menubutton.html %}
     <h1 class="pageheader-title">{{ page.title }}</h1>
     {% include misc/close.html %}
   </header>
-{% endif %}
+<div class="pagewrapper">
+{% endunless %}
 
-
-{{ content }}
+  {{ content }}
+{% unless page.url == '/index.html' %}
+</div>
+{% endunless %}

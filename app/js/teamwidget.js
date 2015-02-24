@@ -3,21 +3,21 @@ $(function() {
 
   function updateSelects(axis) {
     if (axis == 'x') {
-      $('#team_widget_selectY option').css('display', 'block')
-      $('#team_widget_selectY option[value="'+ $('#team_widget_selectX option:selected')[0].value + '"]').css('display', 'none')
+      $('#teamwidget-selectY option').css('display', 'block')
+      $('#teamwidget-selectY option[value="'+ $('#teamwidget-selectX option:selected')[0].value + '"]').css('display', 'none')
     }
 
     else {
-      $('#team_widget_selectX option').css('display', 'block')
-      $('#team_widget_selectX option[value="'+ $('#team_widget_selectY option:selected')[0].value + '"]').css('display', 'none')
+      $('#teamwidget-selectX option').css('display', 'block')
+      $('#teamwidget-selectX option[value="'+ $('#teamwidget-selectY option:selected')[0].value + '"]').css('display', 'none')
     }
   }
 
   function updatePositions(characteristic, axis) {
     var other_axis
     axis == 'x' ? other_axis = 'y' : other_axis = 'x'
-    var other_axis_characteristic = $('#team_widget_select' + other_axis.toUpperCase() + ' option:selected')[0].value,
-        widget_width = $('.team_widget').outerWidth()
+    var other_axis_characteristic = $('#teamwidget-select' + other_axis.toUpperCase() + ' option:selected')[0].value,
+        widget_width = $('.teamwidget').outerWidth()
 
     $.each(window.teaminfo, function(i, object) {
       var key = object.key,
@@ -33,7 +33,7 @@ $(function() {
         translateString = 'translate(' + (other_axis_value * widget_width / 100) + 'px, ' + (this_axis_value * widget_width / 100) + 'px)'
       }
 
-      $('#team_member-member-' + key).css({
+      $('#teamwidget-member-member-' + key).css({
         transform: translateString,
         MozTransform: translateString,
         WebkitTransform: translateString,
@@ -44,20 +44,17 @@ $(function() {
 
   updateSelects('x')
   updateSelects('y')
-  updatePositions($('#team_widget_selectY option:selected')[0].value, 'y')
+  updatePositions($('#teamwidget-selectY option:selected')[0].value, 'y')
 
-  $('.team_widget').on('change', 'select', function(e) {
+  $('.teamwidget').on('change', 'select', function(e) {
     var select_id = $(this).attr('id')
     var axis = select_id.charAt(select_id.length - 1).toLowerCase()
     updateSelects(axis)
     updatePositions($('#' + select_id + ' option:selected')[0].value, axis)
   })
 
-  $('.team_members').on('click touch', '.team_member', function() {
-    $(this).addClass('team_member-active')
-    // var id = $(this).attr('id')
-    // id = id.substr(19, id.length) // strip off "team_member-member-"
-    // console.log(id)
+  $('.teamwidget-members').on('click touch', '.teamwidget-member', function() {
+    $(this).addClass('teamwidget-member-active')
   })
 
   // ON RESIZE RECALCULATE POSITIONS
