@@ -1,14 +1,34 @@
-.closebutton,
-.pageheader-title,
-.pagewrapper {
-  opacity: 1;
-  transition: all $speed-slow $ease-in-out;
+.front {
+  .frontpage-item-title,
+  .frontpage-item-background {
+    opacity: 1;
+  }
+
+  &.has-loading-state {
+    .frontpage-item-title,
+    .frontpage-item-background {
+      opacity: 0 !important;
+    }
+
+    .frontpage-item-inner {
+      box-shadow: 0 0 3px -1px rgba($black, 0) !important;
+    }
+  }
 }
 
-.has-loading-state {
-  .closebutton,
+body {
+  overflow-x: hidden;
+
   .pageheader-title,
   .pagewrapper {
-    opacity: 0;
+    transition: opacity $speed-medium $ease-in $speed-medium;
+    opacity: 1;
+  }
+
+  &.has-loading-state {
+    .pageheader-title,
+    .pagewrapper {
+      opacity: 0 !important;
+    }
   }
 }
