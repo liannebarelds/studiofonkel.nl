@@ -7,7 +7,7 @@ module Jekyll
 
     def render(context)
 
-      @categories = context.registers[:page]["categories"].split(" ")
+      @categories = context.registers[:page]["categories"]
       @output = ''
 
       for @category in @categories
