@@ -1,20 +1,21 @@
 .circlebutton {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 8px solid $yellow;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 8px solid $yellow;
+  float: left;
 
-    &.circlebutton-1 {
-        border-top-color: $black;
-    }
-    &.circlebutton-2 {
-        border-left-color: $black;
-    }
-    &.circlebutton-3 {
-        border-right-color: $black;
-    }
-    &.circlebutton-4 {
-        border-bottom-color: $black;
-    }
+  &.circlebutton-1 {
+    border-top-color: $black;
+  }
+  &.circlebutton-2 {
+    border-left-color: $black;
+  }
+  &.circlebutton-3 {
+    border-right-color: $black;
+  }
+  &.circlebutton-4 {
+    border-bottom-color: $black;
+  }
 }

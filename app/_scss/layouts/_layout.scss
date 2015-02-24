@@ -1,5 +1,4 @@
 .pageheader {
-  @include isolation-span(14, 1, 'both');
   height: 79px;
   padding: 18px 22px;
   position: relative;
@@ -16,6 +15,8 @@
   }
 
   .pageheader-title {
-    @include isolation-span(9, 3, 'both')
+    display: inline-block;
+    float: left;
+    margin-left: 22px;
   }
 }

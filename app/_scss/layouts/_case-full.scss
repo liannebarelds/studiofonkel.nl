@@ -1,4 +1,4 @@
-.case.full {
+.case-full {
   @include isolation-span(14, 1, 'both');
 
   .case-overview-link,
@@ -7,10 +7,14 @@
   }
 
   .case-introduction {
-    @include isolation-span(8, 4, 'clear: both');
+    @include isolation-span(8, 4, 'both');
     padding-bottom: 15px;
     border-bottom: 1px solid $yellow;
     margin-bottom: 30px;
+  }
+
+  .pageheader-title {
+    @include isolation-span(9, 3, 'both');
   }
 
   .case-body {
