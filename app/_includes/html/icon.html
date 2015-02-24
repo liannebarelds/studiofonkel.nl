@@ -7,7 +7,7 @@
       {% assign item_path_exploded = item.url | split:'/' %}
 
       {% if page_path_exploded[1] == item_path_exploded[1] %}
-      <div class="circlebutton circlebutton-{{ forloop.index }}"></div> 
+      <div class="circlebutton circlebutton-{{ forloop.index0 }}"></div> 
       {% endif %}
 
     {% endif %}
