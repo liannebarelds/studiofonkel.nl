@@ -3,15 +3,16 @@ module Jekyll
 
     def initialize(tag_name, text, tokens)
 
-      @params = text.split('" "')
+      @params = text[1..-3].split('" "')
       @url = @params[0]
-      @frame = @params[1]
+      @type = @params[1]
       @description = @params[2]
+      @alt = @params[3]
 
     end
 
     def render(context)
-      "<div class='image #{@frame}'><img src='#{@url}'></div>"
+      "<div class='image #{@type}'><img src='#{@url}' alt='#{@alt}' title=''><div class='image-description'>#{@description}</div></div>"
     end
   end
 end
