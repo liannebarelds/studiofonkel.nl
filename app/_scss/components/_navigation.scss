@@ -1,67 +1,118 @@
 body {
-  overflow: hidden;}
+  // overflow: hidden;
+}
 
 .navigation {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vmax;
-  height: 100vmax;
-  transform-origin: 50% 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 
   .navigation-item {
     position: absolute;
     display: block;
-    width: 100%;
-    height: 100%;
 
-    &:nth-child(1) {
-      left: -50%;
-      top: -50%;
+    &:nth-child(2), &:nth-child(3) {
+      top: 0;
+      bottom: 0;
+
+      .navigation-item-link .navigation-item-inner {
+        width: 100%;
+        height: 100%;
+      }
     }
 
     &:nth-child(2) {
-      right: -50%;
-      top: -50%;
+      left: 0;
+      right: 50%;
+
+      .navigation-item-background {
+        background-position: right center;
+      }
     }
 
     &:nth-child(3) {
-      left: -50%;
-      bottom: -50%;
+      left: 50%;
+      right: 0;
+
+      .navigation-item-background {
+        background-position: left center;
+      }
+    }
+
+    &:nth-child(1) {
+      left: 50%;
+      top: 0;
+      z-index: 100000;
+
+      .navigation-item-background {
+        background-position: center bottom;
+      }
     }
 
     &:nth-child(4) {
-      right: -50%;
-      bottom: -50%;
+      left: 50%;
+      top: 100%;
+
+      .navigation-item-link {
+        backface-visibility: visible;
+      }
+
+      .navigation-item-background {
+        background-position: center top;
+      }
+    }
+
+    &:nth-child(1), &:nth-child(4) {
+      width: 70.710678118vh;
+      height: 70.710678118vh;
+      transform: translate(-50%, -50%) rotate(-45deg);
+
+      .navigation-item-inner {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: 142%;
+        height: 142%;
+      }
     }
 
     .navigation-item-link {
       width: 100%;
       height: 100%;
       display: block;
+      // backface-visibility: hidden;
       position: absolute;
       overflow: hidden;
+      background-color: $color_white;
 
-      .inner {
-        width: 142%;
-        height: 142%;
-        left: 50%;
-        top: 50%;
+      .navigation-item-inner {
+        opacity: 0;
+        filter: blur(10px);
+        transition: all .5s;
         position: absolute;
-        transform: translate(-50%, -50%) rotate(-45deg);
-        // transform-origin: 50% 50%;
-        // width: 100vw;
-        // height: 100vh;
-        // transform: rotate(-45deg);
+        overflow: hidden;
+
+        .navigation-item-background {
+          right: 0;
+          bottom: 0;
+          left: 0;
+          top: 0;
+          position: absolute;
+        }
+      }
+
+      &:hover .navigation-item-inner {
+        opacity: 1;
+        filter: blur(0px);
       }
     }
 
     @for $i from 1 to 5 {
       &:nth-child(#{$i}) {
-        .navigation-item-link .inner {
+        .navigation-item-link .navigation-item-inner .navigation-item-background {
           background-size: cover;
-          background-image: url('http://lorempixel.com/1200/800/sports/#{$i}');
+          background-image: url('http://lorempixel.com/1600/1600/people/#{$i}');
         }
       }
     }
