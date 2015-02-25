@@ -13,7 +13,7 @@
 
 @import "layouts/layout";
 @import "layouts/grid";
-@import "layouts/case-full";
+@import "layouts/page-full";
 @import "layouts/cases-overview";
 @import "layouts/about";
 
@@ -24,6 +24,7 @@
 @import "components/case-teaser";
 @import "components/menubutton";
 @import "components/teamwidget";
+@import "components/convinceblock";
 
 #__bs_notify__ {
   // display: none !important;

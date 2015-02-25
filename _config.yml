@@ -39,12 +39,6 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "page"
-  -
-    scope:
-      path: "cases" # an empty string here means all files in the project
-    values:
-      layout: "case"
-
 
 
 picture:
@@ -75,4 +69,12 @@ picture:
         height: "300"
       source_default:
         width: "300"
+        height: "300"
+    convince:
+      ppi: [1, 1.5, 2]
+      attr:
+        class: "convince"
+        itemprop: "image"
+      source_default:
+        width: "600"
         height: "300"

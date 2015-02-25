@@ -2,7 +2,6 @@
   margin: 0 auto;
 
   .axes {
-    position: relative;
     width: 100%;
     height: 100%;
 
@@ -15,7 +14,7 @@
       top: 50%;
       left: 0;
       background: $yellow;
-      z-index: 110;
+      // z-index: 110;
     }
 
     // y-axis
@@ -27,15 +26,14 @@
       top: 0;
       left: 50%;
       background: $yellow;
-      z-index: 120;
+      // z-index: 120;
 
     }
   }
 
   .teamwidget-members {
-    transform: translate(-4vmin, -4vmin); // fix for everything not being exactly on the right position (since the origin can't be the middle)
-    position: relative;
-    z-index: 130;
+    position: absolute;
+    // z-index: 130;
     width: 100%;
     height: 100%;
 
@@ -51,7 +49,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%) translate(4vmin, 4vmin) translate(0.5px, 0.5px);
+      transform: translate(-50%, -50%) translate(0.5px, 0.5px);
       border: $circle-size/3 solid $yellow;
     }
   }
@@ -60,7 +58,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 90;
+    // z-index: 90;
     cursor: pointer;
   }
 
@@ -74,10 +72,9 @@
 }
 
 .teamwidget-member {
-  position: relative;
 
   &:hover {
-    z-index: 200;
+    // z-index: 200;
   }
 
   .teamwidget-member-icon-wrapper {
@@ -90,7 +87,7 @@
       border-radius: 50%;
       overflow: hidden;
       position: relative;
-      z-index: 50;
+      // z-index: 50;
     }
 
     &:before {
@@ -103,7 +100,7 @@
       left: 50%;
       border-radius: 50%;
       transform: translate(-50%, -50%) scale(0.95);
-      z-index: 40;
+      // z-index: 40;
     }
 
     &:hover:before {
@@ -117,12 +114,12 @@
   }
 
   &.teamwidget-member-active {
-    z-index: 300;
+    // z-index: 300;
 
     .teamwidget-member-icon-wrapper {
       > * {
-        width: 24vmin !important;
-        height: 24vmin !important;
+        width: 24% !important;
+        height: 24% !important;
       }
 
       &:before {
@@ -153,6 +150,11 @@ body:not(.has-loading-state) {
       transition: transform $speed-fast ease-out 0s;
     }
   }
+}
+
+.teamwidget-select {
+  position: relative;
+  // z-index: 100
 }
 
 body.teamwidget-no-transitions {

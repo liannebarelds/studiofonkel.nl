@@ -1,0 +1,43 @@
+.convinceblock {
+  @include isolation-span(14, 1, 'both');
+  background: $yellow;
+
+  img {
+    display: block;
+  }
+
+  .convinceblock-item {
+    @include isolation-span(14, 1, 'both');
+
+    &:nth-child(odd) {
+      .convinceblock-item-content {
+        @include isolation-span(6, 1, 'left');
+      }
+
+      .convinceblock-item-title,
+      .convinceblock-item-text {
+        @include isolation-span(3, 3, 'both', 4 1 1 1 1 1);
+      }
+
+      picture {
+        @include isolation-span(8, 7, 'right');
+      }
+    }
+
+    &:nth-child(even) {
+      .convinceblock-item-content {
+        @include isolation-span(6, 9, 'right');
+      }
+
+      .convinceblock-item-title,
+      .convinceblock-item-text {
+        @include isolation-span(3, 2, 'both', 1 1 1 1 1 4);
+      }
+
+      picture {
+        @include isolation-span(8, 1, 'left');
+      }
+    }
+  }
+
+}

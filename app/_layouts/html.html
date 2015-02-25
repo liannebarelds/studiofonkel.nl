@@ -8,7 +8,9 @@
     <!-- endbuild -->
   </head>
 
-  <body class="has-loading-state layout-{{ page.layout }} {% if page.url == '/index.html' %} front {% endif %}">
+  {% assign page_path_exploded = page.url | remove_first: '/' | split:'/' %}
+
+  <body class="has-loading-state layout-{{ page.layout }} {% if page.url == '/index.html' %} front {% endif %} {{ page_path_exploded | join: '-' }}">
     <div class="grid"></div>
 
     {{ content }}
@@ -17,7 +19,13 @@
     <script src="/js/imageparallax.jquery.js"></script>
     <script src="/js/grid.js"></script>
     <script src="/js/imageparallax.js"></script>
-    <script src="/js/teamwidget.js"></script>
     <!-- endbuild -->
+
+    {% if page.url == '/over-ons/' %}
+      <!-- build:js(app) /js/teamwidget.js -->
+      <script src="/js/teamwidget.js"></script>
+      <!-- endbuild -->
+  {% endif %}
+
   </body>
 </html>

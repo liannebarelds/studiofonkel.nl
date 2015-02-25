@@ -1,22 +1,30 @@
 .pageheader {
-  height: 79px;
-  // padding: 18px 22px;
-  position: relative;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 100;
 
   &:after {
     content: " ";
     display: block;
     position: absolute;
     bottom: 0;
-    left: 22px;
-    right: 22px;
+    left: 20px;
+    right: 20px;
     height: 1px;
-    // background: $light-grey;
+    background: $light-grey;
   }
 
   .pageheader-title {
     display: inline-block;
     float: left;
-    margin-left: 22px;
+    margin-left: 40px;
+    margin-top: 20px;
   }
+}
+
+.pagewrapper {
+  margin-top: 80px;
 }

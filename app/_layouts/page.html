@@ -1,16 +1,28 @@
 ---
 layout: html
 ---
-{% unless page.url == '/index.html' %}
-  <header class="pageheader">
-    {% include html/menubutton.html %}
-    <h1 class="pageheader-title">{{ page.title }}</h1>
-    {% include misc/close.html %}
-  </header>
+<header class="pageheader">
+  {% include html/menubutton.html %}
+  <h1 class="pageheader-title">{{ page.title }}</h1>
+  {% include misc/close.html %}
+</header>
 <div class="pagewrapper">
-{% endunless %}
 
-  {{ content }}
-{% unless page.url == '/index.html' %}
+  {% if page.introduction %}
+    <div class="page-introduction">
+      {{ page.introduction }}
+    </div>
+  {% endif %}
+
+  <h2 class="page-title">{{ page.title }}</h2>
+
+  {% if page.header %}
+    <div class="page-header">
+      {% picture header {{ page.header }} %}
+    </div>
+  {% endif %}
+
+  <div class="page-body">
+    {{ content }}
+  </div>
 </div>
-{% endunless %}

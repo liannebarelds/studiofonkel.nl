@@ -14,7 +14,7 @@
     </section>
   </div>
 
-  <select id="teamwidget-selectX">
+  <select id="teamwidget-selectX" class="teamwidget-select">
     {% for option in site.data.team[0].preferences %}
       {% if forloop.index0 == 0 %}
         <option value="{{ option[0] }}" selected>{{ option[0] }}</option>
@@ -24,7 +24,7 @@
     {% endfor %}
   </select>
 
-  <select id="teamwidget-selectY">
+  <select id="teamwidget-selectY" class="teamwidget-select">
     {% for option in site.data.team[0].preferences %}
       {% if forloop.index0 == 1 %}
         <option value="{{ option[0] }}" selected>{{ option[0] }}</option>
