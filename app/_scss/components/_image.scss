@@ -1,0 +1,17 @@
+.image {
+    img {
+        width: 100%;
+        display: block;
+    }
+    .image-caption {
+        border-top: 1px solid $light-grey;
+        color: $dark-grey;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-top: .5em;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: .3px;
+        font-weight: 300;
+    }
+}

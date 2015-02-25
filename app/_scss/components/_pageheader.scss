@@ -4,7 +4,7 @@
   top: 0;
   width: 100%;
   background: white;
-  z-index: 100;
+  z-index: 1000000;
   transition: box-shadow $speed-fast $ease-in-out;
   box-shadow: 0 2px 6px rgba($black, 0);
 

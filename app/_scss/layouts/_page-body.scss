@@ -1,6 +1,13 @@
 .page-body {
-    > hr, > p, .highlight, > .image {
+    > hr, > p, .highlight {
         @include isolation-span(8, 4, 'both');
+    }
+    > .image {
+        @include isolation-span(8, 4, 'both');
+
+        .image-caption {
+            @include isolation-span(6, 2, 'both', $grid: 8);
+        }
     }
     > blockquote {
         @include isolation-span(7, 4, 'both');
