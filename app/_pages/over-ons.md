@@ -1,5 +1,9 @@
 ---
 title: "Studio Fonkel"
+metatitle: ""
+metadescription: ""
+ogdescription: ""
+ogimage: ""
 subtitle: "Gewone jongens die mooie dingen maken"
 header: over-ons.jpg
 menu-weight: 1

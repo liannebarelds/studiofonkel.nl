@@ -1,5 +1,9 @@
 ---
 title: "Test cizzle"
+metatitle: ""
+metadescription: ""
+ogdescription: ""
+ogimage: ""
 categories:
 - Drupal
 - Aap
