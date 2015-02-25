@@ -10,14 +10,15 @@
         background-color: $yellow;
         height: 1px;
     }
-    > h1 {
-        font-size: 48px;
-        line-height: 50px;
-        letter-spacing: .3px;
-        font-weight: 600;
-    }
-    > p, > hr, > h1, > blockquote, > .highlight {
+    > p, > hr, > blockquote, > .highlight {
         margin-top: .6em;
         margin-bottom: .6em;
+    }
+    > blockquote {
+        font-weight: 300;
+        font-size: 22px;
+        letter-spacing: .3px;
+        line-height: 32px;
+        color: $yellow;
     }
 }
