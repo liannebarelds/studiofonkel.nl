@@ -1,0 +1,11 @@
+.pagefooter {
+  background: $dark-grey;
+  @include clearfix;
+  color: $white;
+  .contact {
+    @include isolation-span(8, 4, 'both');
+  }
+  a, a:hover, a:link {
+    color: $white;
+  }
+}
