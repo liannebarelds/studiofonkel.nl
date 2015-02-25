@@ -1,0 +1,11 @@
+.pagewrapper {
+    > hr, > p, .highlight {
+        @include isolation-span(8, 4, 'both');
+    }
+    > blockquote {
+        @include isolation-span(8, 4, 'both');
+    }
+    > h1 {
+        @include isolation-span(9, 3, 'both');
+    }
+}
