@@ -1,0 +1,22 @@
+select {
+  border: 0px solid $black;
+  padding: 10px;
+  background: $yellow;
+  color: $black;
+  width: 100%;
+  box-sizing: content-box;
+  padding-right: 30px;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.select-wrapper {
+  cursor: pointer;
+  border: 1px solid $black;
+  overflow: hidden;
+  width: 100%;
+
+  option {
+    border: 0;
+  }
+}

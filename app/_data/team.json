@@ -33,14 +33,14 @@
         "name": "Daniël",
         "key": "daniel",
         "preferences": {
-            "Post-it vs. iPad": 50,
-            "Resort vs. Gaspitje": 50,
-            "538 vs. 3voor12": 0,
-            "Drive vs. Stabiliteit": 0,
-            "Enthousiast vs. Accuraat": 100,
+            "Post-it vs. iPad": 30,
+            "Resort vs. Gaspitje": 90,
+            "538 vs. 3voor12": 90,
+            "Drive vs. Stabiliteit": 45,
+            "Enthousiast vs. Accuraat": 55,
             "Knippen vs. Scheren": 100,
             "Mac vs. Windows": 50,
-            "Terminal vs. Graphic interface": 0
+            "Terminal vs. Graphic interface": 15
         },
         "bio": "Autodidact Drupal-nerd (en is daar trots op). Rolde na een jaar kunstacademie in de wereld die Drupal heet en heeft zich met passie gestort op het programmeren. Zit vol ideeën en is zeer betrokken. Deelt zowel zijn enthousiasme over open source en kennisdeling met Floris als zijn wantrouwen tegenover Facebook."
     },

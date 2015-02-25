@@ -50,4 +50,15 @@ $(function() {
     return false
   })
 
+  // SCROLL: TODO OPTIMIZE
+  var scroll = 0;
+  $(window).on('scroll', function () {
+    scroll = window.scrollY
+    if (scroll > 0) {
+      $('.pageheader').addClass('pageheader-scrolled')
+    } else {
+      $('.pageheader').removeClass('pageheader-scrolled')
+    }
+  })
+
 });

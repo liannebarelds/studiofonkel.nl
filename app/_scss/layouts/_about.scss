@@ -1,36 +1,33 @@
-// .layout-page {
-//   .pagewrapper {
-//     padding-top: 70px;
-//     // > * {
-//     //   @include isolation-span(12, 2, 'both');
-//     // }
-
-//     > .teamwidget {
-//       // @include isolation-span(12, 2, 'both');
-//       position: relative;
-//       width: 80vmin;
-//       width: calc(100vmin - 75px);
-//       height: 80vmin;
-//       height: calc(100vmin - 75px);
-
-//       select {
-//         // display: none;
-//       }
-
-//       margin-bottom: 100px;
-//     }
-//   }
-// }
-
 .over-ons {
   .teamwidget {
-    @include isolation-span(5, 4, 'both');
+    margin: 120px auto;
+    @include isolation-span(6, 5, 'both');
     position: relative;
 
     &:after {
       content: '';
       padding-bottom: 100%;
       float: left;
+    }
+  }
+
+  .teamwidget-controls {
+    @include isolation-span(14, 1, 'both');
+    background: $yellow;
+    z-index: 40;
+    margin-bottom: 200px;
+  }
+
+  .teamwidget-controls-inner {
+    padding: 20px 0;
+    @include clearfix;
+
+    .select-wrapper:nth-child(1) {
+      @include isolation-span(3, 5);
+    }
+
+    .select-wrapper:nth-child(2) {
+      @include isolation-span(3, 8);
     }
   }
 }
