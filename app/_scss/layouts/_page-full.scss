@@ -8,6 +8,6 @@
   }
 
   .page-header {
-    @include isolation-span(12, 2, 'both');
+    @include isolation-span(14, 1, 'both');
   }
 }
