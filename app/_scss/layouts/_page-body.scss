@@ -4,5 +4,13 @@
     }
     > blockquote {
         @include isolation-span(8, 4, 'both');
+
+        > p {
+            @include isolation-span(7, 2, 'right', $grid: 8);
+        }
+
+        &:before {
+            @include isolation-span(1, 1, 'left', $grid: 8);
+        }
     }
 }
