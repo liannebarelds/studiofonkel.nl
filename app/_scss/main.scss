@@ -16,13 +16,14 @@
 @import "layouts/page-full";
 @import "layouts/cases-overview";
 @import "layouts/about";
-@import "layouts/pagewrapper";
+@import "layouts/page-body";
 
 @import "components/frontpage";
 @import "components/pageheader";
+@import "components/page-introduction";
 @import "components/scrollimage";
 @import "components/tags";
-@import "components/pagewrapper";
+@import "components/page-body";
 @import "components/case-teaser";
 @import "components/menubutton";
 @import "components/teamwidget";

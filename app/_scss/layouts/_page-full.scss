@@ -1,8 +1,4 @@
 .layout-page {
-  .page-body > p {
-    @include isolation-span(12, 2, 'both');
-  }
-
   .page-introduction {
     @include isolation-span(8, 4, 'both');
     padding-bottom: 15px;
@@ -11,14 +7,10 @@
   }
 
   .page-title {
-    @include isolation-span(10, 3, 'both');
+    @include isolation-span(9, 3, 'both');
   }
 
   .page-header {
     @include isolation-span(12, 2, 'both');
-  }
-
-  .page-body > p {
-    @include isolation-span(9, 4, 'both');
   }
 }

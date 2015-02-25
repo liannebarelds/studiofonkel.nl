@@ -2,11 +2,9 @@
 title: "Geen standaard oplossing, maar het beste rendement"
 subtitle: "subtitle"
 background: cases.jpg
+introduction: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum"
 menu-weight: 2
 ---
-*Lorem ipsum dolor sit amet*, **consectetur** adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum 
-***
-#Dit is een mooie heading ben je er blij mee ja ik wel jij ook
 
 ```
 No language indicated, so no syntax highlighting. 
@@ -17,8 +15,6 @@ dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis 
 
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
-
----
 
 Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
 
