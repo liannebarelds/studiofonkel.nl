@@ -17,4 +17,4 @@
 * `large` - full-width image
 
 ## Case files:
-`{% case_tags %}` // prints tags fromthe case
+`{% case_tags %}` // prints tags from the case
