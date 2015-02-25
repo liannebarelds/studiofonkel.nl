@@ -47,7 +47,17 @@
           if (that.scrollImageMax > window.scrollY && that.scrollImageMin < (that.windowHeight + window.scrollY)) {
             var translateY = Math.floor((that.imageHeight + that.scrollImageHeight) * scrollPercentage * -1 / 2)
             that.image.css( "transform", "translate(0, " + translateY + "px)" );
+
+            console.log('--AAN--');
           }
+            console.log('---------');
+            console.log('that.scrollImageMax: ' + that.scrollImageMax);
+            console.log('that.scrollImageMin: ' + that.scrollImageMin);
+            console.log('that.windowHeight: ' + that.windowHeight);
+            console.log('that.imageHeight: ' + that.imageHeight);
+            console.log('that.scrollImageHeight: ' + that.scrollImageHeight);
+            console.log('scrollPercentage: ' + scrollPercentage);
+            console.log('window.scrollY: ' + window.scrollY);
 
           that.ticking = false
         }
