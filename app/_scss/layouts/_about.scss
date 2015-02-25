@@ -12,10 +12,12 @@
   }
 
   .teamwidget-controls {
-    @include isolation-span(14, 1, 'both');
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
     background: $yellow;
     z-index: 40;
-    margin-bottom: 200px;
   }
 
   .teamwidget-controls-inner {
