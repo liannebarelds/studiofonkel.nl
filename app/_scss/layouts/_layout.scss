@@ -28,6 +28,7 @@ body {
   &.has-loading-state {
     .pageheader-title,
     .pagewrapper {
+      transition: opacity $speed-medium $ease-in 0s;
       opacity: 0 !important;
     }
   }
