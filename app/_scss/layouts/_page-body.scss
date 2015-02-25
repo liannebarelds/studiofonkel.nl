@@ -12,7 +12,7 @@
             @include isolation-span(14, 1, 'both');
 
             .image-caption {
-                @include isolation-span(6, 5, 'both');
+                @include isolation-span(8, 4, 'both');
             }
         }
     }
