@@ -16,3 +16,11 @@ picture {
 code {
     font-family: monospace;
 }
+
+*:focus {
+  outline: none !important;
+}
+
+*::-moz-focus-inner {
+  border: none !important;
+}

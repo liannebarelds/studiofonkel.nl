@@ -1,5 +1,11 @@
 <div class="teamwidget">
   <div class="axes">
+
+    <div class="axis-label top">top</div>
+    <div class="axis-label left">left</div>
+    <div class="axis-label right">right</div>
+    <div class="axis-label bottom">bottom</div>
+
     <section class="teamwidget-members">
     {% for team_member in site.data.team %}
       <article class="teamwidget-member" id="teamwidget-member-member-{{ team_member.key }}">
@@ -13,24 +19,33 @@
     {% endfor %}
     </section>
   </div>
-
-  <select id="teamwidget-selectX" class="teamwidget-select">
-    {% for option in site.data.team[0].preferences %}
-      {% if forloop.index0 == 0 %}
-        <option value="{{ option[0] }}" selected>{{ option[0] }}</option>
-      {% else %}
-        <option value="{{ option[0] }}">{{ option[0] }}</option>
-      {% endif %}
-    {% endfor %}
-  </select>
-
-  <select id="teamwidget-selectY" class="teamwidget-select">
-    {% for option in site.data.team[0].preferences %}
-      {% if forloop.index0 == 1 %}
-        <option value="{{ option[0] }}" selected>{{ option[0] }}</option>
-      {% else %}
-        <option value="{{ option[0] }}">{{ option[0] }}</option>
-      {% endif %}
-    {% endfor %}
-  </select>
 </div>
+
+<div class="teamwidget-controls">
+  <div class="teamwidget-controls-inner">
+    <div class="select-wrapper">
+      <select id="teamwidget-selectX" class="teamwidget-select">
+        {% for option in site.data.team[0].preferences %}
+          {% if forloop.index0 == 0 %}
+            <option value="{{ option[0] }}" selected>{{ option[0] }}</option>
+          {% else %}
+            <option value="{{ option[0] }}">{{ option[0] }}</option>
+          {% endif %}
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="select-wrapper">
+      <select id="teamwidget-selectY" class="teamwidget-select">
+        {% for option in site.data.team[0].preferences %}
+          {% if forloop.index0 == 1 %}
+            <option value="{{ option[0] }}" selected>{{ option[0] }}</option>
+          {% else %}
+            <option value="{{ option[0] }}">{{ option[0] }}</option>
+          {% endif %}
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+</div>
+

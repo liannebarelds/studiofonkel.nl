@@ -1,5 +1,5 @@
 .teamwidget {
-  margin: 0 auto;
+  padding: 40px;
 
   .axes {
     width: 100%;
@@ -14,7 +14,7 @@
       top: 50%;
       left: 0;
       background: $yellow;
-      // z-index: 110;
+      z-index: 11;
     }
 
     // y-axis
@@ -26,32 +26,73 @@
       top: 0;
       left: 50%;
       background: $yellow;
-      // z-index: 120;
+      z-index: 11;
 
     }
   }
 
+  .axis-label {
+    position: absolute;
+    background: $yellow;
+    padding: 6px;
+    text-transform: uppercase;
+    z-index: 30;
+    display: block;
+    border-radius: 3px;
+    pointer-events: none;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: $black;
+    line-height: 1;
+    white-space: nowrap;
+
+    &.top {
+      transform: translate(-50%, 0);
+      bottom: 100%;
+      left: 50%;
+    }
+
+    &.left {
+      transform: translate(0, -50%);
+      top: 50%;
+      right: 100%;
+    }
+
+    &.right {
+      transform: translate(0, -50%);
+      top: 50%;
+      left: 100%;
+    }
+
+    &.bottom {
+      transform: translate(-50%, 0);
+      top: 100%;
+      left: 50%;
+    }
+
+  }
+
   .teamwidget-members {
     position: absolute;
-    // z-index: 130;
+    z-index: 13;
     width: 100%;
     height: 100%;
 
     // circle
-    $circle-size: 12px;
-    &:before {
-      content: " ";
-      display: block;
-      border-radius: 50%;
-      width: $circle-size;
-      height: $circle-size;
-      background: $white;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) translate(0.5px, 0.5px);
-      border: $circle-size/3 solid $yellow;
-    }
+    // $circle-size: 12px;
+    // &:before {
+    //   content: " ";
+    //   display: block;
+    //   border-radius: 50%;
+    //   width: $circle-size;
+    //   height: $circle-size;
+    //   background: $white;
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%) translate(0.5px, 0.5px);
+    //   border: $circle-size/3 solid $yellow;
+    // }
   }
 
   .teamwidget-member {
@@ -72,18 +113,21 @@
 }
 
 .teamwidget-member {
+  $width: 60px;
+  left: -($width / 2) !important;
+  top: -($width / 2) !important;
 
   &:hover {
-    // z-index: 200;
+    z-index: 140;
   }
 
   .teamwidget-member-icon-wrapper {
     display: block;
 
-    > * {
+    picture {
       display: block;
-      width: 8vmin !important;
-      height: 8vmin !important;
+      width: $width !important;
+      height: $width !important;
       border-radius: 50%;
       overflow: hidden;
       position: relative;
@@ -123,7 +167,7 @@
       }
 
       &:before {
-        transform: translate(-50%, -50%) scale(0.95) !important;
+        transform: translate(-50%, -50%) !important;
         // border-radius: 0%;
       }
     }
@@ -135,14 +179,14 @@ body:not(.has-loading-state) {
     .teamwidget-member {
       transition: transform $speed-slow $ease-in-out 0s;
 
-      > * {
+      picture {
         transition: transform $speed-fast $ease-in-out 0s;
       }
     }
   }
 
   .teamwidget-member-icon-wrapper {
-    > * {
+    picture {
       transition: width $speed-fast $ease-in-out 0s, height $speed-fast $ease-in-out 0s;
     }
 
@@ -154,7 +198,7 @@ body:not(.has-loading-state) {
 
 .teamwidget-select {
   position: relative;
-  // z-index: 100
+  z-index: 20;
 }
 
 body.teamwidget-no-transitions {
