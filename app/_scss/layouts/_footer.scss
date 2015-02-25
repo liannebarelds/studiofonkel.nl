@@ -4,5 +4,13 @@
 
   .contact {
     @include isolation-span(8, 4, 'both');
+
+    .naw {
+      @include isolation-span(8, 1);
+    }
+
+    .social {
+      @include isolation-span(8, 5);
+    }
   }
 }
