@@ -64,8 +64,8 @@ $(function() {
   }
 
   $(window).on('scroll', function () {
-    var top = $('.teamwidget').offset().top - 500
-    var bottom = top + $('.teamwidget').height()
+    var top = $('.teamwidget').offset().top - 700
+    var bottom = top + $('.teamwidget').height() + 200
 
     if ($(window).scrollTop() > top && $(window).scrollTop() < bottom) {
       $('body').addClass('has-visible-teamwidget')
