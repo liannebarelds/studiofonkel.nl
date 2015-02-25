@@ -1,13 +1,54 @@
 .convinceblock {
   @include isolation-span(14, 1, 'both');
   background: $yellow;
+  position: relative;
+  counter-reset: my-badass-counter;
 
   img {
     display: block;
   }
 
+  picture {
+    position: absolute;
+    width: 100%;
+  }
+
+  .convinceblock-item-image {
+    position: relative;
+  }
+
+  .convinceblock-item-content {
+    padding: 65px 0;
+  }
+
+  .convinceblock-item-title {
+    font-weight: 900;
+    border-bottom: 2px solid $black;
+    font-size: 24px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+
   .convinceblock-item {
+    overflow: hidden;
+    position: relative;
     @include isolation-span(14, 1, 'both');
+
+    &:before {
+      content: counter(my-badass-counter);
+      counter-increment: my-badass-counter;
+      background: $black;
+      color: white;
+      font-weight: 900;
+      @include isolation-span(1, 8, 'right');
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      text-align: center;
+      line-height: 65px;
+      width: 65px;
+      font-size: 30px;
+    }
 
     &:nth-child(odd) {
       .convinceblock-item-content {
@@ -19,8 +60,13 @@
         @include isolation-span(3, 3, 'both', 4 1 1 1 1 1);
       }
 
-      picture {
+      .convinceblock-item-image {
         @include isolation-span(8, 7, 'right');
+      }
+
+      &:before {
+        @include isolation-span(1, 7, 'right');
+        width: 65px;
       }
     }
 
@@ -34,9 +80,19 @@
         @include isolation-span(3, 2, 'both', 1 1 1 1 1 4);
       }
 
-      picture {
+      .convinceblock-item-image {
         @include isolation-span(8, 1, 'left');
       }
+
+      &:before {
+        @include isolation-span(1, 8, 'right');
+        width: 65px;
+        margin-left: 0;
+        right: 0;
+        left: auto;
+        margin-right: grid-span(8, 5) + gutter-span();
+      }
+
     }
   }
 
