@@ -1,5 +1,6 @@
 ---
-title: "Cases"
+title: "Geen standaard oplossing, maar het beste rendement"
+subtitle: "subtitle"
 background: cases.jpg
 menu-weight: 2
 ---

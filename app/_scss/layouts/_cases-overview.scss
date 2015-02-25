@@ -1,33 +1,34 @@
 .cases-overview {
-    @include isolation-span(12, 2, 'both');
+  @include isolation-span(12, 2, 'both');
 
-    .case-teaser {
-        float: left;
-        width: 50%;
+  .case-teaser {
+    float: left;
+    width: 50%;
 
-        &:nth-of-type(odd) {
-            @include isolation-span(6, 1, 'left', $grid: 12);
-        }
-        &:nth-of-type(even) {
-            @include isolation-span(6, 7, 'right', $grid: 12);
-        }
+    &:nth-of-type(odd) {
+      @include isolation-span(6, 1, 'left', $grid: 12);
     }
+    
+    &:nth-of-type(even) {
+      @include isolation-span(6, 7, 'right', $grid: 12);
+    }
+  }
 }
 .case-spacer {
-    display: none;
-    width: gutter-span()*1.5;
-    position: relative;
-    float: left;
-    clear: both;
+  display: none;
+  width: gutter-span()*1.5;
+  position: relative;
+  float: left;
+  clear: both;
 
-    &:after {
-        content: '';
-        display: block;
-        padding-bottom: 100%;
-        float: left;        
-    }
+  &:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+    float: left;        
+  }
 
-    &:nth-of-type(even) {
-        display: block;
-    }
+  &:nth-of-type(even) {
+    display: block;
+  }
 }
