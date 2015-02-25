@@ -6,7 +6,7 @@
     @include isolation-span(8, 4, 'both');
 
     .naw {
-      @include isolation-span(8, 1);
+      @include isolation-span(8, 2);
     }
 
     .social {
