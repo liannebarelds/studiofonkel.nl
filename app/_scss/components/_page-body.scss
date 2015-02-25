@@ -10,7 +10,7 @@
         background-color: $yellow;
         height: 1px;
     }
-    > p, > hr, > blockquote, > .highlight {
+    > p, > hr, > blockquote, > .highlight, > .categories {
         margin-top: .6em;
         margin-bottom: .6em;
     }
@@ -32,6 +32,22 @@
             content: '';
             display: block;
             background-image: url('../img/icons/quote.svg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: contain;
+            height: 50px;
+        }
+    }
+    > .categories {
+        .categories-inner {
+            margin-top: 25px;
+            padding-top: 1em;
+            border-top: 1px solid $yellow;
+        }
+        &:before {
+            content: '';
+            display: block;
+            background-image: url('../img/icons/tag.svg');
             background-repeat: no-repeat;
             background-position: center top;
             background-size: contain;

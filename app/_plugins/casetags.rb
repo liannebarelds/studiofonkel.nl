@@ -14,7 +14,7 @@ module Jekyll
         @output += "<div class='categories-item'>#{@category}</div>"
       end
 
-      "<div class='categories'>#{@output}</div>"
+      "<div class='categories'><div class='categories-inner'>#{@output}</div></div>"
     end
   end
 end
