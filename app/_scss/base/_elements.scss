@@ -24,3 +24,11 @@ code {
 *::-moz-focus-inner {
   border: none !important;
 }
+
+.button {
+  height: 40px;
+  font-size: 18px;
+  &.button-yellow {
+    background: $yellow;
+  }
+}
