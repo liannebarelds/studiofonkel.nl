@@ -8,6 +8,13 @@
         .image-caption {
             @include isolation-span(6, 2, 'both', $grid: 8);
         }
+        &.large {
+            @include isolation-span(14, 1, 'both');
+
+            .image-caption {
+                @include isolation-span(6, 5, 'both');
+            }
+        }
     }
     > blockquote {
         @include isolation-span(7, 4, 'both');
