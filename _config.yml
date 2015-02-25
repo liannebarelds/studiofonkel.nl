@@ -23,7 +23,7 @@ show_drafts: true
 markdown: redcarpet
 #   extensions: ['fenced_code_blocks', 'smart']
 
-highlighter: pygments
+highlighter: none
 
 collections:
   cases:

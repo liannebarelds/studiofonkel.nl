@@ -17,29 +17,37 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
   <li class="convinceblock-item">
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We are the best</h3>
-      <p class="convinceblock-item-text">Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+      <p class="convinceblock-item-text">Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
     </div>
-    {% picture convince carto1.png %}
+    <div class="convinceblock-item-image">
+      {% picture convince carto1.png %}
+    </div>
   </li>
   <li class="convinceblock-item">
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We are the best</h3>
-      <p class="convinceblock-item-text">Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+      <p class="convinceblock-item-text">Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
     </div>
-    {% picture convince carto1.png %}
+    <div class="convinceblock-item-image">
+      {% picture convince carto1.png %}
+    </div>
   </li>
   <li class="convinceblock-item">
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We are the best</h3>
-      <p class="convinceblock-item-text">Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+      <p class="convinceblock-item-text">Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus.</p>
     </div>
-    {% picture convince carto1.png %}
+    <div class="convinceblock-item-image">
+      {% picture convince carto1.png %}
+    </div>
   </li>
   <li class="convinceblock-item">
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We are the best</h3>
-      <p class="convinceblock-item-text">Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+      <p class="convinceblock-item-text">Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. </p>
     </div>
-    {% picture convince carto1.png %}
+    <div class="convinceblock-item-image">
+      {% picture convince carto1.png %}
+    </div>
   </li>
 </ol>
