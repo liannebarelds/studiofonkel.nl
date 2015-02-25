@@ -17,18 +17,13 @@
     right: 20px;
     height: 1px;
     background: $light-grey;
-    transition: left $speed-fast $ease-in-out, right $speed-fast $ease-in-out;
+    transition: left $speed-fast $ease-in-out, right $speed-fast $ease-in-out, background-color $speed-slow $ease-in-out;
   }
   .pageheader-title {
-    position: absolute;
-    pointer-events: none;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 40px 0 80px;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: inline-block;
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
   }
   &.pageheader-scrolled {
     box-shadow: 0 2px 6px rgba($black, .1);
@@ -42,4 +37,10 @@
 
 .pagewrapper {
   margin-top: 150px;
+}
+
+.has-loading-state {
+  .pageheader:After {
+    background: white;
+  }
 }

@@ -4,7 +4,7 @@
   }
 
   .page-title {
-    @include isolation-span(9, 3, 'both');
+    @include isolation-span(8, 4, 'both');
   }
 
   .page-header {
