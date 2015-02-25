@@ -1,0 +1,12 @@
+.page-title {
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: .3px;
+    font-weight: 600;
+    margin-top: .6em;
+    margin-bottom: .6em;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
