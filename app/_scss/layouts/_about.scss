@@ -18,6 +18,8 @@
     left: 0;
     background: $yellow;
     z-index: 40;
+    transform: translateY(100%);
+    transition: transform $speed-fast $ease-in-out;
   }
 
   .teamwidget-controls-inner {
@@ -31,5 +33,11 @@
     .select-wrapper:nth-child(2) {
       @include isolation-span(3, 8);
     }
+  }
+}
+
+.has-visible-teamwidget {
+  .teamwidget-controls {
+    transform: translateY(0);
   }
 }

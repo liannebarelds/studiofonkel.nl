@@ -33,39 +33,47 @@ $(function() {
   }
 
   function updateLabels() {
-      var textsX = $('#teamwidget-selectX option:selected').val().split(' vs. ')
-      var textsY = $('#teamwidget-selectY option:selected').val().split(' vs. ')
+    var changingAxis
+    var textsX = $('#teamwidget-selectX option:selected').val().split(' vs. ')
+    var textsY = $('#teamwidget-selectY option:selected').val().split(' vs. ')
 
+    if ($('.axis-label.left').html() == textsX[0]) {
+      changingAxis = 'y'
+    }
+    else {
+      changingAxis = 'x'
+    }
+
+    $('body').addClass('has-updating-teamwidget-' + changingAxis)
+
+    setTimeout(function () {
       $('.axis-label.top').html(textsY[0])
       $('.axis-label.bottom').html(textsY[1])
 
       $('.axis-label.left').html(textsX[0])
       $('.axis-label.right').html(textsX[1])
+      $('body').removeClass('has-updating-teamwidget-' + changingAxis)
+    }, 200)
+
   }
-
-  // function detailsOnMember(item) {
-  //   item.addClass('teamwidget-member-active')
-  //   var thisPosition = item.offset()
-  //   var axesPosition = $('.axes').offset()
-  //   var translateString = 'translate(' + (axesPosition.left - thisPosition.left) + 'px, ' + (axesPosition.top - thisPosition.top) + 'px) translate(4vmin, 4vmin)'
-
-  //   item.find('> .teamwidget-member-icon-wrapper').css({
-  //     transform: translateString,
-  //       MozTransform: translateString,
-  //       WebkitTransform: translateString,
-  //       msTransform: translateString
-  //   })
-  // }
-
-  // $('.teamwidget-members').on('click touch', '.teamwidget-member', function() {
-  //   detailsOnMember($(this), false)
-  // })
 
   function update() {
     updateSelects()
     updatePositions()
     updateLabels()
   }
+
+  $(window).on('scroll', function () {
+    var top = $('.teamwidget').offset().top - 500
+    var bottom = top + $('.teamwidget').height()
+
+    if ($(window).scrollTop() > top && $(window).scrollTop() < bottom) {
+      $('body').addClass('has-visible-teamwidget')
+    }
+    else {
+      $('body').removeClass('has-visible-teamwidget')
+    }
+  })
 
   // Event handlers
   $('.teamwidget-select').on('change', function(e) {
