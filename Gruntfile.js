@@ -285,8 +285,8 @@ module.exports = function (grunt) {
     buildcontrol: {
       dist: {
         options: {
-          remote: './',
-          branch: 'gh-pages',
+           remote: 'git@github.com:studio-fonkel/studiofonkel.nl.git',
+           branch: 'gh-pages',
           commit: true,
           push: true
         }
