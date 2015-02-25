@@ -1,10 +1,26 @@
 .case-teaser {
     position: relative;
-    background-image: url('http://lorempixel.com/1400/800/people/9/');
     background-size: cover;
     min-height: 300px;
     padding: 25px 30px;
     overflow: hidden;
+    transition: all $speed-slow $ease-in-out;
+
+    picture {
+        transition: all $speed-slow $ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 1;
+
+        img {
+          transition: all $speed-slow $ease-in-out;
+          height: 100%;
+          width: auto;
+          transform: translateX(-50%);
+        }
+    }
 
     .cast-teaser-title {
         color: $white;
@@ -12,6 +28,7 @@
         font-size: 30px;
         position: absolute;
         bottom: 80px;
+        z-index: 2;
     }
     .cast-teaser-categories {
         position: absolute;
@@ -25,6 +42,7 @@
         color: $yellow;
         white-space: nowrap;
         overflow: hidden;
+        z-index: 2;
 
         .cast-teaser-categories-item {
             color: $yellow;
@@ -46,6 +64,7 @@
         left: 0;
         right: 0;
         bottom: 0;
+        z-index: 2;
     }
     &:before {
         background: linear-gradient(rgba($black, 0), rgba($black, 0) 40%, rgba($black, .6) 100%);

@@ -5,7 +5,7 @@
   width: 100%;
   background: white;
   z-index: 1000000;
-  transition: box-shadow $speed-fast $ease-in-out;
+  transition: box-shadow $speed-fast $ease-in-out, opacity $speed-slow $ease-in-out;
   box-shadow: 0 2px 6px rgba($black, 0);
 
   &:after {
@@ -45,7 +45,7 @@
 }
 
 .has-loading-state {
-  .pageheader:After {
-    background: white;
+  .pageheader {
+    opacity: 0;
   }
 }

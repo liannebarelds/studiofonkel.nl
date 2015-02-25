@@ -15,6 +15,13 @@
 
     {{ content }}
 
+    {% if page_path_exploded[0] == 'cases' %}
+      {% include overview/cases.html %}
+      <!-- build:js(app) /js/cases.js -->
+      <script src="/js/cases.js"></script>
+      <!-- endbuild -->
+    {% endif %}
+
     <!-- build:js(app) /js/scripts.js -->
     <script src="/js/imageparallax.jquery.js"></script>
     <script src="/js/grid.js"></script>
@@ -27,12 +34,9 @@
       <!-- endbuild -->
     {% endif %}
 
-    {% if page_path_exploded[0] == 'cases' %}
-      <!-- build:js(app) /js/cases.js -->
-      <script src="/js/cases.js"></script>
-      <!-- endbuild -->
-    {% endif %}
-
+  <div class="pagefooter">
+    {% include html/footer.html %}
+  </div>
 
   </body>
 </html>

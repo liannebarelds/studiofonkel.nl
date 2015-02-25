@@ -89,3 +89,11 @@ picture:
       source_default:
         width: "600"
         height: "300"
+    case_teaser:
+      ppi: [1, 1.5, 2]
+      attr:
+        class: "teaser"
+        itemprop: "image"
+      source_default:
+        width: "500"
+        height: "300"

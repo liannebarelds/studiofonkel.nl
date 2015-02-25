@@ -1,4 +1,12 @@
 .cases-overview {
+  background: white;
+  float: left;
+  width: 100%;
+  @include clearfix;
+}
+
+.cases-overview-inner {
+  background: white;
   @include isolation-span(12, 2, 'both');
   @include clearfix;
   margin-top: 40px;
@@ -11,7 +19,7 @@
     &:nth-of-type(odd) {
       @include isolation-span(6, 1, 'left', $grid: 12);
     }
-    
+
     &:nth-of-type(even) {
       @include isolation-span(6, 7, 'right', $grid: 12);
     }
@@ -28,10 +36,31 @@
     content: '';
     display: block;
     padding-bottom: 100%;
-    float: left;        
+    float: left;
   }
 
   &:nth-of-type(even) {
     display: block;
+  }
+}
+
+.layout-page.cases.has-loading-state {
+  overflow: hidden;
+  margin-bottom: 100vh;
+
+  .case-teaser.active {
+    width: 100%;
+    z-index: 99999;
+
+    picture img {
+      transform: translateX(0);
+    }
+
+    .cast-teaser-title,
+    .cast-teaser-button,
+    .cast-teaser-categories,
+    &:after, &:before {
+      opacity: 0;
+    }
   }
 }

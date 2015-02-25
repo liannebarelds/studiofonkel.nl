@@ -19,6 +19,7 @@
 body {
   overflow-x: hidden;
 
+  .pagefooter,
   .pageheader-title,
   .pagewrapper {
     transition: opacity $speed-medium $ease-in $speed-medium;
@@ -26,10 +27,15 @@ body {
   }
 
   &.has-loading-state {
+    .pagefooter,
     .pageheader-title,
     .pagewrapper {
       transition: opacity $speed-medium $ease-in 0s;
       opacity: 0 !important;
+    }
+
+    .pageheader {
+      box-shadow: 0 2px 6px rgba($black, 0);
     }
   }
 }

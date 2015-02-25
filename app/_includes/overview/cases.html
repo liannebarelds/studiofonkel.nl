@@ -1,6 +1,8 @@
 <div class="cases-overview overview">
-  {% for case in site.cases %}
-    {% include teasers/case.html %}
-    <div class="case-spacer"></div>
-  {% endfor %}
+  <div class="cases-overview-inner">
+    {% for case in site.cases %}
+      {% include teasers/case.html %}
+      <div class="case-spacer"></div>
+    {% endfor %}
+  </div>
 </div>

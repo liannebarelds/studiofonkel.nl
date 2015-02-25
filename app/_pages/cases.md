@@ -21,5 +21,3 @@ dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis 
 > This line is part of the same quote." - Henkie Penkie
 
 Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
-
-{% include overview/cases.html %}

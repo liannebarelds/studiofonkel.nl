@@ -12,13 +12,14 @@
   }
 
   .teamwidget-controls {
-    position: fixed;
+    clear: both;
+    float: left;
+    position: relative;
     bottom: 0;
     width: 100%;
     left: 0;
     background: $yellow;
     z-index: 40;
-    transform: translateY(100%);
     transition: transform $speed-fast $ease-in-out;
   }
 
@@ -34,10 +35,18 @@
       @include isolation-span(3, 8);
     }
   }
+
+  .convinceblock {
+    margin-top: 100px;
+  }
 }
 
 .has-visible-teamwidget {
   .teamwidget-controls {
-    transform: translateY(0);
+    position: fixed;
+  }
+
+  .team-widget {
+    margin-bottom: 201px;
   }
 }
