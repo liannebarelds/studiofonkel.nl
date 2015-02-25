@@ -45,6 +45,8 @@
     color: $black;
     line-height: 1;
     white-space: nowrap;
+    transition: opacity $speed-fast $ease-in-out;
+    opacity: 1;
 
     &.top {
       transform: translate(-50%, 0);
@@ -204,5 +206,17 @@ body:not(.has-loading-state) {
 body.teamwidget-no-transitions {
   .teamwidget * {
     transition: none !important;
+  }
+}
+
+.has-updating-teamwidget-x {
+  .axis-label.left, .axis-label.right {
+    opacity: 0;
+  }
+}
+
+.has-updating-teamwidget-y {
+  .axis-label.top, .axis-label.bottom {
+    opacity: 0;
   }
 }
