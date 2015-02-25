@@ -20,10 +20,14 @@
     transition: left $speed-fast $ease-in-out, right $speed-fast $ease-in-out;
   }
   .pageheader-title {
-    display: inline-block;
-    float: left;
-    margin-left: 40px;
-    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 40px 0 80px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &.pageheader-scrolled {
     box-shadow: 0 2px 6px rgba($black, .1);
