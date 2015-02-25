@@ -5,6 +5,8 @@
   width: 100%;
   background: white;
   z-index: 100;
+  transition: box-shadow $speed-fast $ease-in-out;
+  box-shadow: 0 2px 6px rgba($black, 0);
 
   &:after {
     content: " ";
@@ -15,13 +17,21 @@
     right: 20px;
     height: 1px;
     background: $light-grey;
+    transition: left $speed-fast $ease-in-out, right $speed-fast $ease-in-out;
   }
-
   .pageheader-title {
     display: inline-block;
     float: left;
     margin-left: 40px;
     margin-top: 20px;
+  }
+  &.pageheader-scrolled {
+    box-shadow: 0 2px 6px rgba($black, .1);
+
+    &:after {
+      left: 0;
+      right: 0;
+    }
   }
 }
 
