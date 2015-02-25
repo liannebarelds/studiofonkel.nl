@@ -1,5 +1,9 @@
 ---
 title: "Wat doen we"
+metatitle: ""
+metadescription: ""
+ogdescription: ""
+ogimage: ""
 subtitle: ""
 background: wat-doen-we.jpg
 menu-weight: 3
