@@ -12,11 +12,9 @@ $(function() {
   }
 
   function updatePositions() {
-
-
     $.each(window.teaminfo, function(delta, object) {
       var selected = [],
-      widget_width = $('.teamwidget').outerWidth(),
+      widget_width = $('.teamwidget').width(),
       key = object.key
 
       $.each($('.teamwidget-select option:selected'), function (selectDelta, select) {
@@ -34,6 +32,17 @@ $(function() {
     })
   }
 
+  function updateLabels() {
+      var textsX = $('#teamwidget-selectX option:selected').val().split(' vs. ')
+      var textsY = $('#teamwidget-selectY option:selected').val().split(' vs. ')
+
+      $('.axis-label.top').html(textsY[0])
+      $('.axis-label.bottom').html(textsY[1])
+
+      $('.axis-label.left').html(textsX[0])
+      $('.axis-label.right').html(textsX[1])
+  }
+
   // function detailsOnMember(item) {
   //   item.addClass('teamwidget-member-active')
   //   var thisPosition = item.offset()
@@ -48,20 +57,24 @@ $(function() {
   //   })
   // }
 
-  // Event handlers
-  $('.teamwidget-select').on('change', function(e) {
-    updateSelects()
-    updatePositions()
-  })
-
   // $('.teamwidget-members').on('click touch', '.teamwidget-member', function() {
   //   detailsOnMember($(this), false)
   // })
 
-  $(window).resize(function() {
+  function update() {
+    updateSelects()
     updatePositions()
+    updateLabels()
+  }
+
+  // Event handlers
+  $('.teamwidget-select').on('change', function(e) {
+    update()
   })
 
-  updatePositions()
+  $(window).resize(function() {
+    update()
+  })
 
+  update()
 });
