@@ -4,6 +4,7 @@
     background-size: cover;
     min-height: 300px;
     padding: 25px 30px;
+    overflow: hidden;
 
     .cast-teaser-title {
         color: $white;
@@ -19,11 +20,15 @@
         background-repeat: no-repeat;
         background-position: left center;
         padding-left: 70px;
+        display: inline-block;
+        width: 100%;
+        color: $yellow;
+        white-space: nowrap;
+        overflow: hidden;
 
         .cast-teaser-categories-item {
             color: $yellow;
-            display: block;
-            float: left;
+            display: inline-block;
             line-height: 45px;
             font-size: 18px;
             font-weight: 300;
