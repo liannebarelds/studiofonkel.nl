@@ -10,4 +10,7 @@
   .page-header {
     @include isolation-span(12, 2, 'both');
   }
+  .pagewrapper {
+    @include clearfix;
+  }
 }
