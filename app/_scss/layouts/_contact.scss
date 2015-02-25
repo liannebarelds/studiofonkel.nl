@@ -1,3 +1,23 @@
 .contact-form {
-  @include isolation-span(8, 4, 'both');
+
+  .form-title {
+    @include isolation-span(8, 4, 'both');
+  }
+
+  label {
+    @include isolation-span(3, 1, 'left', 8);
+  }
+
+  input, textarea {
+    @include isolation-span(5, 4, 'right', 8);
+  }
+
+  .error-message {
+    @include isolation-span(8, 1, 'both', 8);
+  }
+
+  .form-item {
+    @include isolation-span(8, 4, 'both');
+  }
+
 }
