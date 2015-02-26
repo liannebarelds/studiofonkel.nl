@@ -1,6 +1,6 @@
 .image {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 
   img {
   width: 100%;
@@ -42,7 +42,7 @@
   &.image--laptop {
     background: url('/img/laptop.svg') no-repeat;
     background-size: contain;
-    padding: 23px 100px 56px;
+    padding: 23px 100px 0;
 
     .image-inner {
       position: relative;
