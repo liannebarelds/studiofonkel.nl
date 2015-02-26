@@ -3,8 +3,8 @@
   margin-bottom: 40px;
 
   img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
   }
 
   .image-caption {
@@ -20,7 +20,16 @@
 
 
   &.image--frame {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px 8px 0 0;
 
+    &:before {
+      width: 100%;
+      content: url('/img/frame.svg');
+      display: block;
+      margin-bottom: -8px;
+    }
   }
 
   &.image--scroll {
