@@ -24,7 +24,7 @@
     height: 80px;
     background-color: transparent;
     border: 30px solid $yellow-alpha;
-    transition: border-color $speed-slow $ease-out;
+    transition: border-color $speed-fast $ease-out;
   }
 
   &.active-1:before {
