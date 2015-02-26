@@ -26,7 +26,7 @@ $(function() {
     $('body').addClass('has-loading-state')
     $(this).addClass('active')
 
-    $('.pagewrapper').one('transitionend', function () {
+    $('.wrapper').one('transitionend', function () {
       window.location = $(that).attr('href')
     })
 
@@ -39,7 +39,7 @@ $(function() {
 
     $('.menubutton').removeClass().addClass('menubutton')
 
-    $('.pagewrapper').one('transitionend', function () {
+    $('.wrapper').one('transitionend', function () {
       window.location = $(that).attr('href')
     })
 
