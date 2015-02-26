@@ -35,6 +35,6 @@ $margin-right: grid-span(1, 14);
 .has-loading-state {
   .menubutton {
     // transform: translate(- (50vw - (($margin-right + grid-span(6, 1)) / 1%)), 50vh) translate(-50%, -50%) scale(3.50);
-    transform: translate(-50vw, 50vh) translate(-50%, -50%) scale(3.50);
+    transform: translate(-50vw, 50vh) translate(50%, -50%) scale(3.50);
   }
 }

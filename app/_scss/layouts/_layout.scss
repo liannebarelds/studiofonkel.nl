@@ -23,15 +23,15 @@ body {
 
   .overview,
   .pagefooter,
-  .pageheader-title,
+  .pageheader-inner,
   .pagewrapper {
-    transition: opacity $speed-medium $ease-in $speed-medium;
+    transition: opacity $speed-medium $ease-out $speed-fast;
     opacity: 1;
   }
 
   &.has-loading-state {
     .pagefooter,
-    .pageheader-title,
+    .pageheader-inner,
     .overview,
     .pagewrapper {
       transition: opacity $speed-medium $ease-in 0s;

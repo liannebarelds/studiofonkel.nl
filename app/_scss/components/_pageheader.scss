@@ -5,7 +5,7 @@
   width: 100%;
   background: white;
   z-index: 1000000;
-  transition: box-shadow $speed-fast $ease-in-out, opacity $speed-slow $ease-in-out;
+  transition: box-shadow $speed-fast $ease-in-out; //, opacity $speed-slow $ease-in-out
   box-shadow: 0 2px 6px rgba($black, 0);
 
   #logo {
@@ -43,8 +43,10 @@
     left: 20px;
     right: 20px;
     height: 1px;
-    background: $light-grey;
-    transition: left $speed-fast $ease-in-out, right $speed-fast $ease-in-out, background-color $speed-slow $ease-in-out;
+    background: rgba($light-grey, 1);
+    transition: left $speed-fast $ease-in-out 0s,
+                right $speed-fast $ease-in-out 0s,
+                background-color $speed-medium $ease-out $speed-fast;
   }
 
   &.pageheader--scrolled {
@@ -59,6 +61,9 @@
 
 .has-loading-state {
   .pageheader:after {
-    background: white;
+    background: rgba($light-grey, 0);
+    transition: left $speed-fast $ease-in-out 0s,
+                right $speed-fast $ease-in-out 0s,
+                background-color $speed-medium $ease-out 0s;
   }
 }
