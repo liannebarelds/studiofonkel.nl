@@ -18,7 +18,6 @@
     font-weight: 300;
   }
 
-
   &.image--frame {
     overflow: hidden;
     position: relative;
@@ -35,7 +34,13 @@
   &.image--scroll {
     .image-inner {
       height: 400px;
+      background-color: $light-grey;
       overflow: hidden;
+
+      img {
+        opacity: 0;
+        animation: fadein $speed-medium $speed-slow 1 linear forwards;
+      }
     }
   }
 }
