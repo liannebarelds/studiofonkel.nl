@@ -19,7 +19,6 @@
       that.element = $('.image-inner', that.element)
       that.image = $('img', that.element)
       that.ticking = false
-      that.windowHeight = window.innerHeight
       that.update(that)
 
       $(window).on('scroll', function () {
@@ -53,6 +52,7 @@
       that.scrollImageMin = $(that.element).offset().top
       that.scrollImageMax = that.scrollImageMin + that.scrollImageHeight
       that.imageHeight = that.image.innerHeight()
+      that.windowHeight = window.innerHeight
     },
 
     scroll: function(that) {
