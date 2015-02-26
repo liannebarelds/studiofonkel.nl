@@ -1,12 +1,12 @@
 .image {
   margin-top: 40px;
   margin-bottom: 40px;
-  
+
   img {
     width: 100%;
     display: block;
   }
-  
+
   .image-caption {
     border-top: 1px solid $light-grey;
     color: $dark-grey;
@@ -18,7 +18,12 @@
     font-weight: 300;
   }
 
-  &.image-scroll {
+
+  &.image--frame {
+
+  }
+
+  &.image--scroll {
     .image-inner {
       height: 400px;
       overflow: hidden;
