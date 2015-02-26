@@ -4,35 +4,35 @@
   position: relative;
   counter-reset: my-badass-counter;
 
-  img {
-    display: block;
-  }
-
-  picture {
-    position: absolute;
-    width: 100%;
-  }
-
-  .convinceblock-item-image {
-    position: relative;
-  }
-
-  .convinceblock-item-content {
-    padding: 65px 0;
-  }
-
-  .convinceblock-item-title {
-    font-weight: 900;
-    border-bottom: 2px solid $black;
-    font-size: 24px;
-    padding-bottom: 8px;
-    margin-bottom: 20px;
-  }
-
   .convinceblock-item {
     overflow: hidden;
     position: relative;
     @include isolation-span(14, 1, 'both');
+
+    .convinceblock-item-title {
+      font-weight: 900;
+      border-bottom: 2px solid $black;
+      font-size: 24px;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    .convinceblock-item-content {
+      padding: 65px 0;
+    }
+
+    .convinceblock-item-image {
+      position: relative;
+
+      picture {
+        position: absolute;
+        width: 100%;
+      }
+
+      img {
+        display: block;
+      }
+    }
 
     &:before {
       content: counter(my-badass-counter);
@@ -92,8 +92,6 @@
         left: auto;
         margin-right: grid-span(8, 5) + gutter-span();
       }
-
     }
   }
-
 }
