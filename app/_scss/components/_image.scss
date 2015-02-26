@@ -38,4 +38,40 @@
       overflow: hidden;
     }
   }
+
+  &.image--laptop {
+    background: url('/img/laptop.svg') no-repeat;
+    background-size: contain;
+    padding: 23px 100px 56px;
+
+    .image-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      border-radius: 4px;
+
+      > img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        transform: translateX(-50%);
+        width: auto;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        float: left;
+        padding-bottom: 65%;
+        width: 100%;
+      }
+    }
+
+    .image-caption {
+      margin-top: 67px;
+    }
+  }
 }

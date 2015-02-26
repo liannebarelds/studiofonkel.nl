@@ -24,7 +24,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
 
 {% image "http://lorempixel.com/600/1200/technics/1/" "frame image--scroll" "Donec a diam lectus. Sed sit amet ipsum mauris." %}
 
-Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar.
+
+{% image "http://placehold.it/1000x600/" "laptop" "Donec a diam lectus. Sed sit amet ipsum mauris." %}
+
+At malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
 
