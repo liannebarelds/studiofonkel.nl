@@ -33,7 +33,7 @@ $(function() {
     return false
   })
 
-  $('.menubutton').on('click', function () {
+  $('.menubutton, .logo-link').on('click', function () {
     var that = this
     $('body').addClass('has-loading-state')
 
