@@ -33,24 +33,3 @@
     display: block;
   }
 }
-
-.layout-page.cases.has-loading-state {
-  overflow: hidden;
-  margin-bottom: 100vh;
-
-  .case-teaser.active {
-    width: 100%;
-    z-index: 99999;
-
-    picture img {
-      transform: translateX(0);
-    }
-
-    .cast-teaser-title,
-    .cast-teaser-button,
-    .cast-teaser-categories,
-    &:after, &:before {
-      opacity: 0;
-    }
-  }
-}

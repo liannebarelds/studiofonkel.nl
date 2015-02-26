@@ -18,9 +18,9 @@
     bottom: 0;
     width: 100%;
     left: 0;
-    background: $yellow;
+    background: white;
     z-index: 40;
-    transition: transform $speed-fast $ease-in-out;
+    transition: all $speed-fast;
   }
 
   .teamwidget-controls-inner {
@@ -35,18 +35,27 @@
       @include isolation-span(3, 8);
     }
   }
+}
+
+.is-above-teamwidget {
+  .teamwidget-controls {
+    position: fixed;
+    transform: translateY(100%);
+  }
 
   .convinceblock {
-    margin-top: 100px;
+    margin-top: 81px;
   }
 }
 
 .has-visible-teamwidget {
   .teamwidget-controls {
     position: fixed;
+    transform: translateY(0%);
+    background: $yellow;
   }
 
-  .team-widget {
-    margin-bottom: 201px;
+  .convinceblock {
+    margin-top: 81px;
   }
 }
