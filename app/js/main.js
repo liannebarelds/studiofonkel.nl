@@ -21,23 +21,6 @@ $(function() {
     }, 300)
   }
 
-  $('.overview a').on('click', function () {
-    var that = this
-    $('body').addClass('has-loading-state')
-    $(this).addClass('active')
-    var top = $(this).offset().top
-
-    $('.overview .case-teaser img').one('transitionend', function () {
-      window.location = $(that).attr('href')
-    })
-
-    $('body,html').animate({
-      scrollTop: top
-    }, 800);
-
-    return false
-  })
-
   $('.menubutton').on('click', function () {
     var that = this
     $('body').addClass('has-loading-state')
