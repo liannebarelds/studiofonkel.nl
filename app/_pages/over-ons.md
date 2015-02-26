@@ -13,11 +13,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
 
 {% include misc/teamwidget.html %}
 
+<h2 class="convince-title">4 redenen om met ons te werken</h2>
 <ol class="convinceblock">
   <li class="convinceblock-item">
     <div class="convinceblock-item-content">
-      <h3 class="convinceblock-item-title">We are the best</h3>
-      <p class="convinceblock-item-text">Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      <h3 class="convinceblock-item-title">Flexibiliteit in de genen</h3>
+      <p class="convinceblock-item-text">We kijken breder dan de iniële vraag. En voegen waarde toe waar dat het meeste rendement oplevert, ook voor de langere termijn.</p>
     </div>
     <div class="convinceblock-item-image">
       {% picture convince carto1.png %}
@@ -28,14 +29,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
       {% picture convince carto1.png %}
     </div>
     <div class="convinceblock-item-content">
-      <h3 class="convinceblock-item-title">We are the best</h3>
-      <p class="convinceblock-item-text">Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      <h3 class="convinceblock-item-title">We zijn vakidioten</h3>
+      <p class="convinceblock-item-text">We besteden ruim tijd aan kennisontwikkeling</p>
     </div>
   </li>
   <li class="convinceblock-item">
     <div class="convinceblock-item-content">
-      <h3 class="convinceblock-item-title">We are the best</h3>
-      <p class="convinceblock-item-text">Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      <h3 class="convinceblock-item-title">We zijn betrokken</h3>
+      <p class="convinceblock-item-text">Onze commitment gaat verder dan de scope van de opdracht.</p>
     </div>
     <div class="convinceblock-item-image">
       {% picture convince carto1.png %}
@@ -46,8 +47,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
       {% picture convince carto1.png %}
     </div>
     <div class="convinceblock-item-content">
-      <h3 class="convinceblock-item-title">We are the best</h3>
-      <p class="convinceblock-item-text">Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      <h3 class="convinceblock-item-title">We gaan voor de relatie</h3>
+      <p class="convinceblock-item-text">Een goede verstandhouding is één van de belangrijkste voorwaarden om waarde toe te voegen.</p>
     </div>
   </li>
 </ol>
