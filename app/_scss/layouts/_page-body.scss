@@ -1,11 +1,12 @@
 .page-body {
-  > hr, > p, .highlight {
+  > hr, 
+  > p, 
+  .highlight,
+  > .image {
     @include isolation-span(8, 4, 'both');
   }
   
   > .image {
-    @include isolation-span(8, 4, 'both');
-
     .image-caption {
       @include isolation-span(6, 2, 'both', $grid: 8);
     }
@@ -19,22 +20,26 @@
     }
   }
 
-  > blockquote {
+  > blockquote,
+  > .categories {
     @include isolation-span(7, 4, 'both');
+  }
 
+  > blockquote {
     > p {
       @include isolation-span(6, 2, 'right', $grid: 7);
     }
+
     &:before {
       @include isolation-span(1, 1, 'left', $grid: 7);
     }
   }
-  > .categories {
-    @include isolation-span(7, 4, 'both');
 
+  > .categories {
     > .categories-inner {
       @include isolation-span(6, 2, 'right', $grid: 7);
     }
+
     &:before {
       @include isolation-span(1, 1, 'left', $grid: 7);
     }
