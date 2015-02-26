@@ -1,5 +1,4 @@
 .contact-form {
-
   .form-title {
     @include isolation-span(8, 4, 'both');
   }
@@ -19,5 +18,4 @@
   .form-item {
     @include isolation-span(8, 4, 'both');
   }
-
 }

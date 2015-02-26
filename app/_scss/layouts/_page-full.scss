@@ -1,17 +1,16 @@
 .layout-page {
-  .page-introduction {
+  .page-introduction, .page-title {
     @include isolation-span(8, 4, 'both');
   }
-  .page-title {
-    @include isolation-span(8, 4, 'both');
-  }
+  
   .page-header {
     @include isolation-span(12, 2, 'both');
   }
+  
   .pagewrapper {
     @include clearfix;
   }
-
+  
   .pagefooter {
     float: left;
     width: 100%;
