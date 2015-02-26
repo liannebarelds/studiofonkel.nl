@@ -21,6 +21,18 @@ $(function() {
     }, 300)
   }
 
+  $('.overview a').on('click', function () {
+    var that = this
+    $('body').addClass('has-loading-state')
+    $(this).addClass('active')
+
+    $('.pagewrapper').one('transitionend', function () {
+      window.location = $(that).attr('href')
+    })
+
+    return false
+  })
+
   $('.menubutton').on('click', function () {
     var that = this
     $('body').addClass('has-loading-state')
