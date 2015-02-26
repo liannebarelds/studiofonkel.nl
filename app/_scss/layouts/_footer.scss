@@ -1,16 +1,16 @@
 .pagefooter {
-  background: $dark-grey;
-  @include clearfix;
+  // @include clearfix;
+  @include isolation-span(14, 1, 'both');
 
   .contact {
-    @include isolation-span(8, 4, 'both');
+    @include isolation-span(12, 2, 'both');
 
     .naw {
-      @include isolation-span(8, 2);
+      @include isolation-span(8, 2, $grid: 12);
     }
 
     .social {
-      @include isolation-span(8, 5);
+      @include isolation-span(8, 5, $grid: 12);
     }
   }
 }
