@@ -10,19 +10,19 @@
   transition: transform $speed-medium $ease-in-out;
 
   &.menubutton-1 {
-    border-top-color: $black;
+    border-top-color: $yellow-dark;
   }
 
   &.menubutton-2 {
-    border-left-color: $black;
+    border-left-color: $yellow-dark;
   }
 
   &.menubutton-3 {
-    border-right-color: $black;
+    border-right-color: $yellow-dark;
   }
 
   &.menubutton-4 {
-    border-bottom-color: $black;
+    border-bottom-color: $yellow-dark;
   }
 }
 

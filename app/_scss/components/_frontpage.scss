@@ -28,19 +28,19 @@
   }
 
   &.active-1:before {
-    border-top-color: $black;
+    border-top-color: $yellow-dark;
   }
 
   &.active-2:before {
-    border-left-color: $black;
+    border-left-color: $yellow-dark;
   }
 
   &.active-3:before {
-    border-right-color: $black;
+    border-right-color: $yellow-dark;
   }
 
   &.active-4:before {
-    border-bottom-color: $black;
+    border-bottom-color: $yellow-dark;
   }
 }
 

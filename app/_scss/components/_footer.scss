@@ -1,12 +1,47 @@
+$footer-font-size: 16px;
+$footer-svg-multiplier: 2.5;
+
 .pagefooter {
   clear: both;
-  color: $white;
+  color: $yellow;
   padding: 50px 0;
-  font-size: 14px;
+  font-size: $footer-font-size;
+  font-weight: 300;
 
-  a, 
-  a:hover, 
-  a:link {
-    color: $white
+  a {
+    transition: color $speed-fast $ease-out 0s;
+    display: block;
+    line-height: #{$footer-svg-multiplier}em;
+
+    &:before {
+      display: inline;
+      transition: color $speed-fast $ease-out 0s;
+    }
+
+    &:link,
+    &:visited {
+      &,
+      &:before {
+        color: $yellow;
+      }
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      &,
+      &:before {
+        color: $white;
+      }
+    }
+  }
+
+  svg {
+    width: #{$footer-svg-multiplier}em;
+    height: #{$footer-svg-multiplier}em;
+    vertical-align: middle;
+    transform: translateY(-0.14em);
+    display: inline-block;
+    margin-right: .4em;
   }
 }
