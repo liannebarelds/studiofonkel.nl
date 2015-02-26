@@ -1,11 +1,14 @@
+$margin-right: grid-span(1, 14);
+
 .menubutton {
   display: block;
-  width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 8px solid $yellow-alpha;
-  float: left;
-  transform: translate(0vw, 0vh) translate(20px, 20px) scale(1);
+  border-color: $yellow-alpha;
+  float: right;
+  width: 40px;
+  transform: translate(0vw, 0vh) translate(-20px, 20px) scale(1);
   transition: transform $speed-medium $ease-in-out, border-color $speed-fast $ease-in-out;
 
   &.menubutton-1 {
@@ -31,7 +34,7 @@
 
 .has-loading-state {
   .menubutton {
-    transform: translate(50vw, 50vh) translate(-50%, -50%) scale(3.50);
-    // border-color: $yellow-alpha !important;
+    // transform: translate(- (50vw - (($margin-right + grid-span(6, 1)) / 1%)), 50vh) translate(-50%, -50%) scale(3.50);
+    transform: translate(-50vw, 50vh) translate(-50%, -50%) scale(3.50);
   }
 }

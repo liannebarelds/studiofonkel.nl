@@ -285,3 +285,17 @@ body:not(.has-loading-state) .frontpage-item {
     pointer-events: none;
   }
 }
+
+.frontpage-item-title {
+  svg {
+    width: 100%;
+    position: relative;
+    height: 60px;
+    margin-bottom: 4px;
+    transition: fill $speed-fast $ease-in-out;
+  }
+}
+
+.frontpage-item:hover svg {
+  fill: white;
+}

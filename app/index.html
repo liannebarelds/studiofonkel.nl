@@ -8,7 +8,11 @@ layout: html
   {% for item in menuItems %}
     {% if item.menu-weight %}
       <li class="frontpage-item">
+        {% if item.title == 'De Studio' %}
+        <div class="frontpage-item-title">{% include misc/logo.svg %}</div>
+        {% else %}
         <h2 class="frontpage-item-title">{{ item.title }}</h2>
+        {% endif %}
         <h3 class="frontpage-item-subtitle">{{ item.subtitle }}</h2>
         <div class="frontpage-item-inner">
           <a href="{{ item.url }}" class="frontpage-item-link">
