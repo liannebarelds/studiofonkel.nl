@@ -1,17 +1,17 @@
 .categories {
   .categories-inner {
-      margin-top: 25px;
-      padding-top: 1em;
-      border-top: 1px solid $yellow;
+    margin-top: 25px;
+    padding-top: 1em;
+    border-top: 1px solid $yellow;
   }
 
   &:before {
-      content: '';
-      display: block;
-      background-image: url('../img/icons/tag.svg');
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: contain;
-      height: 50px;
+    content: '';
+    display: block;
+    background-image: url('../img/icons/tag.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    height: 50px;
   }
 }

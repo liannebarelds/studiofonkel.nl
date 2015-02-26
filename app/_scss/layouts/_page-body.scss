@@ -11,7 +11,7 @@
       @include isolation-span(6, 2, 'both', $grid: 8);
     }
 
-    &.large {
+    &.image--large {
       @include isolation-span(14, 1, 'both');
 
       .image-caption {
