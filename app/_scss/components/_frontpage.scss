@@ -182,8 +182,7 @@
 
       .frontpage-item-background {
         opacity: 0;
-        filter: blur(10px);
-        transition: all $speed-medium;
+        transition: opacity $speed-medium;
         // TODO
         right: 0;
         bottom: 0;
@@ -211,7 +210,6 @@ body:not(.has-loading-state) .frontpage-item {
     .frontpage-item-link-inner {
       .frontpage-item-background {
         opacity: 1;
-        filter: blur(0px);
       }
     }
     .frontpage-item-title {
