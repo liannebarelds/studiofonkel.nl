@@ -8,14 +8,29 @@
   transition: box-shadow $speed-fast $ease-in-out, opacity $speed-slow $ease-in-out;
   box-shadow: 0 2px 6px rgba($black, 0);
 
+  #logo {
+    height: 40px;
+  }
+
+  .pageheader-inner {
+    @include isolation-span(12, 2, 'left');
+  }
+
+  .logo-link {
+    float: left;
+    margin-top: 18px;
+    @include isolation-span(2, 1, 'right', 12);
+  }
+
   .pageheader-title {
     display: block;
-    position: absolute;
-    top: 20px;
-    padding: 0 40px 0 80px;
+    @include isolation-span(8, 3, 'right', 12);
+    margin-top: 26px;
     pointer-events: none;
-    width: 100%;
     white-space: nowrap;
+    font-weight: 200;
+    font-size: 30px;
+    color: $dark-grey;
     overflow: hidden;
     text-overflow: ellipsis;
   }

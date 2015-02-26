@@ -1,5 +1,5 @@
 ---
-title: "Studio Fonkel"
+title: "De Studio"
 metatitle: ""
 metadescription: ""
 ogdescription: ""

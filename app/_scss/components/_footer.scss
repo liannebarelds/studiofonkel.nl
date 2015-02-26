@@ -2,8 +2,8 @@ $footer-font-size: 16px;
 $footer-svg-multiplier: 2.5;
 
 .pagefooter {
-  clear: both;
-  color: $yellow;
+  color: $black;
+  background-color: $yellow;
   padding: 50px 0;
   font-size: $footer-font-size;
   font-weight: 300;
@@ -13,25 +13,20 @@ $footer-svg-multiplier: 2.5;
     display: block;
     line-height: #{$footer-svg-multiplier}em;
 
-    &:before {
-      display: inline;
-      transition: color $speed-fast $ease-out 0s;
-    }
-
     &:link,
     &:visited {
-      &,
-      &:before {
-        color: $yellow;
-      }
+      color: $black;
     }
 
     &:hover,
     &:active,
     &:focus {
-      &,
-      &:before {
-        color: $white;
+      color: $dark-grey;
+
+      svg {
+        * {
+          fill: $dark-grey;
+        }
       }
     }
   }
@@ -43,5 +38,10 @@ $footer-svg-multiplier: 2.5;
     transform: translateY(-0.14em);
     display: inline-block;
     margin-right: .4em;
+
+    * {
+      fill: $black;
+      transition: fill $speed-fast $ease-out 0s;
+    }
   }
 }
