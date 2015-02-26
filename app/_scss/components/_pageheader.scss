@@ -8,17 +8,6 @@
   transition: box-shadow $speed-fast $ease-in-out, opacity $speed-slow $ease-in-out;
   box-shadow: 0 2px 6px rgba($black, 0);
 
-  &:after {
-    content: " ";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    right: 20px;
-    height: 1px;
-    background: $light-grey;
-    transition: left $speed-fast $ease-in-out, right $speed-fast $ease-in-out, background-color $speed-slow $ease-in-out;
-  }
   .pageheader-title {
     display: block;
     position: absolute;
@@ -30,7 +19,20 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  &.pageheader-scrolled {
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background: $light-grey;
+    transition: left $speed-fast $ease-in-out, right $speed-fast $ease-in-out, background-color $speed-slow $ease-in-out;
+  }
+
+  &.pageheader--scrolled {
     box-shadow: 0 2px 6px rgba($black, .1);
 
     &:after {
@@ -39,11 +41,9 @@
     }
   }
 }
-.pagewrapper {
-  margin-top: 150px;
-}
+
 .has-loading-state {
-  .pageheader {
-    opacity: 0;
+  .pageheader:after {
+    background: white;
   }
 }

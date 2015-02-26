@@ -27,7 +27,6 @@
     transition: border-color $speed-slow $ease-out;
   }
 
-
   &.active-1:before {
     border-top-color: $black;
   }
@@ -182,8 +181,7 @@
 
       .frontpage-item-background {
         opacity: 0;
-        transition: opacity $speed-medium;
-        // TODO
+        transition: opacity $speed-medium $ease-in-out;
         right: 0;
         bottom: 0;
         left: 0;

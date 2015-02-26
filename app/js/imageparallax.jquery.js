@@ -16,25 +16,28 @@
 
         init: function() {
           var that = this
+          setTimeout(function () {
 
-          this.scrollImageHeight = $(this.element).innerHeight()
-          this.image = $('img', this.element)
-          this.ticking = false
+            that.scrollImageHeight = $(that.element).innerHeight()
+            that.image = $('img', that.element)
+            that.ticking = false
 
-          this.scrollImageMin = $(this.element).offset().top
-          this.scrollImageMax = this.scrollImageMin + this.scrollImageHeight
-          this.windowHeight = window.innerHeight
+            that.scrollImageMin = $(that.element).offset().top
+            that.scrollImageMax = that.scrollImageMin + that.scrollImageHeight
+            that.windowHeight = window.innerHeight
 
-          $(window).on('scroll', function () {
-            if (that.ticking === false) {
-              that.ticking = true
-              requestAnimationFrame(function () {
-                that.scroll(that)
-              })
-            }
-          })
+            $(window).on('scroll', function () {
+              if (that.ticking === false) {
+                that.ticking = true
+                requestAnimationFrame(function () {
+                  that.scroll(that)
+                })
+              }
+            })
 
-          that.scroll(that)
+            that.scroll(that)
+          }, 300)
+
         },
 
         scroll: function(that) {
@@ -48,16 +51,16 @@
             var translateY = Math.floor((that.imageHeight + that.scrollImageHeight) * scrollPercentage * -1 / 2)
             that.image.css( "transform", "translate(0, " + translateY + "px)" );
 
-            console.log('--AAN--');
+            // console.log('--AAN--');
           }
-            console.log('---------');
-            console.log('that.scrollImageMax: ' + that.scrollImageMax);
-            console.log('that.scrollImageMin: ' + that.scrollImageMin);
-            console.log('that.windowHeight: ' + that.windowHeight);
-            console.log('that.imageHeight: ' + that.imageHeight);
-            console.log('that.scrollImageHeight: ' + that.scrollImageHeight);
-            console.log('scrollPercentage: ' + scrollPercentage);
-            console.log('window.scrollY: ' + window.scrollY);
+            // console.log('---------');
+            // console.log('that.scrollImageMax: ' + that.scrollImageMax);
+            // console.log('that.scrollImageMin: ' + that.scrollImageMin);
+            // console.log('that.windowHeight: ' + that.windowHeight);
+            // console.log('that.imageHeight: ' + that.imageHeight);
+            // console.log('that.scrollImageHeight: ' + that.scrollImageHeight);
+            // console.log('scrollPercentage: ' + scrollPercentage);
+            // console.log('window.scrollY: ' + window.scrollY);
 
           that.ticking = false
         }

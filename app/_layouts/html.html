@@ -15,7 +15,7 @@
 
     {{ content }}
 
-    {% if page_path_exploded[0] == 'cases' %}
+    {% if page.url == '/cases/' %}
       {% include overview/cases.html %}
       <!-- build:js(app) /js/cases.js -->
       <script src="/js/cases.js"></script>

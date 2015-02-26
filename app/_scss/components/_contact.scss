@@ -8,12 +8,12 @@
   }
 
   input {
-    border: 1px solid light-grey;
+    border: 1px solid $light-grey;
     padding: 5px;
   }
 
   textarea {
-    border: 1px solid light-grey;
+    border: 1px solid $light-grey;
     padding: 5px;
     height: 150px;
   }

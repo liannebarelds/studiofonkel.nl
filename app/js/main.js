@@ -25,15 +25,10 @@ $(function() {
     var that = this
     $('body').addClass('has-loading-state')
     $(this).addClass('active')
-    var top = $(this).offset().top
 
-    $('.overview .case-teaser img').one('transitionend', function () {
+    $('.pagewrapper').one('transitionend', function () {
       window.location = $(that).attr('href')
     })
-
-    $('body,html').animate({
-      scrollTop: top
-    }, 800);
 
     return false
   })
@@ -74,9 +69,9 @@ $(function() {
   $(window).on('scroll', function () {
     scroll = window.scrollY
     if (scroll > 0) {
-      $('.pageheader').addClass('pageheader-scrolled')
+      $('.pageheader').addClass('pageheader--scrolled')
     } else {
-      $('.pageheader').removeClass('pageheader-scrolled')
+      $('.pageheader').removeClass('pageheader--scrolled')
     }
   })
 
