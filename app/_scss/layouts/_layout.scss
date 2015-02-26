@@ -21,12 +21,12 @@
 body {
   overflow-x: hidden;
 
-  .wrapper {
+  &:not(.front) .wrapper {
     transition: opacity $speed-medium $ease-out $speed-fast;
     opacity: 1;
   }
 
-  &.has-loading-state {
+  &:not(.front).has-loading-state {
     .wrapper {
       transition: opacity $speed-medium $ease-in 0s;
       opacity: 0 !important;

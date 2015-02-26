@@ -43,5 +43,9 @@
 @import "components/contact";
 
 #__bs_notify__ {
+  left: 0px;
+  right: auto !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 5px;
   // display: none !important;
 }
