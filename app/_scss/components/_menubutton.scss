@@ -7,10 +7,9 @@ $margin-right: grid-span(1, 14);
   border: 8px solid $yellow-alpha;
   border-color: $yellow-alpha;
   float: right;
-  // margin-right: 20px;
   width: 40px;
   transform: translate(0vw, 0vh) translate(-20px, 20px) scale(1);
-  transition: transform $speed-medium $ease-in-out;
+  transition: transform $speed-medium $ease-in-out, border-color $speed-fast $ease-in-out;
 
   &.menubutton-1 {
     border-top-color: $yellow-dark;
@@ -26,6 +25,10 @@ $margin-right: grid-span(1, 14);
 
   &.menubutton-4 {
     border-bottom-color: $yellow-dark;
+  }
+
+  &:hover {
+    border-color: $yellow-alpha !important;
   }
 }
 
