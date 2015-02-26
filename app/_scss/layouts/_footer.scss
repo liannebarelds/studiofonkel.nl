@@ -1,15 +1,20 @@
 .pagefooter {
-  width: 100%;
-  
+  @include isolation-span(14, 1, 'both');
+  @include clearfix;
+
   .contact {
     @include isolation-span(12, 2, 'both');
 
     .naw {
-      // @include isolation-span(3, 2, $grid: 12);
+      @include isolation-span(3, 1, $grid: 12);
+    }
+
+    .direct {
+      @include isolation-span(3, 4, $grid: 12);
     }
 
     .social {
-      // @include isolation-span(3, 5, $grid: 12);
+      @include isolation-span(3, 7, $grid: 12);
     }
   }
 }
