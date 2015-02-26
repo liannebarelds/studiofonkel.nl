@@ -1,11 +1,13 @@
 .front {
   .frontpage-item-title,
+  .frontpage-item-subtitle,
   .frontpage-item-background {
     opacity: 1;
   }
 
   &.has-loading-state {
     .frontpage-item-title,
+    .frontpage-item-subtitle,
     .frontpage-item-background {
       opacity: 0 !important;
     }
