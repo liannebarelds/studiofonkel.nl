@@ -1,5 +1,6 @@
 .convinceblock {
   margin-top: 100px;
+  margin-bottom: 60px;
   @include isolation-span(14, 1, 'both');
   background: $yellow;
   position: relative;

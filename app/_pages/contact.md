@@ -1,10 +1,10 @@
 ---
 title: "Contact"
+subtitle: "Ons thuishonk, en de contact gegevens."
 metatitle: ""
 metadescription: ""
 ogdescription: ""
 ogimage: ""
-subtitle: ""
 background: contact.jpg
 menu-weight: 4
 ---
