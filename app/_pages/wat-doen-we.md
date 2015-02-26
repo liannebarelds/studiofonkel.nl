@@ -1,10 +1,10 @@
 ---
-title: "Wat doen we"
+title: "Werkwijze"
+subtitle: "Langdurige samenwerkingen voor groot resultaat"
 metatitle: ""
 metadescription: ""
 ogdescription: ""
 ogimage: ""
-subtitle: ""
 background: wat-doen-we.jpg
 menu-weight: 3
 ---

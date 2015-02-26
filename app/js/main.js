@@ -48,6 +48,9 @@ $(function() {
 
 
   $('.frontpage-item-link').on('click', function () {
+
+    $('body,html').animate({scrollTop: 0}, 400);
+
     var that = this
     if (!$('body').hasClass('has-loading-state')) {
       var index = $(this).parents('.frontpage-item').index() + 1

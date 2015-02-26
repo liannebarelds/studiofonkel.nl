@@ -1,6 +1,6 @@
 .image {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 
   img {
   width: 100%;
@@ -18,7 +18,6 @@
     font-weight: 300;
   }
 
-
   &.image--frame {
     overflow: hidden;
     position: relative;
@@ -35,14 +34,20 @@
   &.image--scroll {
     .image-inner {
       height: 400px;
+      background-color: $light-grey;
       overflow: hidden;
+
+      img {
+        opacity: 0;
+        animation: fadein $speed-medium $speed-slow 1 linear forwards;
+      }
     }
   }
 
   &.image--laptop {
     background: url('/img/laptop.svg') no-repeat;
     background-size: contain;
-    padding: 23px 100px 56px;
+    padding: 23px 100px 0;
 
     .image-inner {
       position: relative;
