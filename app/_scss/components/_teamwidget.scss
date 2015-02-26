@@ -183,6 +183,7 @@ body:not(.has-loading-state) {
 .teamwidget-select {
   position: relative;
   z-index: 20;
+  font-family: $default-font-stack;
 }
 
 body.teamwidget-no-transitions {

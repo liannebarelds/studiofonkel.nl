@@ -1,14 +1,17 @@
-<a class="case-teaser" href="{{ case.url }}">
+<a class="case--teaser" href="{{ case.url }}">
   <article>
-    <h1 class="cast-teaser-title">{{ case.title }}</h1>
-    <div class="cast-teaser-button">Bekijk deze case</div>
+    <header>
+      <h1 class="case--teaser-title">{{ case.title }}</h1>
+    </header>
+
+    <div class="case--teaser-button">Bekijk deze case</div>
 
     {% picture header {{ case.header }} %}
 
-    <div class="cast-teaser-categories">
+    <footer class="case--teaser-categories">
       {% for category in case.categories %}
-        <div class="cast-teaser-categories-item">{{ category }}</div>
+        <div class="case--teaser-categories-item">{{ category }}</div>
       {% endfor %}
-    </div>
+    </footer>
   </article>
 </a>

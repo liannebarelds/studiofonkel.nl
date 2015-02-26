@@ -14,7 +14,7 @@ picture {
 }
 
 code {
-    font-family: monospace;
+  font-family: monospace;
 }
 
 *:focus {
@@ -28,6 +28,7 @@ code {
 .button {
   height: 40px;
   font-size: 18px;
+
   &.button-yellow {
     background: $yellow;
   }

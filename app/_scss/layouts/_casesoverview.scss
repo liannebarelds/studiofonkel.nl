@@ -4,7 +4,7 @@
   margin-top: 40px;
   margin-bottom: 40px;
 
-  .case-teaser {
+  .case--teaser {
     &:nth-of-type(odd) {
       @include isolation-span(6, 1, 'left', $grid: 12);
     }

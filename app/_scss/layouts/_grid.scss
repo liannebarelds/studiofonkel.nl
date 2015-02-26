@@ -14,7 +14,7 @@ $grid: 4 1 1 1 1 1 1 1 1 1 1 1 1 4;
   @include background-grid($color: blue);
   opacity: 0;
   transition: opacity $speed-fast $ease-in-out;
-  z-index: 99999;
+  z-index: 1005;
 }
 
 .has-grid-overlay-enabled {
