@@ -3,8 +3,16 @@ layout: html
 ---
 <header class="pageheader">
   {% include html/menubutton.html %}
-  <h1 class="pageheader-title">{{ page.title }}</h1>
-  {% include misc/close.html %}
+  <div class="pageheader-inner">
+    <h1 class="pageheader-title">{{ page.title }}</h1>
+
+    <a href="/" class="logo-link">
+      {% include misc/logo.svg %}
+    </a>
+
+
+    {% include misc/close.html %}
+  </div>
 </header>
 <div class="pagewrapper">
 
