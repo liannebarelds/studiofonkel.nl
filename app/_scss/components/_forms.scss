@@ -1,0 +1,21 @@
+input {
+  border: 1px solid $light-grey;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  border: 1px solid $light-grey;
+  padding: 14px;
+}
+
+.form-item {
+  margin-bottom: 10px;
+
+  label {
+    font-weight: 500;
+    color: $yellow-dark;
+  }
+}

@@ -32,4 +32,9 @@ layout: html
   <div class="page-body">
     {{ content }}
   </div>
+
+  {% if page.url == '/cases/' %}
+    {% include overview/cases.html %}
+  {% endif %}
+
 </section>

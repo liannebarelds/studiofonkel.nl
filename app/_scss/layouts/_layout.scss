@@ -19,8 +19,6 @@
 }
 
 body {
-  overflow-x: hidden;
-
   &:not(.front) .wrapper {
     transition: opacity $speed-medium $ease-out $speed-fast;
     opacity: 1;

@@ -94,4 +94,5 @@ $(function() {
   })
 
   update()
+  $(window).scroll()
 });

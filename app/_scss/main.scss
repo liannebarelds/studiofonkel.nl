@@ -15,8 +15,8 @@
 @import "animations/fadein";
 
 @import "layouts/layout";
-@import "layouts/footer";
 @import "layouts/grid";
+@import "layouts/footer";
 @import "layouts/page-full";
 @import "layouts/case-full";
 @import "layouts/casesoverview";
@@ -24,6 +24,7 @@
 @import "layouts/page-body";
 @import "layouts/contact";
 
+@import "components/forms";
 @import "components/select";
 @import "components/frontpage";
 @import "components/categories";
@@ -47,5 +48,5 @@
   right: auto !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 5px;
-  // display: none !important;
+  display: none !important;
 }

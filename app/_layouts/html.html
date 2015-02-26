@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% include html/head.html %}
+  {% include html/head.html %}
 
-    <!-- build:css({app,.tmp}) /css/main.css -->
-    <link rel="stylesheet" href="/css/main.css">
-    <!-- endbuild -->
+  <!-- build:css({app,.tmp}) /css/main.css -->
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- endbuild -->
   </head>
 
   {% assign page_path_exploded = page.url | remove_first: '/' | split:'/' %}
 
   <body class="has-loading-state layout-{{ page.layout }} {% if page.url == '/index.html' %} front {% endif %} {{ page_path_exploded | join: '-' }}">
-    <!-- build:dist:remove -->
-    <div class="grid"></div>
-    <!-- endbuild -->
-    {% include html/menubutton.html %}
-    
-    <div class="wrapper">
-        {{ content }}
-        
-        {% if page.url == '/cases/' %}
-        {% include overview/cases.html %}
-        {% endif %}
-        
-        <footer class="pagefooter">
-          {% include html/footer.html %}
-        </footer>
-    </div>
+  <!-- build:dist:remove -->
+  <div class="grid"></div>
+  <script src="/js/grid.js"></script>
+  <!-- endbuild -->
+  {% include html/menubutton.html %}
 
-    <!-- build:js(app) /js/scripts.js -->
-    <script src="/js/imageparallax.jquery.js"></script>
-    <script src="/js/grid.js"></script>
-    <script src="/js/imageparallax.js"></script>
-    <!-- endbuild -->
-    {% if page.url == '/over-ons/' %}
-    <!-- build:js(app) /js/teamwidget.js -->
-    <script src="/js/teamwidget.js"></script>
-    <!-- endbuild -->
-    {% endif %}
+  <div class="wrapper">
+    {{ content }}
+
+    <footer class="pagefooter">
+      {% include html/footer.html %}
+    </footer>
+  </div>
+
+  <!-- build:js(app) /js/scripts.js -->
+  <script src="/js/imageparallax.jquery.js"></script>
+  <script src="/js/imageparallax.js"></script>
+  <!-- endbuild -->
+
+  {% if page.url == '/over-ons/' %}
+  <!-- build:js(app) /js/teamwidget.js -->
+  <script src="/js/teamwidget.js"></script>
+  <!-- endbuild -->
+  {% endif %}
 
   </body>
 </html>

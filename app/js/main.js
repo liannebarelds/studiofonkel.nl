@@ -46,10 +46,14 @@ $(function() {
     return false
   })
 
+  $('.frontpage-item-link.contact').on('click', function () {
+    $('body,html').animate({scrollTop: $(window).height()}, 400)
+    return false
+  })
 
-  $('.frontpage-item-link').on('click', function () {
+  $('.frontpage-item-link:not(.contact').on('click', function () {
 
-    $('body,html').animate({scrollTop: 0}, 400);
+    $('body,html').animate({scrollTop: 0}, 400)
 
     var that = this
     if (!$('body').hasClass('has-loading-state')) {
