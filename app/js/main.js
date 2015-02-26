@@ -57,9 +57,9 @@ $(function() {
   $(window).on('scroll', function () {
     scroll = window.scrollY
     if (scroll > 0) {
-      $('.pageheader').addClass('pageheader-scrolled')
+      $('.pageheader').addClass('pageheader--scrolled')
     } else {
-      $('.pageheader').removeClass('pageheader-scrolled')
+      $('.pageheader').removeClass('pageheader--scrolled')
     }
   })
 
