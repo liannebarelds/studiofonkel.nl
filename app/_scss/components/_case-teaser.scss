@@ -1,4 +1,4 @@
-.case-teaser {
+.case--teaser {
   position: relative;
   background-size: cover;
   min-height: 300px;
@@ -22,7 +22,7 @@
     }
   }
 
-  .cast-teaser-title {
+  .case--teaser-title {
     color: $white;
     font-weight: 600;
     font-size: 30px;
@@ -31,7 +31,7 @@
     z-index: 2;
   }
 
-  .cast-teaser-categories {
+  .case--teaser-categories {
     position: absolute;
     bottom: 25px;
     background-image: url('../img/icons/tag.svg');
@@ -45,20 +45,20 @@
     overflow: hidden;
     z-index: 2;
 
-    .cast-teaser-categories-item {
+    .case--teaser-categories-item {
       color: $yellow;
       display: inline-block;
       line-height: 45px;
       font-size: 18px;
       font-weight: 300;
 
-      + .cast-teaser-categories-item {
+      + .case--teaser-categories-item {
         margin-left: 20px;
       }
     }
   }
 
-  .cast-teaser-button {
+  .case--teaser-button {
     opacity: 0;
     display: block;
     position: absolute;
@@ -97,7 +97,7 @@
   }
   
   &:hover {
-    .cast-teaser-button, 
+    .case--teaser-button, 
     &:after {
       opacity: 1;
     }

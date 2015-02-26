@@ -21,19 +21,13 @@
 body {
   overflow-x: hidden;
 
-  .overview,
-  .pagefooter,
-  .pageheader-inner,
-  .pagewrapper {
+  .wrapper {
     transition: opacity $speed-medium $ease-out $speed-fast;
     opacity: 1;
   }
 
   &.has-loading-state {
-    .pagefooter,
-    .pageheader-inner,
-    .overview,
-    .pagewrapper {
+    .wrapper {
       transition: opacity $speed-medium $ease-in 0s;
       opacity: 0 !important;
     }
@@ -42,4 +36,11 @@ body {
       box-shadow: 0 2px 6px rgba($black, 0);
     }
   }
+}
+
+.pagewrapper,
+.frontpage {
+  position: relative;
+  z-index: 999;
+  background-color: white;
 }

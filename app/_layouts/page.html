@@ -2,7 +2,6 @@
 layout: html
 ---
 <header class="pageheader">
-  {% include html/menubutton.html %}
   <div class="pageheader-inner">
     <h1 class="pageheader-title">{{ page.title }}</h1>
 
@@ -14,8 +13,8 @@ layout: html
     {% include misc/close.html %}
   </div>
 </header>
-<div class="pagewrapper">
 
+<section class="pagewrapper">
   {% if page.introduction %}
     <div class="page-introduction">
       {{ page.introduction }}
@@ -25,12 +24,12 @@ layout: html
   <h2 class="page-title">{{ page.title }}</h2>
 
   {% if page.header %}
-    <div class="page-header">
+    <header class="page-header">
       {% picture header {{ page.header }} %}
-    </div>
+    </header>
   {% endif %}
 
   <div class="page-body">
     {{ content }}
   </div>
-</div>
+</section>
