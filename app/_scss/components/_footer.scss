@@ -8,6 +8,13 @@ $footer-svg-multiplier: 2;
   font-size: $footer-font-size;
   font-weight: 300;
 
+  #logo {
+    margin-top: 30px;
+    path {
+      fill: $yellow-dark;
+    }
+  }
+
   h3 {
     color: $yellow-dark;
   }

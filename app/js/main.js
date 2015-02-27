@@ -46,6 +46,12 @@ $(function() {
     return false
   })
 
+  $('.scroll-to-top').on('click', function () {
+    $('body,html').animate({scrollTop: 0 }, 400)
+    return false
+  })
+
+
   $('.frontpage-item-link.contact').on('click', function () {
     $('body,html').animate({scrollTop: $(window).height()}, 400)
     return false

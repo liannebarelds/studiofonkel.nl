@@ -4,8 +4,13 @@
   min-height: 100vh;
 
   .top {
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+    @include clearfix;
     .logo-wrapper {
       @include isolation-span(5, 2, 'left');
+      padding-bottom: 30px;
     }
 
     #logo {

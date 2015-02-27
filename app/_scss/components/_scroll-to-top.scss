@@ -3,11 +3,19 @@
   height: 60px;
 
   svg {
-    width: 100%;
+    float: right;
     height: 100%;
+    width: auto;
   }
 
-  path: {
-    fill: white !important;
+  path {
+    fill: $yellow-dark !important;
+    transition: fill $speed-fast $ease-in-out;
+  }
+
+  &:hover {
+    path {
+      fill: $black !important;
+    }
   }
 }
