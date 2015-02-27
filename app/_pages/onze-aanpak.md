@@ -1,5 +1,5 @@
 ---
-title: "Werkwijze"
+title: "Onze aanpak"
 subtitle: "Langdurige samenwerkingen voor groot resultaat"
 metatitle: ""
 metadescription: ""
