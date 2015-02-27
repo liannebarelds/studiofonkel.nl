@@ -5,12 +5,12 @@
         "preferences": {
             "Post-it vs. iPad": 1,
             "Resort vs. Gaspitje": 100,
-            "538 vs. 3voor12": 100,
+            "538 vs. 3voor12": 97,
             "Drive vs. Stabiliteit": 45,
             "Enthousiast vs. Accuraat": 30,
-            "Knippen vs. Scheren": 50,
-            "Mac vs. Windows": 1,
-            "Terminal vs. Graphic interface": 90
+            "Knippen vs. Scheren": 45,
+            "Mac vs. Windows": 6,
+            "Terminal vs. Graphic interface": 86
         },
         "bio": "Kunstacademicus en eigenzinnig vakman op zoek naar originele invalshoeken. Verdiept zich met plezier in de klant en doelgroep om vervolgens met een voorstel te komen waarmee hij de spijker op z'n kop slaat. Wil vooral toffe dingen maken die zowel mooi als duidelijk zijn."
     },
@@ -18,8 +18,8 @@
         "name": "Floris",
         "key": "floris",
         "preferences": {
-            "Post-it vs. iPad": 90,
-            "Resort vs. Gaspitje": 20,
+            "Post-it vs. iPad": 93,
+            "Resort vs. Gaspitje": 22,
             "538 vs. 3voor12": 15,
             "Drive vs. Stabiliteit": 25,
             "Enthousiast vs. Accuraat": 25,
@@ -34,7 +34,7 @@
         "key": "daniel",
         "preferences": {
             "Post-it vs. iPad": 30,
-            "Resort vs. Gaspitje": 90,
+            "Resort vs. Gaspitje": 95,
             "538 vs. 3voor12": 90,
             "Drive vs. Stabiliteit": 45,
             "Enthousiast vs. Accuraat": 55,
@@ -49,7 +49,7 @@
         "key": "tijmen",
         "preferences": {
             "Post-it vs. iPad": 45,
-            "Resort vs. Gaspitje": 90,
+            "Resort vs. Gaspitje": 85,
             "538 vs. 3voor12": 50,
             "Drive vs. Stabiliteit": 40,
             "Enthousiast vs. Accuraat": 25,

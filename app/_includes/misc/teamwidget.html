@@ -22,42 +22,56 @@
     </div>
   </div>
 
-  <div class="teamwidget-textwrapper">
-    {% for text in site.data.properties %}
-      <div class="teamwidget-text" data-id="{{ text[0] }}">
-        <h4 class="title">{{ text[0] }}</h4>
-        <p>{{ text[1] }}</p>
-      </div>
-    {% endfor %}
-  </div>
 </div>
 
 <div class="teamwidget-controls">
   <div class="teamwidget-controls-inner">
-    <div class="select-wrapper">
-      <select id="teamwidget-selectX" class="teamwidget-select">
-        {% for option in site.data.team[0].preferences %}
-          {% if forloop.index0 == 0 %}
-            <option value="{{ option[0] }}" selected>{{ option[0] }}</option>
-          {% else %}
-            <option value="{{ option[0] }}">{{ option[0] }}</option>
-          {% endif %}
+    <div class="x">
+      <div class="select-wrapper">
+        <select id="teamwidget-selectX" class="teamwidget-select">
+          {% for option in site.data.team[0].preferences %}
+            {% if forloop.index0 == 0 %}
+              <option value="{{ option[0] }}" selected>{{ option[0] }}</option>
+            {% else %}
+              <option value="{{ option[0] }}">{{ option[0] }}</option>
+            {% endif %}
+          {% endfor %}
+        </select>
+        {% include misc/select.svg %}
+      </div>
+
+      <div class="teamwidget-textwrapper">
+        {% for text in site.data.properties %}
+          <div class="teamwidget-text" data-id="{{ text[0] }}">
+            <!-- <h4 class="title">{{ text[0] }}</h4> -->
+            <p>{{ text[1] }}</p>
+          </div>
         {% endfor %}
-      </select>
-      {% include misc/select.svg %}
+      </div>
     </div>
 
-    <div class="select-wrapper">
-      <select id="teamwidget-selectY" class="teamwidget-select">
-        {% for option in site.data.team[0].preferences %}
-          {% if forloop.index0 == 1 %}
-            <option value="{{ option[0] }}" selected>{{ option[0] }}</option>
-          {% else %}
-            <option value="{{ option[0] }}">{{ option[0] }}</option>
-          {% endif %}
+    <div class="y">
+      <div class="select-wrapper">
+        <select id="teamwidget-selectY" class="teamwidget-select">
+          {% for option in site.data.team[0].preferences %}
+            {% if forloop.index0 == 1 %}
+              <option value="{{ option[0] }}" selected>{{ option[0] }}</option>
+            {% else %}
+              <option value="{{ option[0] }}">{{ option[0] }}</option>
+            {% endif %}
+          {% endfor %}
+        </select>
+        {% include misc/select.svg %}
+      </div>
+
+      <div class="teamwidget-textwrapper">
+        {% for text in site.data.properties %}
+          <div class="teamwidget-text" data-id="{{ text[0] }}">
+            <!-- <h4 class="title">{{ text[0] }}</h4> -->
+            <p>{{ text[1] }}</p>
+          </div>
         {% endfor %}
-      </select>
-      {% include misc/select.svg %}
+      </div>
     </div>
   </div>
 </div>

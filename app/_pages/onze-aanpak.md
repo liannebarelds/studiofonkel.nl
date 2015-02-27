@@ -23,24 +23,24 @@ Zo kan het zijn dat de oorspronkelijke vraag een opfrissing van de website betre
 ###Onze tools
 Om samen met de klant inzicht te krijgen.
 
-{% image "/img/agile-board.png" "frame image--scroll" "Jira scrumbord." %}
+{% image "/img/agile-board.png" "frame" "Jira scrumbord." %}
 
 <h2 class="convince-title">We zijn o.a. goed in:</h2>
 <ol class="convinceblock">
 
   <li class="convinceblock-item">
+    <div class="convinceblock-item-image">
+      {% picture convince case/carto1.png %}
+    </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">Identiteit en merkkarakter</h3>
       <p class="convinceblock-item-text"></p>
-    </div>
-    <div class="convinceblock-item-image">
-      {% picture convince case/carto1.png %}
     </div>
   </li>
 
   <li class="convinceblock-item">
     <div class="convinceblock-item-image">
-      {% picture convince case/carto1.png %}
+      {% picture convince case/carto2.jpg %}
     </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">Een heldere en overtuigende website</h3>
@@ -49,18 +49,18 @@ Om samen met de klant inzicht te krijgen.
   </li>
 
   <li class="convinceblock-item">
+    <div class="convinceblock-item-image">
+      {% picture convince case/infographics.jpg %}
+    </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">Complexe informatie</h3>
       <p class="convinceblock-item-text">het omzetten van complexe informatie in duidelijke infographics</p>
-    </div>
-    <div class="convinceblock-item-image">
-      {% picture convince case/carto1.png %}
     </div>
   </li>
 
   <li class="convinceblock-item">
     <div class="convinceblock-item-image">
-      {% picture convince case/carto1.png %}
+      {% picture convince case/luchtballon.jpeg %}
     </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">Cartogratie en data</h3>

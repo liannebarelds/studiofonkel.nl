@@ -34,13 +34,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
       <p class="convinceblock-item-text">We besteden ruim tijd aan kennisontwikkeling.</p>
     </div>
     <div class="convinceblock-item-image">
-      {% picture convince case/carto1.png %}
+      {% picture convince case/webdesign2.jpg %}
     </div>
   </li>
 
   <li class="convinceblock-item">
     <div class="convinceblock-item-image">
-      {% picture convince case/carto1.png %}
+      {% picture convince case/infographics.jpg %}
     </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We zijn betrokken</h3>
@@ -54,7 +54,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
       <p class="convinceblock-item-text">Een goede verstandhouding is één van de belangrijkste voorwaarden om waarde toe te voegen.</p>
     </div>
     <div class="convinceblock-item-image">
-      {% picture convince case/carto1.png %}
+      {% picture convince case/luchtballon.jpeg %}
     </div>
   </li>
 </ol>
