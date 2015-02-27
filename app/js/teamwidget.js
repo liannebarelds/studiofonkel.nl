@@ -58,29 +58,33 @@ $(function() {
   }
 
   function update() {
-    updateSelects()
-    updatePositions()
-    updateLabels()
+    if ($('.teamwidget').length) {
+      updateSelects()
+      updatePositions()
+      updateLabels()
+    }
   }
 
   $(window).on('scroll', function () {
-    var top = $('.teamwidget').offset().top - $('.teamwidget').outerHeight()
-    var bottom = top + $('.teamwidget').height() - 81
+    if ($('.teamwidget').length) {
+      var top = $('.teamwidget').offset().top - $('.teamwidget').outerHeight()
+      var bottom = top + $('.teamwidget').height() - 81
 
-    if ($(window).scrollTop() > top && $(window).scrollTop() < bottom) {
-      $('body').addClass('has-visible-teamwidget')
-      $('body').removeClass('is-above-teamwidget')
-      $('body').removeClass('is-below-teamwidget')
-    }
-    else if ($(window).scrollTop() < top) {
-      $('body').addClass('is-above-teamwidget')
-      $('body').removeClass('is-below-teamwidget')
-      $('body').removeClass('has-visible-teamwidget')
-    }
-    else {
-      $('body').addClass('is-below-teamwidget')
-      $('body').removeClass('has-visible-teamwidget')
-      $('body').removeClass('is-above-teamwidget')
+      if ($(window).scrollTop() > top && $(window).scrollTop() < bottom) {
+        $('body').addClass('has-visible-teamwidget')
+        $('body').removeClass('is-above-teamwidget')
+        $('body').removeClass('is-below-teamwidget')
+      }
+      else if ($(window).scrollTop() < top) {
+        $('body').addClass('is-above-teamwidget')
+        $('body').removeClass('is-below-teamwidget')
+        $('body').removeClass('has-visible-teamwidget')
+      }
+      else {
+        $('body').addClass('is-below-teamwidget')
+        $('body').removeClass('has-visible-teamwidget')
+        $('body').removeClass('is-above-teamwidget')
+      }
     }
   })
 

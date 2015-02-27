@@ -7,9 +7,25 @@ input[type="number"],
 input[type="tel"],
 input[type="email"],
 textarea {
-  border: 1px solid $light-grey;
-  padding: 14px;
+  border: none;
+  border-bottom: 1px solid $yellow-dark;
+  padding: 14px 0;
+  background: 0;
+  font-family: $default-font-stack;
+  font-weight: 600;
+
+  &:invalid {
+    border-bottom: 1px solid red;
+    box-shadow: none;
+  }
 }
+
+@include placeholder {
+  color: $black;
+  font-family: $default-font-stack;
+  font-weight: 300;
+}
+
 
 .form-item {
   margin-bottom: 10px;
