@@ -39,12 +39,12 @@ Om samen met de klant inzicht te krijgen.
   </li>
 
   <li class="convinceblock-item">
-    <div class="convinceblock-item-image">
-      {% picture convince case/carto2.jpg %}
-    </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">Een heldere en overtuigende website</h3>
       <p class="convinceblock-item-text">We besteden ruim tijd aan kennisontwikkeling.</p>
+    </div>
+    <div class="convinceblock-item-image">
+      {% picture convince case/carto2.jpg %}
     </div>
   </li>
 
@@ -59,12 +59,12 @@ Om samen met de klant inzicht te krijgen.
   </li>
 
   <li class="convinceblock-item">
-    <div class="convinceblock-item-image">
-      {% picture convince case/luchtballon.jpeg %}
-    </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">Cartogratie en data</h3>
       <p class="convinceblock-item-text">data verwerkt in een landkaart, waarbij het ontwerp van de kaart aansluit bij de organisatie-identiteit</p>
+    </div>
+    <div class="convinceblock-item-image">
+      {% picture convince case/luchtballon.jpeg %}
     </div>
   </li>
 </ol>
