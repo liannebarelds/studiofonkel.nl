@@ -52,10 +52,6 @@ code {
     @include grid-span($Span, $Location, $grid, $gutter, 'isolation', $gutter-style, $Options);
   }
 
-  @include breakpoint($bp-small) {
-    @include grid-span($Span, $Location, $grid, $gutter, 'isolation', $gutter-style, $Options);
-  }
-
   @include breakpoint($bp-large) {
     @include grid-span($Span, $Location, $grid, $gutter, 'isolation', $gutter-style, $Options);
   }

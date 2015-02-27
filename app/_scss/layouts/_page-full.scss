@@ -1,6 +1,6 @@
 .layout-page {
   .page-introduction, .page-title {
-    @include isolation-span(8, 4, 'both');
+    @include isolation-span(10, 3, 'both');
   }
 
   .page-header {
@@ -10,5 +10,13 @@
   .pagewrapper {
     @include clearfix;
     margin-top: 150px;
+  }
+}
+
+@include breakpoint($bp-medium) {
+  .layout-page {
+    .page-introduction, .page-title {
+      @include isolation-span(8, 4, 'both');
+    }
   }
 }

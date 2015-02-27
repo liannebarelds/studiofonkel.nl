@@ -6,18 +6,18 @@
 
   .case--teaser {
     &:nth-of-type(odd) {
-      @include isolation-span(6, 1, 'left', $grid: 12);
+      @include isolation-span(12, 1, 'both', $grid: 12);
     }
 
     &:nth-of-type(even) {
-      @include isolation-span(6, 7, 'right', $grid: 12);
+      @include isolation-span(12, 1, 'both', $grid: 12);
     }
   }
 }
 
 .case-spacer {
-  display: none;
-  width: gutter-span() * 1.5;
+  display: block;
+  width: gutter-span();
   position: relative;
   float: left;
   clear: both;
@@ -28,8 +28,28 @@
     padding-bottom: 100%;
     float: left;
   }
+}
 
-  &:nth-of-type(even) {
-    display: block;
+@include breakpoint($bp-medium) {
+  .casesoverview {
+    @include isolation-span(12, 2, 'both');
+    @include clearfix;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .case--teaser {
+      &:nth-of-type(odd) {
+        @include isolation-span(6, 1, 'left', $grid: 12);
+      }
+
+      &:nth-of-type(even) {
+        @include isolation-span(6, 7, 'right', $grid: 12);
+      }
+    }
+    .case-spacer {
+      &:nth-of-type(odd) {
+        display: none;
+      }
+    }
   }
 }

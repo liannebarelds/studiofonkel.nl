@@ -81,5 +81,9 @@
   .pageheader {
     opacity: 0;
     transform: translateY(-100%);
+
+    .logo-link {
+      opacity: 0;
+    }
   }
 }
