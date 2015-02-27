@@ -72,13 +72,25 @@ $(function() {
   })
 
   // SCROLL: TODO OPTIMIZE
-  var scroll = 0;
+  var scroll = 0,
+      header = $('.pageheader'),
+      headerHeight = header.innerHeight(),
+      headerTitle = $('.pageheader-title'),
+      pageTitle = $('.page-title'),
+      pageTitleHeight = pageTitle.innerHeight(),
+      pageTitlePos = pageTitle.offset().top
   $(window).on('scroll', function () {
     scroll = window.scrollY
     if (scroll > 0) {
       $('.pageheader').addClass('pageheader--scrolled')
     } else {
       $('.pageheader').removeClass('pageheader--scrolled')
+    }
+
+    if (scroll < (pageTitlePos + pageTitleHeight - headerHeight)) {
+      headerTitle.addClass('pageheader-title--hidden');
+    } else {
+      headerTitle.removeClass('pageheader-title--hidden');
     }
   })
 
