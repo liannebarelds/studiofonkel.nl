@@ -9,6 +9,7 @@
     overflow: hidden;
     position: relative;
     @include isolation-span(14, 1, 'both');
+    display: table;
 
     .convinceblock-item-title {
       font-weight: 600;
