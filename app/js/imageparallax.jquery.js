@@ -49,31 +49,38 @@
     update: function(that) {
       $(that.element).innerHeight($(that.element).innerWidth()*0.5625)
       that.windowHeight = window.innerHeight
-      that.offsetTop = that.windowHeight / 2
-      that.offsetBottom = that.windowHeight / 2
+      that.offsetTop = that.windowHeight / 2.5
+      that.offsetBottom = that.windowHeight / 2.5
       that.scrollImageHeight = $(that.element).innerHeight()
-      that.scrollImageMin = $(that.element).offset().top + that.offsetTop
+      that.scrollImageMin = $(that.element).offset().top
       that.scrollImageMax = that.scrollImageMin + that.scrollImageHeight
+      that.scrollImageBegin = that.scrollImageMin + that.offsetTop
+      that.scrollImageEnd = that.scrollImageMax - that.offsetBottom
       that.imageHeight = that.image.innerHeight()
     },
 
     scroll: function(that) {
-      var scrollPercentage = (window.scrollY - (that.scrollImageMin - that.windowHeight)) / (that.scrollImageMax - (that.scrollImageMin - that.windowHeight))
+      var scrollPercentage = (window.scrollY - (that.scrollImageBegin - that.windowHeight)) / (that.scrollImageEnd - (that.scrollImageBegin - that.windowHeight))
 
       if (that.scrollImageMax > window.scrollY && that.scrollImageMin < (that.windowHeight + window.scrollY)) {
+        if (scrollPercentage < 0) {
+          scrollPercentage = 0
+        } else if (scrollPercentage > 1) {
+          scrollPercentage = 1
+        }
         var translateY = Math.floor((that.imageHeight - that.scrollImageHeight) * scrollPercentage * -1)
         that.image.css( "transform", "translate(0, " + translateY + "px)" );
 
-        console.log('--AAN--');
+        // console.log('--AAN--');
       }
-      console.log('---------');
-      console.log('that.scrollImageMax: ' + that.scrollImageMax);
-      console.log('that.scrollImageMin: ' + that.scrollImageMin);
-      console.log('that.windowHeight: ' + that.windowHeight);
-      console.log('that.imageHeight: ' + that.imageHeight);
-      console.log('that.scrollImageHeight: ' + that.scrollImageHeight);
-      console.log('scrollPercentage: ' + scrollPercentage);
-      console.log('window.scrollY: ' + window.scrollY);
+      // console.log('---------');
+      // console.log('that.scrollImageMax: ' + that.scrollImageMax);
+      // console.log('that.scrollImageMin: ' + that.scrollImageMin);
+      // console.log('that.windowHeight: ' + that.windowHeight);
+      // console.log('that.imageHeight: ' + that.imageHeight);
+      // console.log('that.scrollImageHeight: ' + that.scrollImageHeight);
+      // console.log('scrollPercentage: ' + scrollPercentage);
+      // console.log('window.scrollY: ' + window.scrollY);
 
       that.ticking = false
     }
