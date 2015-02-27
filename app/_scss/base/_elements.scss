@@ -25,11 +25,9 @@ code {
   border: none !important;
 }
 
-.button {
-  height: 40px;
-  font-size: 18px;
-
-  &.button-yellow {
-    background: $yellow;
-  }
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
 }

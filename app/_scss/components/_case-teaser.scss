@@ -73,7 +73,7 @@
     z-index: 100;
   }
 
-  &:before, 
+  &:before,
   &:after {
     content: '';
     display: block;
@@ -86,7 +86,7 @@
   }
 
   &:before {
-    background: linear-gradient(rgba($black, 0), rgba($black, 0) 40%, rgba($black, .6) 100%);
+    background: linear-gradient(rgba($black, 0) 0%, rgba($black, 0) 40%, rgba($black, .2) 60%, rgba($black, .8) 100%);
   }
 
   &:after {
@@ -95,9 +95,9 @@
     background-color: rgba($black, .6);
     z-index: 10;
   }
-  
+
   &:hover {
-    .case--teaser-button, 
+    .case--teaser-button,
     &:after {
       opacity: 1;
     }
