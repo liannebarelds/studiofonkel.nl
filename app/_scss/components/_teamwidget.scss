@@ -1,19 +1,21 @@
 .teamwidget-textwrapper {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   transition: all $speed-fast $ease-in-out;
+  @include clearfix;
+  float: left;
+
 
   .teamwidget-text {
+    overflow: hidden;
     opacity: 0;
-    max-height: 0;
-    transition: opacity $speed-slow $ease-in-out, max-height $speed-fast $speed-fast $ease-in-out;
+    margin-bottom: -100%;
+    transition: opacity $speed-fast $ease-in-out, max-height $speed-fast $ease-in-out, margin $speed-fast $ease-in-out;
     float: left;
     width: 100%;
-    transform: translateX(800px);
+    max-height: 0;
 
     p {
-      margin-bottom: 30px;
+      margin-top: 30px;
+      margin-bottom: 50px;
     }
 
     .title {
@@ -26,8 +28,18 @@
 
   .teamwidget-text--active {
     opacity: 1;
+    margin-bottom: 0%;
     max-height: 500px;
-    transform: translateX(0);
+  }
+}
+
+.teamwidget-controls {
+  margin-top: 97px;
+
+  .x, .y {
+    float: left;
+    width: 100%;
+    @include clearfix;
   }
 }
 

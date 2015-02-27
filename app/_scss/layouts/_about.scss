@@ -16,58 +16,32 @@
     }
   }
 
-  .teamwidget-textwrapper {
+  .teamwidget-controls {
     @include isolation-span(3, 11);
   }
-
-  .teamwidget-controls {
-    clear: both;
-    float: left;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    background: white;
-    z-index: 40;
-    transition: all $speed-fast;
-  }
-
-  .teamwidget-controls-inner {
-    padding: 20px 0;
-    @include clearfix;
-
-    .select-wrapper:nth-child(1) {
-      @include isolation-span(3, 3);
-    }
-
-    .select-wrapper:nth-child(2) {
-      @include isolation-span(3, 7);
-    }
-  }
 }
 
-.is-above-teamwidget {
-  .teamwidget-controls {
-    position: fixed;
-    transform: translateY(100%);
-  }
+// .is-above-teamwidget {
+//   .teamwidget-controls {
+//     position: fixed;
+//     transform: translateY(100%);
+//   }
 
-  .convinceblock {
-    margin-top: 81px;
-  }
-}
+//   .convinceblock {
+//     margin-top: 81px;
+//   }
+// }
 
-.has-visible-teamwidget {
-  .teamwidget-controls {
-    position: fixed;
-    transform: translateY(0%);
-    background: $yellow;
-  }
+// .has-visible-teamwidget {
+//   .teamwidget-controls {
+//     position: fixed;
+//     transform: translateY(0%);
+//     background: $yellow;
+//   }
 
-  .convinceblock {
-    margin-top: 81px;
-  }
-}
-.convince-title {
-  @include isolation-span(8, 4, 'both');
-}
+//   .convinceblock {
+//     margin-top: 81px;
+//   }
+// }
+//
+
