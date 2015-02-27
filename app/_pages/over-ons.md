@@ -17,6 +17,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
 
 <h2 class="convince-title">4 redenen om met ons te werken</h2>
 <ol class="convinceblock">
+
   <li class="convinceblock-item">
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">Flexibiliteit in de genen</h3>
@@ -26,6 +27,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
       {% picture convince carto1.png %}
     </div>
   </li>
+
   <li class="convinceblock-item">
     <div class="convinceblock-item-image">
       {% picture convince carto1.png %}
@@ -35,6 +37,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
       <p class="convinceblock-item-text">We besteden ruim tijd aan kennisontwikkeling</p>
     </div>
   </li>
+
   <li class="convinceblock-item">
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We zijn betrokken</h3>
@@ -44,6 +47,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
       {% picture convince carto1.png %}
     </div>
   </li>
+
   <li class="convinceblock-item">
     <div class="convinceblock-item-image">
       {% picture convince carto1.png %}
