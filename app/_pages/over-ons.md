@@ -34,7 +34,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
     </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We zijn vakidioten</h3>
-      <p class="convinceblock-item-text">We besteden ruim tijd aan kennisontwikkeling</p>
+      <p class="convinceblock-item-text">We besteden ruim tijd aan kennisontwikkeling.</p>
     </div>
   </li>
 
