@@ -24,3 +24,47 @@ Zo kan het zijn dat de oorspronkelijke vraag een opfrissing van de website betre
 Om samen met de klant inzicht te krijgen.
 
 {% image "/img/agile-board.png" "frame image--scroll" "Jira scrumbord." %}
+
+<h2 class="convince-title">We zijn o.a. goed in:</h2>
+<ol class="convinceblock">
+
+  <li class="convinceblock-item">
+    <div class="convinceblock-item-content">
+      <h3 class="convinceblock-item-title">Identiteit en merkkarakter</h3>
+      <p class="convinceblock-item-text"></p>
+    </div>
+    <div class="convinceblock-item-image">
+      {% picture convince case/carto1.png %}
+    </div>
+  </li>
+
+  <li class="convinceblock-item">
+    <div class="convinceblock-item-image">
+      {% picture convince case/carto1.png %}
+    </div>
+    <div class="convinceblock-item-content">
+      <h3 class="convinceblock-item-title">Een heldere en overtuigende website</h3>
+      <p class="convinceblock-item-text">We besteden ruim tijd aan kennisontwikkeling.</p>
+    </div>
+  </li>
+
+  <li class="convinceblock-item">
+    <div class="convinceblock-item-content">
+      <h3 class="convinceblock-item-title">Complexe informatie</h3>
+      <p class="convinceblock-item-text">het omzetten van complexe informatie in duidelijke infographics</p>
+    </div>
+    <div class="convinceblock-item-image">
+      {% picture convince case/carto1.png %}
+    </div>
+  </li>
+
+  <li class="convinceblock-item">
+    <div class="convinceblock-item-image">
+      {% picture convince case/carto1.png %}
+    </div>
+    <div class="convinceblock-item-content">
+      <h3 class="convinceblock-item-title">Cartogratie en data</h3>
+      <p class="convinceblock-item-text">data verwerkt in een landkaart, waarbij het ontwerp van de kaart aansluit bij de organisatie-identiteit</p>
+    </div>
+  </li>
+</ol>
