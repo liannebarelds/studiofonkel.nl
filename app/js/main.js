@@ -71,7 +71,6 @@ $(function() {
     return false
   })
 
-  // SCROLL: TODO OPTIMIZE
   var scroll = 0,
       header = $('.pageheader'),
       headerHeight = header.innerHeight(),
@@ -79,6 +78,7 @@ $(function() {
       pageTitle = $('.page-title'),
       pageTitleHeight = pageTitle.innerHeight(),
       pageTitlePos = pageTitle.offset().top
+      
   $(window).on('scroll', function () {
     scroll = window.scrollY
     if (scroll > 0) {
