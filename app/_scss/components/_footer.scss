@@ -9,10 +9,14 @@ $footer-svg-multiplier: 2;
   font-weight: 300;
 
   #logo {
-    margin-top: 30px;
+    margin-top: 29px;
     path {
       fill: $yellow-dark;
     }
+  }
+
+  h2 {
+    font-size: 34px;
   }
 
   h3 {

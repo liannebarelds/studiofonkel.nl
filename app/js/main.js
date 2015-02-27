@@ -87,19 +87,21 @@ $(function() {
       headerHeight = header.innerHeight(),
       headerTitle = $('.pageheader-title')
   }
-      
-  $(window).on('scroll', function () {
-    scroll = window.scrollY
-    if (scroll > 0) {
-      $('.pageheader').addClass('pageheader--scrolled')
-    } else {
-      $('.pageheader').removeClass('pageheader--scrolled')
-    }
 
-    if (scroll < (pageTitlePos + pageTitleHeight - headerHeight)) {
-      headerTitle.addClass('pageheader-title--hidden');
-    } else {
-      headerTitle.removeClass('pageheader-title--hidden');
+  $(window).on('scroll', function () {
+    if (pageTitle.length) {
+    scroll = window.scrollY
+      if (scroll > 0) {
+        $('.pageheader').addClass('pageheader--scrolled')
+      } else {
+        $('.pageheader').removeClass('pageheader--scrolled')
+      }
+
+      if (scroll < (pageTitlePos + pageTitleHeight - headerHeight)) {
+        headerTitle.addClass('pageheader-title--hidden');
+      } else {
+        headerTitle.removeClass('pageheader-title--hidden');
+      }
     }
   })
 

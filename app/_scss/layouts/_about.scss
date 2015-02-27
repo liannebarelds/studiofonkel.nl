@@ -6,7 +6,7 @@
 
   .teamwidget {
     margin: 120px auto;
-    @include isolation-span(6, 4, 'both');
+    @include isolation-span(5, 4, 'both');
     position: relative;
 
     &:after {
@@ -37,7 +37,7 @@
     @include clearfix;
 
     .select-wrapper:nth-child(1) {
-      @include isolation-span(3, 4);
+      @include isolation-span(3, 3);
     }
 
     .select-wrapper:nth-child(2) {

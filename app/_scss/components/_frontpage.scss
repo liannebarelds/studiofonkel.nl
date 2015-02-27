@@ -10,9 +10,14 @@
     margin-top: 90px;
     transform: translateX(-50%);
     z-index: 100000;
+    transition: opacity $speed-fast $ease-in-out;
 
     svg {
       height: 60px;
+    }
+
+    path {
+      transition: fill $speed-fast $ease-in-out;
     }
   }
 
