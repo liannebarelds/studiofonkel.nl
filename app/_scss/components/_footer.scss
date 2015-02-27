@@ -10,7 +10,8 @@ $footer-svg-multiplier: 2;
 
   #logo {
     height: 50px;
-    margin-top: 20px;
+    margin-top: 22px;
+
     path {
       fill: $black;
     }
@@ -24,6 +25,10 @@ $footer-svg-multiplier: 2;
   h3 {
     color: $yellow;
     font-weight: 300;
+  }
+
+  .form-title {
+    color: $yellow !important;
   }
 
   a {
