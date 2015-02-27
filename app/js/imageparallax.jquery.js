@@ -48,11 +48,13 @@
 
     update: function(that) {
       $(that.element).innerHeight($(that.element).innerWidth()*0.5625)
+      that.windowHeight = window.innerHeight
+      that.offsetTop = that.windowHeight / 2
+      that.offsetBottom = that.windowHeight / 2
       that.scrollImageHeight = $(that.element).innerHeight()
-      that.scrollImageMin = $(that.element).offset().top
+      that.scrollImageMin = $(that.element).offset().top + that.offsetTop
       that.scrollImageMax = that.scrollImageMin + that.scrollImageHeight
       that.imageHeight = that.image.innerHeight()
-      that.windowHeight = window.innerHeight
     },
 
     scroll: function(that) {
@@ -62,16 +64,16 @@
         var translateY = Math.floor((that.imageHeight - that.scrollImageHeight) * scrollPercentage * -1)
         that.image.css( "transform", "translate(0, " + translateY + "px)" );
 
-        // console.log('--AAN--');
+        console.log('--AAN--');
       }
-      // console.log('---------');
-      // console.log('that.scrollImageMax: ' + that.scrollImageMax);
-      // console.log('that.scrollImageMin: ' + that.scrollImageMin);
-      // console.log('that.windowHeight: ' + that.windowHeight);
-      // console.log('that.imageHeight: ' + that.imageHeight);
-      // console.log('that.scrollImageHeight: ' + that.scrollImageHeight);
-      // console.log('scrollPercentage: ' + scrollPercentage);
-      // console.log('window.scrollY: ' + window.scrollY);
+      console.log('---------');
+      console.log('that.scrollImageMax: ' + that.scrollImageMax);
+      console.log('that.scrollImageMin: ' + that.scrollImageMin);
+      console.log('that.windowHeight: ' + that.windowHeight);
+      console.log('that.imageHeight: ' + that.imageHeight);
+      console.log('that.scrollImageHeight: ' + that.scrollImageHeight);
+      console.log('scrollPercentage: ' + scrollPercentage);
+      console.log('window.scrollY: ' + window.scrollY);
 
       that.ticking = false
     }
