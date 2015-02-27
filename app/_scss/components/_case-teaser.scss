@@ -7,18 +7,17 @@
   transition: all $speed-slow $ease-in-out;
 
   picture {
-    transition: all $speed-slow $ease-in-out;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    right: 0;
+    bottom: 0;
     z-index: 1;
 
     img {
-      transition: all $speed-slow $ease-in-out;
       height: 100%;
-      width: auto;
-      transform: translateX(-50%);
+      width: 100%;
+      object-fit: cover;
     }
   }
 
