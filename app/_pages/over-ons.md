@@ -30,7 +30,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
 
   <li class="convinceblock-item">
     <div class="convinceblock-item-image">
-      {% picture convince case/carto1.png %}
+      {% picture convince case/webdesign2.jpg %}
     </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We zijn vakidioten</h3>
@@ -44,13 +44,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
       <p class="convinceblock-item-text">Onze commitment gaat verder dan de scope van de opdracht.</p>
     </div>
     <div class="convinceblock-item-image">
-      {% picture convince case/carto1.png %}
+      {% picture convince case/infographics.jpg %}
     </div>
   </li>
 
   <li class="convinceblock-item">
     <div class="convinceblock-item-image">
-      {% picture convince case/carto1.png %}
+      {% picture convince case/luchtballon.jpeg %}
     </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We gaan voor de relatie</h3>

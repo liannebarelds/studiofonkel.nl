@@ -40,7 +40,7 @@ Om samen met de klant inzicht te krijgen.
 
   <li class="convinceblock-item">
     <div class="convinceblock-item-image">
-      {% picture convince case/carto1.png %}
+      {% picture convince case/carto2.jpg %}
     </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">Een heldere en overtuigende website</h3>
@@ -54,13 +54,13 @@ Om samen met de klant inzicht te krijgen.
       <p class="convinceblock-item-text">het omzetten van complexe informatie in duidelijke infographics</p>
     </div>
     <div class="convinceblock-item-image">
-      {% picture convince case/carto1.png %}
+      {% picture convince case/infographics.jpg %}
     </div>
   </li>
 
   <li class="convinceblock-item">
     <div class="convinceblock-item-image">
-      {% picture convince case/carto1.png %}
+      {% picture convince case/luchtballon.jpeg %}
     </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">Cartogratie en data</h3>
