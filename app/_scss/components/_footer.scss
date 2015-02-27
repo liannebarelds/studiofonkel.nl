@@ -8,6 +8,13 @@ $footer-svg-multiplier: 2;
   font-size: $footer-font-size;
   font-weight: 300;
 
+  #logo {
+    margin-top: 30px;
+    path {
+      fill: $yellow-dark;
+    }
+  }
+
   h3 {
     color: $yellow-dark;
   }
@@ -34,7 +41,12 @@ $footer-svg-multiplier: 2;
     }
   }
 
-  svg {
+  .scroll-to-top {
+    margin-top: 30px;
+    @include isolation-span(1, 13);
+  }
+
+  .right svg {
     width: #{$footer-svg-multiplier}em;
     height: #{$footer-svg-multiplier}em;
     vertical-align: middle;

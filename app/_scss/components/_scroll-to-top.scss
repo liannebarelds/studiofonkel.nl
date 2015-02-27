@@ -1,0 +1,21 @@
+.scroll-to-top {
+  width: 60px;
+  height: 60px;
+
+  svg {
+    float: right;
+    height: 100%;
+    width: auto;
+  }
+
+  path {
+    fill: $yellow-dark !important;
+    transition: fill $speed-fast $ease-in-out;
+  }
+
+  &:hover {
+    path {
+      fill: $black !important;
+    }
+  }
+}

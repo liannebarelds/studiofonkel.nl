@@ -1,4 +1,5 @@
 .front {
+  .logo,
   .frontpage-item-title,
   .frontpage-item-subtitle,
   .frontpage-item-background {
@@ -6,6 +7,7 @@
   }
 
   &.has-loading-state {
+    .logo,
     .frontpage-item-title,
     .frontpage-item-subtitle,
     .frontpage-item-background {

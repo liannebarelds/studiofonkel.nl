@@ -1,13 +1,46 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 28.4 28.4" enable-background="new 0 0 28.4 28.4" xml:space="preserve">
-      <path fill="#fec81c" d="M25.4,8.9c0-0.2,0-0.4-0.1-0.6c0,0,0,0,0,0c0,0,0,0,0,0c-0.1-0.2-0.2-0.3-0.3-0.5c0,0,0,0,0,0
-        c-0.2-0.3-0.5-0.5-0.8-0.6c0,0-0.1,0-0.1,0c-0.2,0-0.3-0.1-0.5-0.1H5.3C5.2,7,5,7.1,4.8,7.1c0,0-0.1,0-0.1,0
-        C4.4,7.3,4.1,7.5,3.9,7.7c0,0,0,0,0,0.1C3.8,7.9,3.7,8.1,3.6,8.2c0,0,0,0,0,0c0,0,0,0,0,0C3.5,8.5,3.5,8.7,3.5,8.9v11.9
-        c0,0.2,0,0.4,0.1,0.6c0,0,0,0,0,0c0,0,0,0,0,0c0.1,0.2,0.2,0.3,0.3,0.5c0,0,0,0,0,0.1c0.2,0.3,0.5,0.5,0.8,0.6c0,0,0.1,0,0.1,0
-        c0.2,0,0.3,0.1,0.5,0.1h18.2c0.2,0,0.3,0,0.5-0.1c0,0,0.1,0,0.1,0c0.3-0.1,0.6-0.3,0.8-0.6c0,0,0,0,0,0c0.1-0.1,0.2-0.3,0.3-0.5
-        c0,0,0,0,0,0c0,0,0,0,0,0c0.1-0.2,0.1-0.4,0.1-0.7V8.9z M18.3,14.8l6-5.4v10.8L18.3,14.8z M23.5,8c0.1,0,0.2,0,0.3,0.1c0,0,0,0,0,0
-        c0.1,0,0.2,0.1,0.3,0.2c0,0,0,0,0,0L14.4,17L4.7,8.3c0,0,0,0,0,0C4.8,8.2,4.9,8.2,5,8.1c0,0,0,0,0,0C5.1,8.1,5.2,8,5.3,8H23.5z
-         M4.5,9.5l6,5.4l-6,5.4V9.5z M5.3,21.6c-0.1,0-0.2,0-0.3-0.1c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.2-0.2c0,0,0,0,0,0l6.6-5.8l2.8,2.5
-        c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l2.8-2.5l6.6,5.8c0,0,0,0,0,0c-0.1,0.1-0.2,0.1-0.3,0.2c0,0,0,0,0,0
-        c-0.1,0-0.2,0.1-0.3,0.1H5.3z"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 28.4 28.4"
+   enable-background="new 0 0 28.4 28.4"
+   xml:space="preserve"
+   inkscape:version="0.48.5 r10040"
+   width="100%"
+   height="100%"
+   sodipodi:docname="mail.svg"><metadata
+     id="metadata5621"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs5619" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview5617"
+     showgrid="false"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="89.206622"
+     inkscape:cy="40.388233"
+     inkscape:window-x="1920"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" /><path
+     fill="#fec81c"
+     d="M25.4,8.9c0-0.2,0-0.4-0.1-0.6c0,0,0,0,0,0c0,0,0,0,0,0c-0.1-0.2-0.2-0.3-0.3-0.5c0,0,0,0,0,0         c-0.2-0.3-0.5-0.5-0.8-0.6c0,0-0.1,0-0.1,0c-0.2,0-0.3-0.1-0.5-0.1H5.3C5.2,7,5,7.1,4.8,7.1c0,0-0.1,0-0.1,0         C4.4,7.3,4.1,7.5,3.9,7.7c0,0,0,0,0,0.1C3.8,7.9,3.7,8.1,3.6,8.2c0,0,0,0,0,0c0,0,0,0,0,0C3.5,8.5,3.5,8.7,3.5,8.9v11.9         c0,0.2,0,0.4,0.1,0.6c0,0,0,0,0,0c0,0,0,0,0,0c0.1,0.2,0.2,0.3,0.3,0.5c0,0,0,0,0,0.1c0.2,0.3,0.5,0.5,0.8,0.6c0,0,0.1,0,0.1,0         c0.2,0,0.3,0.1,0.5,0.1h18.2c0.2,0,0.3,0,0.5-0.1c0,0,0.1,0,0.1,0c0.3-0.1,0.6-0.3,0.8-0.6c0,0,0,0,0,0c0.1-0.1,0.2-0.3,0.3-0.5         c0,0,0,0,0,0c0,0,0,0,0,0c0.1-0.2,0.1-0.4,0.1-0.7V8.9z M18.3,14.8l6-5.4v10.8L18.3,14.8z M23.5,8c0.1,0,0.2,0,0.3,0.1c0,0,0,0,0,0         c0.1,0,0.2,0.1,0.3,0.2c0,0,0,0,0,0L14.4,17L4.7,8.3c0,0,0,0,0,0C4.8,8.2,4.9,8.2,5,8.1c0,0,0,0,0,0C5.1,8.1,5.2,8,5.3,8H23.5z          M4.5,9.5l6,5.4l-6,5.4V9.5z M5.3,21.6c-0.1,0-0.2,0-0.3-0.1c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.2-0.2c0,0,0,0,0,0l6.6-5.8l2.8,2.5         c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l2.8-2.5l6.6,5.8c0,0,0,0,0,0c-0.1,0.1-0.2,0.1-0.3,0.2c0,0,0,0,0,0         c-0.1,0-0.2,0.1-0.3,0.1H5.3z"
+     id="path5615" /></svg>

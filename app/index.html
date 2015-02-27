@@ -8,8 +8,9 @@ layout: html
   {% for item in menuItems %}
     {% if item.menu-weight %}
       <li class="frontpage-item">
-        {% if item.title == 'De Studio' %}
-        <div class="frontpage-item-title">{% include misc/logo.svg %}</div>
+        {% if item.title == 'Over ons' %}
+        <div class="logo">{% include misc/logo.svg %}</div>
+        <div class="frontpage-item-title">{{ item.title }}</div>
         {% else %}
         <h2 class="frontpage-item-title">{{ item.title }}</h2>
         {% endif %}

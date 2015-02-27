@@ -3,8 +3,22 @@
   @include clearfix;
   min-height: 100vh;
 
+  .top {
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+    @include clearfix;
+    .logo-wrapper {
+      @include isolation-span(5, 2, 'left');
+      padding-bottom: 30px;
+    }
+
+    #logo {
+      height: 60px;
+    }
+  }
+
   .left {
-    padding-top: 100px;
     @include isolation-span(5, 2, 'left');
 
     h3 {
@@ -14,7 +28,6 @@
   }
 
   .right {
-    padding-top: 100px;
     @include isolation-span(6, 8, 'right');
 
     svg, path {
