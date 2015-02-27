@@ -6,6 +6,16 @@ metadescription: ""
 ogdescription: ""
 ogimage: ""
 background: wat-doen-we.jpg
+introduction: "Een agile benadering van de klantvraag"
 menu-weight: 3
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+Agile is een term uit de software-ontwikkeling. Het woord 'agile' betekent 'lenig' en 'behendig'. Kort gezegd komt het erop neer dat ervan uitgegaan wordt dat in het proces ruimte moet zijn voor interactie en voortschrijdend inzicht.
+Het probleem van een dichtgetimmerde scope bij aanvang van de opdracht is dat niet alles van tevoren inzichteljk is en de beste ideëen vaak pas komen als er een start gemaakt is met het project.
+Om deze ideëen een plek te kunnen geven en toch de voortgang te bewaken, wordt vaak een agile project-benadering gekozen, bijvoorbeel Scrum.
+
+###Scrum
+Bij de scrum-methodiek wordt een project in stukjes gesneden, zgn 'sprints'. De scope wordt per sprint vastgesteld. Voor de aanvang van een nieuwe sprint kunnen wensen en functionaliteiten toegevoegd worden. Vaak worden deze door de klant beoordeele, op basis van complexiteit tov de toegevoegde (business-)waarde. Hierdoor heeft de klant maximale sturing op het budget en het resultaat, waarbij in het ideale gaval de zaken die het meeste waarde toevoegen de hoogste prioriteit krijgen en dus in een vroeg stadium al ontwikkeld worden.
+
+###Breder kijken
+Wij trekken deze lijn van prioriteiten en waarde toevoegen door naar de gehele klantvraag. We gaan met onze klant in gesprek en adviseren waar volgens ons de meeste waarde toe te voegen is in de organsisatie.
+Zo kan het zijn dat de oorspronkelijke vraag een opfrissing van de website betreft terwijl we er samen met de klant achterkomen dat er beter tijd en budget aan de brandstory, de strategie of de klantreis besteed kan worden.
