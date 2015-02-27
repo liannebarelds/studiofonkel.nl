@@ -48,7 +48,7 @@ code {
 
   $Options: if(length($Options) > 0, $Options, null);
 
-  @include breakpoint($bp-small) {
+  @include breakpoint(0px) {
     @include grid-span($Span, $Location, $grid, $gutter, 'isolation', $gutter-style, $Options);
   }
 
