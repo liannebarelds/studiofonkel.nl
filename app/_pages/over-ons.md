@@ -24,13 +24,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
       <p class="convinceblock-item-text">We kijken breder dan de iniële vraag. En voegen waarde toe waar dat het meeste rendement oplevert, ook voor de langere termijn.</p>
     </div>
     <div class="convinceblock-item-image">
-      {% picture convince carto1.png %}
+      {% picture convince case/carto1.png %}
     </div>
   </li>
 
   <li class="convinceblock-item">
     <div class="convinceblock-item-image">
-      {% picture convince carto1.png %}
+      {% picture convince case/carto1.png %}
     </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We zijn vakidioten</h3>
@@ -44,13 +44,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Se
       <p class="convinceblock-item-text">Onze commitment gaat verder dan de scope van de opdracht.</p>
     </div>
     <div class="convinceblock-item-image">
-      {% picture convince carto1.png %}
+      {% picture convince case/carto1.png %}
     </div>
   </li>
 
   <li class="convinceblock-item">
     <div class="convinceblock-item-image">
-      {% picture convince carto1.png %}
+      {% picture convince case/carto1.png %}
     </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We gaan voor de relatie</h3>

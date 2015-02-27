@@ -3,11 +3,22 @@ select {
   padding: 10px;
   background: $yellow;
   color: $black;
-  width: 100%;
-  box-sizing: content-box;
-  padding-right: 30px;
+  width: calc(100% + 20px);
+  padding-right: 54px;
   -webkit-appearance: none;
   cursor: pointer;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@-moz-document url-prefix() {
+  select {
+    color: #000;
+    color: rgba(0,0,0,0);
+    text-shadow: 0 0 0 #000;
+  }
 }
 
 .select-wrapper {
@@ -15,6 +26,29 @@ select {
   border: 1px solid $black;
   overflow: hidden;
   width: 100%;
+  position: relative;
+
+  svg {
+    width: 30px;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    right: 15px;
+    z-index: 90;
+    margin-top: 2px;
+    transform: translateY(-50%);
+  }
+
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: red;
+    content: '';
+  }
 
   option {
     border: 0;

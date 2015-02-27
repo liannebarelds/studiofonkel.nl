@@ -1,23 +1,34 @@
-<div class="teamwidget">
-  <div class="axes">
+<div class="teamwidget-wrapper">
+  <div class="teamwidget">
+    <div class="axes">
 
-    <div class="axis-label top">top</div>
-    <div class="axis-label left">left</div>
-    <div class="axis-label right">right</div>
-    <div class="axis-label bottom">bottom</div>
+      <div class="axis-label top">top</div>
+      <div class="axis-label left">left</div>
+      <div class="axis-label right">right</div>
+      <div class="axis-label bottom">bottom</div>
 
-    <section class="teamwidget-members">
-    {% for team_member in site.data.team %}
-      <article class="teamwidget-member" id="teamwidget-member-member-{{ team_member.key }}">
-        <span class="teamwidget-member-icon-wrapper">{% picture teamwidget_member team_members/{{ team_member.key }}.jpg alt="{{ team_member.name }}" title="{{ team_member.name }}" %}</span>
+      <section class="teamwidget-members">
+      {% for team_member in site.data.team %}
+        <article class="teamwidget-member" id="teamwidget-member-member-{{ team_member.key }}">
+          <span class="teamwidget-member-icon-wrapper">{% picture teamwidget_member team_members/{{ team_member.key }}.jpg alt="{{ team_member.name }}" title="{{ team_member.name }}" %}</span>
 
-        <div class="teamwidget-member-info">
-          <h3 class="teamwidget-member-name">{{ team_member.name }}</h3>
-          <span class="teamwidget-member-bio">Bio: {{ team_member.bio }}</span>
-        </div>
-      </article>
+          <div class="teamwidget-member-info">
+            <h3 class="teamwidget-member-name">{{ team_member.name }}</h3>
+            <span class="teamwidget-member-bio">Bio: {{ team_member.bio }}</span>
+          </div>
+        </article>
+      {% endfor %}
+      </section>
+    </div>
+  </div>
+
+  <div class="teamwidget-textwrapper">
+    {% for text in site.data.properties %}
+      <div class="teamwidget-text" data-id="{{ text[0] }}">
+        <h4 class="title">{{ text[0] }}</h4>
+        <p>{{ text[1] }}</p>
+      </div>
     {% endfor %}
-    </section>
   </div>
 </div>
 
@@ -33,6 +44,7 @@
           {% endif %}
         {% endfor %}
       </select>
+      {% include misc/select.svg %}
     </div>
 
     <div class="select-wrapper">
@@ -45,6 +57,7 @@
           {% endif %}
         {% endfor %}
       </select>
+      {% include misc/select.svg %}
     </div>
   </div>
 </div>

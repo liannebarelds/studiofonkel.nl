@@ -57,11 +57,22 @@ $(function() {
 
   }
 
+  function updateTexts() {
+    $('.teamwidget-text--active').removeClass('teamwidget-text--active')
+
+    var xValue = $('#teamwidget-selectX option:selected').val()
+    var yValue = $('#teamwidget-selectY option:selected').val()
+
+    $('.teamwidget-text[data-id="' + xValue + '"]').addClass('teamwidget-text--active')
+    $('.teamwidget-text[data-id="' + yValue + '"]').addClass('teamwidget-text--active')
+  }
+
   function update() {
     if ($('.teamwidget').length) {
       updateSelects()
       updatePositions()
       updateLabels()
+      updateTexts()
     }
   }
 

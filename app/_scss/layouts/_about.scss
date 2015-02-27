@@ -1,7 +1,12 @@
 .over-ons {
+  .teamwidget-wrapper {
+    position: relative;
+    @include isolation-span(14, 1, 'both');
+  }
+
   .teamwidget {
     margin: 120px auto;
-    @include isolation-span(6, 5, 'both');
+    @include isolation-span(6, 4, 'both');
     position: relative;
 
     &:after {
@@ -9,6 +14,10 @@
       padding-bottom: 100%;
       float: left;
     }
+  }
+
+  .teamwidget-textwrapper {
+    @include isolation-span(3, 11);
   }
 
   .teamwidget-controls {
@@ -28,11 +37,11 @@
     @include clearfix;
 
     .select-wrapper:nth-child(1) {
-      @include isolation-span(3, 5);
+      @include isolation-span(3, 4);
     }
 
     .select-wrapper:nth-child(2) {
-      @include isolation-span(3, 8);
+      @include isolation-span(3, 7);
     }
   }
 }
