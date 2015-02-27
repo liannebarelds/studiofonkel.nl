@@ -3,7 +3,7 @@ $footer-svg-multiplier: 2;
 
 .pagefooter {
   color: $black;
-  background-color: $yellow;
+  background-color: $white-grey;
   padding: 0 0 50px;
   font-size: $footer-font-size;
   font-weight: 300;
@@ -12,7 +12,7 @@ $footer-svg-multiplier: 2;
     height: 40px;
     margin-top: 20px;
     path {
-      fill: $yellow-dark;
+      fill: $dark-grey;
     }
   }
 
@@ -21,7 +21,7 @@ $footer-svg-multiplier: 2;
   }
 
   h3 {
-    color: $yellow-dark;
+    color: $yellow;
   }
 
   a {

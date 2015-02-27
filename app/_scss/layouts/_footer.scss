@@ -23,7 +23,7 @@
 
     h3 {
       margin-top: 102px;
-      color: $yellow-dark;
+      color: $yellow;
     }
   }
 
@@ -31,7 +31,7 @@
     @include isolation-span(6, 8, 'right');
 
     svg, path {
-      fill: $yellow-dark;
+      fill: $yellow;
     }
 
     h3 {
