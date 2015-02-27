@@ -51,7 +51,7 @@ $(function() {
     return false
   })
 
-  $('.frontpage-item-link:not(.contact').on('click', function () {
+  $('.frontpage-item-link:not(.contact)').on('click', function () {
 
     $('body,html').animate({scrollTop: 0}, 400)
 
