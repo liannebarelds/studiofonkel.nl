@@ -60,7 +60,7 @@ Om samen met de klant inzicht te krijgen.
 
   <li class="convinceblock-item">
     <div class="convinceblock-item-content">
-      <h3 class="convinceblock-item-title">Cartogratie en datavisualisatie</h3>
+      <h3 class="convinceblock-item-title">Cartografie en datavisualisatie</h3>
       <p class="convinceblock-item-text">data verwerkt in een landkaart, waarbij het ontwerp van de kaart aansluit bij de organisatie-identiteit</p>
     </div>
     <div class="convinceblock-item-image">
