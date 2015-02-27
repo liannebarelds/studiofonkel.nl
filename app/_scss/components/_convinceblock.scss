@@ -1,15 +1,17 @@
 .convinceblock {
   margin-top: 100px;
-  @include isolation-span(14, 1, 'both');
+  width: 100%;
   background: $yellow;
   position: relative;
   counter-reset: my-badass-counter;
   margin-bottom: 200px;
+  clear: both;
 
   .convinceblock-item {
     overflow: hidden;
+    width: 100%;
     position: relative;
-    @include isolation-span(14, 1, 'both');
+    clear: both;
     display: table;
 
     .convinceblock-item-title {
@@ -24,17 +26,23 @@
 
     .convinceblock-item-title,
     .convinceblock-item-text {
-      @include isolation-span(4, 2, 'both', 4 1 1 1 1 1);
+      @include isolation-span(3, 2, 'both', $grid: 1 1 1 1 1 4);
     }
 
     .convinceblock-item-content {
+      @include isolation-span(6, 1);
+      float: none !important;
+      margin-right: none !important;
+      margin-left: none !important;
       display: table-cell;
       vertical-align: top;
-      width: column-span(6, 1) + gutter-span(1/6);
     }
 
     .convinceblock-item-image {
-      width: column-span(8, 7) - gutter-span(1/6);
+      @include isolation-span(8, 7);
+      float: none !important;
+      margin-right: none !important;
+      margin-left: none !important;
       position: relative;
       display: table-cell;
 
@@ -76,7 +84,7 @@
     &:nth-child(odd) {
       .convinceblock-item-image {
         &:before {
-          left: 0;
+          right: 0;
         }
       }
     }
@@ -84,17 +92,18 @@
     &:nth-child(even) {
       .convinceblock-item-title,
       .convinceblock-item-text {
-        @include isolation-span(4, 2, 'both', 1 1 1 1 1 4);
+        @include isolation-span(3, 3, 'both', $grid: 4 1 1 1 1 1);
       }
 
       .convinceblock-item-image {
         &:before {
-          right: 0;
+          left: 0;
         }
       }
     }
   }
 }
 .convince-title {
-  margin-top: 100px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
