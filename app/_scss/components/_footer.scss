@@ -8,6 +8,10 @@ $footer-svg-multiplier: 2;
   font-size: $footer-font-size;
   font-weight: 300;
 
+  h3 {
+    color: $yellow-dark;
+  }
+
   a {
     transition: color $speed-fast $ease-out 0s;
     display: block;

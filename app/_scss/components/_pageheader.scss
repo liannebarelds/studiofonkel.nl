@@ -33,6 +33,14 @@
     color: $dark-grey;
     overflow: hidden;
     text-overflow: ellipsis;
+    opacity: 1;
+    transition: opacity $speed-fast $ease-in-out, transform $speed-fast $ease-in-out;
+    transform: translateY(0);
+
+    &.pageheader-title--hidden {
+      opacity: 0;
+      transform: translateY(50%);
+    }
   }
 
   &:after {
