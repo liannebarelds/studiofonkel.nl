@@ -78,12 +78,15 @@ $(function() {
   })
 
   var scroll = 0,
+      pageTitle = $('.page-title')
+
+  if (pageTitle.length) {
+      var pageTitleHeight = pageTitle.innerHeight(),
+      pageTitlePos = pageTitle.offset().top,
       header = $('.pageheader'),
       headerHeight = header.innerHeight(),
-      headerTitle = $('.pageheader-title'),
-      pageTitle = $('.page-title'),
-      pageTitleHeight = pageTitle.innerHeight(),
-      pageTitlePos = pageTitle.offset().top
+      headerTitle = $('.pageheader-title')
+  }
       
   $(window).on('scroll', function () {
     scroll = window.scrollY
