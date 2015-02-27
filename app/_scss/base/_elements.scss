@@ -31,3 +31,33 @@ code {
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}
 }
+
+//////////////////////////////
+// Happy Syntax for Isolation
+//
+// Makes working with Isolation easier, as it moves Clear to a 1st class citizen of the mixin, and automatically builds the verbose grid-span mixin call
+//////////////////////////////
+@mixin isolation-span($Span, $Location, $clear: false, $grid: false, $gutter: false, $gutter-style: false, $from: false) {
+  $Options: ();
+  @if $clear {
+    $Options: map-merge($Options, ('clear': unquote($clear)));
+  }
+  @if $from {
+    $Options: map-merge($Options, ('from': $from));
+  }
+
+  $Options: if(length($Options) > 0, $Options, null);
+
+  @include breakpoint($bp-small) {
+    @include grid-span($Span, $Location, $grid, $gutter, 'isolation', $gutter-style, $Options);
+  }
+
+  @include breakpoint($bp-large) {
+    @include grid-span($Span, $Location, $grid, $gutter, 'isolation', $gutter-style, $Options);
+  }
+
+  @include breakpoint($bp-xlarge) {
+    @include grid-span($Span, $Location, $grid, $gutter, 'isolation', $gutter-style, $Options);
+  }
+
+}
