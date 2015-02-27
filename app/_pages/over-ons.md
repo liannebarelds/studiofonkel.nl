@@ -1,5 +1,5 @@
 ---
-title: "De Studio"
+title: "Over ons"
 metatitle: ""
 metadescription: ""
 ogdescription: ""

@@ -3,6 +3,19 @@
   height: 100vh;
   overflow: hidden;
 
+  .logo {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-top: 90px;
+    transform: translateX(-50%);
+    z-index: 100000;
+
+    svg {
+      height: 60px;
+    }
+  }
+
   &:before, &:after {
     content: '';
     display: block;

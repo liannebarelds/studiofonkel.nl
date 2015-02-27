@@ -34,7 +34,12 @@ $footer-svg-multiplier: 2;
     }
   }
 
-  svg {
+  .scroll-to-top {
+    margin-top: 30px;
+    @include isolation-span(1, 13);
+  }
+
+  .right svg {
     width: #{$footer-svg-multiplier}em;
     height: #{$footer-svg-multiplier}em;
     vertical-align: middle;
