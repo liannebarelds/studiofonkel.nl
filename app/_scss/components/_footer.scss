@@ -9,7 +9,8 @@ $footer-svg-multiplier: 2;
   font-weight: 300;
 
   #logo {
-    margin-top: 29px;
+    height: 40px;
+    margin-top: 20px;
     path {
       fill: $yellow-dark;
     }
@@ -46,7 +47,7 @@ $footer-svg-multiplier: 2;
   }
 
   .scroll-to-top {
-    margin-top: 30px;
+    margin-top: 20px;
     @include isolation-span(1, 13);
   }
 

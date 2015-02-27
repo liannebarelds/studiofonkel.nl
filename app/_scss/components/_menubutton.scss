@@ -39,3 +39,13 @@ $margin-right: grid-span(1, 14);
     transform: translate(-50vw, 50vh) translate(50%, -50%) scale(3.50);
   }
 }
+
+.has-scrolled-to-contact {
+  .menubutton {
+    border-color: white;
+  }
+}
+
+.menubutton--active {
+  border-color: $yellow !important;
+}

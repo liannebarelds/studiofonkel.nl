@@ -5,8 +5,9 @@
   width: 100%;
   background: white;
   z-index: 1000;
-  transition: box-shadow $speed-fast $ease-in-out; //, opacity $speed-slow $ease-in-out
+  transition: box-shadow $speed-fast $ease-in-out, transform $speed-fast $ease-in-out, opacity $speed-fast $ease-in-out;
   box-shadow: 0 2px 6px rgba($black, 0);
+  transform: translateY(0);
 
   #logo {
     height: 40px;
@@ -73,5 +74,12 @@
     transition: left $speed-fast $ease-in-out 0s,
                 right $speed-fast $ease-in-out 0s,
                 background-color $speed-medium $ease-out 0s;
+  }
+}
+
+.has-scrolled-to-contact {
+  .pageheader {
+    opacity: 0;
+    transform: translateY(-100%);
   }
 }

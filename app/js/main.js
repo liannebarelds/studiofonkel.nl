@@ -37,7 +37,7 @@ $(function() {
     var that = this
     $('body').addClass('has-loading-state')
 
-    $('.menubutton').removeClass().addClass('menubutton')
+    $('.menubutton').removeClass().addClass('menubutton').addClass('menubutton--active')
 
     $('.wrapper').one('transitionend', function () {
       window.location = $(that).attr('href')
@@ -91,10 +91,18 @@ $(function() {
   $(window).on('scroll', function () {
     if (pageTitle.length) {
     scroll = window.scrollY
+    var pagefooterTop = $('.pagefooter').offset().top - 80
       if (scroll > 0) {
         $('.pageheader').addClass('pageheader--scrolled')
       } else {
         $('.pageheader').removeClass('pageheader--scrolled')
+      }
+
+      if (scroll > pagefooterTop) {
+        $('body').addClass('has-scrolled-to-contact')
+      }
+      else {
+        $('body').removeClass('has-scrolled-to-contact')
       }
 
       if (scroll < (pageTitlePos + pageTitleHeight - headerHeight)) {
