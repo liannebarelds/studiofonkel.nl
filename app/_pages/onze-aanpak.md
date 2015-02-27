@@ -22,3 +22,5 @@ Zo kan het zijn dat de oorspronkelijke vraag een opfrissing van de website betre
 
 ###Onze tools
 Om samen met de klant inzicht te krijgen.
+
+{% image "/img/agile-board.png" "frame image--scroll" "Jira scrumbord." %}
