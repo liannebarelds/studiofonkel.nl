@@ -77,12 +77,13 @@
     position: absolute;
     font-family: 'Aktiv Grotesk', sans-serif;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 22px;
     pointer-events: none;
     z-index: 100000;
     transition: color $speed-fast, text-shadow $speed-fast, opacity $speed-fast;
     text-shadow: 0px 1px 4px rgba($black, 0);
+    display: none;
   }
 
   .frontpage-item-inner {
@@ -119,7 +120,7 @@
     .frontpage-item-subtitle {
       max-width: 13%;
       text-align: center;
-      margin-bottom: 140px;
+      margin-bottom: 120px;
       bottom: 50%;
       left: 50%;
       transform: translateX(-50%);
@@ -319,16 +320,15 @@ body:not(.has-loading-state) .frontpage-item {
 
 @include breakpoint($bp-xlarge) {
   .frontpage .frontpage-item .frontpage-item-subtitle {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 26px;
   }
   .frontpage .frontpage-item:nth-child(1) .frontpage-item-subtitle {
-    margin-bottom: 120px;
+    margin-bottom: 140px;
   }
 }
 @include breakpoint($bp-large) {
   .frontpage .frontpage-item .frontpage-item-subtitle {
-    display: none;
+    display: block;
   }
 }

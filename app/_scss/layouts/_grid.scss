@@ -1,5 +1,4 @@
-$grid: 0 1 1 1 1 1 1 1 1 1 1 1 1 0;
-@include add-grid($grid);
+@include add-grid(0 1 1 1 1 1 1 1 1 1 1 1 1 0);
 @include add-grid(2 1 1 1 1 1 1 1 1 1 1 1 1 2 at $bp-large);
 @include add-grid(4 1 1 1 1 1 1 1 1 1 1 1 1 4 at $bp-xlarge);
 
