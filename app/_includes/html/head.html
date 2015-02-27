@@ -39,6 +39,13 @@
 <script src="/js/main.js"></script>
 <script src="/js/fontloader.js"></script>
 <!-- endbuild -->
+
+<!--[if lt IE 9]>
+<!-- build:js(app) /js/head.js -->
+    <script src="_bower_components/html5shiv/dist/html5shiv.js"></script>
+<!-- endbuild -->
+<![endif]-->
+
 {% if page.url == '/over-ons/' %}
   {% teaminfo %}
 {% endif %}
