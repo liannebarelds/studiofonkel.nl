@@ -106,4 +106,9 @@
       opacity: 1;
     }
   }
+
+  &.active:before {
+    background: $light-grey;
+    z-index: 30;
+  }
 }

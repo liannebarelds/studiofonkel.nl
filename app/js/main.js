@@ -10,7 +10,7 @@ $(function() {
     $('body').removeClass('has-loading-state')
   }
 
-  if (previousUrl.substr(0, 7) == '/cases/' && previousUrl.length > 7) {
+  if (previousUrl.substr(0, 7) == '/cases/' && previousUrl.length > 7 && currentPageUrl != previousUrl && currentPageUrl == '/cases/') {
     dontRemove = true
     var that = $('.case--teaser[href="' + previousUrl + '"]')
     $(that).addClass('active')
@@ -48,9 +48,10 @@ $(function() {
         height: height
       }, function () {
         clonedItem.remove()
+        $('.case--teaser.active').removeClass('active')
         $('body').removeClass('case-full-transition').removeClass('has-case-loading-state')
       })
-    }, 200)
+    }, 600)
   }
 
   if (!dontRemove) {
@@ -61,14 +62,16 @@ $(function() {
 
     setTimeout(function () {
       $('body').removeClass('case-full-transition')
+      initTitle()
     }, 2000)
   }
 
-
+  // TODO contains bug on case full.
+  // Shows empty page.
   $('.menubutton, .pageheader .logo-link, body:not(.front) .logo-link').on('click', function () {
     var that = this
-    $('.menubutton').removeClass().addClass('menubutton').addClass('menubutton--active')
     $('body').addClass('has-loading-state')
+    $('.menubutton').removeClass().addClass('menubutton').addClass('menubutton--active')
 
     $('.menubutton').one('transitionend', function () {
       setTimeout(function () {
@@ -86,7 +89,7 @@ $(function() {
 
   $('.closebutton').on('click', function () {
     var that = this
-
+    $('body,html').animate({scrollTop: 0 }, 400)
     $('body').addClass('case-full-transition')
 
     setTimeout(function () {
@@ -95,7 +98,7 @@ $(function() {
       $('.page-introduction').one('transitionend', function () {
         setTimeout(function () {
           window.location = $(that).attr('href')
-        }, 100)
+        }, 400)
       })
     }, 100)
 
@@ -108,6 +111,7 @@ $(function() {
   })
 
   $('.overview a').on('click', function () {
+
     var that = this
     $(this).addClass('active')
     $('body').addClass('has-loading-state').addClass('has-case-loading-state')
