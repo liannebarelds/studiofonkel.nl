@@ -7,12 +7,12 @@ body.case-full-transition {
 
   .page-body,
   .pageheader {
-    transition: all $speed-medium $ease-in .35s !important;
+    transition: all $speed-medium $ease-in .25s !important;
   }
 
   .pagewrapper .page-title,
   .page-introduction {
-    transition: all $speed-medium $ease-in .35s !important;
+    transition: all $speed-medium $ease-in .25s !important;
     max-height: 400px;
   }
 

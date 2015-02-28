@@ -48,6 +48,7 @@ $(function() {
         height: height
       }, function () {
         clonedItem.remove()
+        $('body').removeClass('case-full-transition').removeClass('has-case-loading-state')
       })
     }, 200)
   }
@@ -94,9 +95,9 @@ $(function() {
       $('.page-introduction').one('transitionend', function () {
         setTimeout(function () {
           window.location = $(that).attr('href')
-        }, 300)
+        }, 100)
       })
-    }, 200)
+    }, 100)
 
     return false
   })
