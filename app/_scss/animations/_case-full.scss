@@ -1,0 +1,75 @@
+body.case-full-transition {
+  .pagefooter,
+  .pagewrapper .page-title,
+  .menubutton {
+    transition: all $speed-medium $ease-in .1s !important;
+  }
+
+  .page-body,
+  .pageheader {
+    transition: all $speed-medium $ease-in .35s !important;
+  }
+
+  .pagewrapper .page-title,
+  .page-introduction {
+    transition: all $speed-medium $ease-in .35s !important;
+    max-height: 400px;
+  }
+
+  &.layout-page .pagewrapper {
+    transition: all $speed-medium $ease-in .2s !important;
+  }
+}
+
+///////////////
+
+body.case-full-transition.has-case-loading-state {
+  .pagefooter,
+  .page-title,
+  .page-body,
+  .menubutton,
+  .pageheader {
+    opacity: 0;
+  }
+
+  .pagewrapper .page-title,
+  .page-introduction {
+    opacity: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .page-introduction {
+    max-height: 40px;
+  }
+
+  &.layout-page .pagewrapper {
+    margin-top: 0;
+  }
+}
+
+////////
+
+body.cases.has-case-loading-state {
+  .menubutton {
+    opacity: 0 !important;
+  }
+
+  > .case--teaser.active {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 400px;
+
+    .case--teaser-title,
+    .case--teaser-categories,
+    .case--teaser-button,
+    &:after, &:before {
+      opacity: 0 !important;
+    }
+  }
+}

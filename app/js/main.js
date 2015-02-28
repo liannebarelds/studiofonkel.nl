@@ -1,67 +1,155 @@
 $(function() {
  'use strict'
 
+ var dontRemove = false
   var previousUrl = sessionStorage.getItem('previous-url')
   var currentPageUrl = window.location.pathname
   sessionStorage.setItem('previous-url', currentPageUrl)
 
-  // Set the previous clicked item inside an overview to active to transition back to the overview.
-  if ($('.overview [href="' + previousUrl + '"]').length) {
-    $('.overview [href="' + previousUrl + '"]').addClass('active')
-    $('body').addClass('has-loading-state')
+  if (previousUrl != '/') {
+    $('body').removeClass('has-loading-state')
+  }
+
+  if (previousUrl.substr(0, 7) == '/cases/' && previousUrl.length > 7) {
+    dontRemove = true
+    var that = $('.case--teaser[href="' + previousUrl + '"]')
+    $(that).addClass('active')
+    $('body').addClass('has-loading-state').addClass('has-case-loading-state')
+
+    var clone = $(that)[0].outerHTML
+
+    var offset = $(that).offset()
+    var width = $(that).outerWidth()
+    var height = $(that).outerHeight()
+
+    $('body').append(clone)
+
+    var clonedItem = $('body > .case--teaser')
+
+    var goToLeft = $('.casesoverview').offset().left
+    var goToWidth = $('.casesoverview').outerWidth()
+
+    clonedItem.css({
+      width: goToWidth,
+      left: goToLeft,
+      top: '120px',
+      height: '308px'
+    })
 
     setTimeout(function () {
       $('body').removeClass('has-loading-state')
-      $('.overview [href="' + previousUrl + '"]').removeClass('active')
-    }, 100)
+
+      clonedItem.animate({
+        top: offset.top - $(window).scrollTop(),
+        left: offset.left,
+        bottom: 'auto',
+        right: 'auto',
+        width: width,
+        height: height
+      }, function () {
+        clonedItem.remove()
+      })
+    }, 200)
   }
-  else {
+
+  if (!dontRemove) {
     setTimeout(function () {
-      $('body').removeClass('has-loading-state')
+      $('body').removeClass('has-loading-state').removeClass('has-case-loading-state')
+      initTitle()
     }, 300)
+
+    setTimeout(function () {
+      $('body').removeClass('case-full-transition')
+    }, 2000)
   }
 
-  $('.overview a').on('click', function () {
+
+  $('.menubutton, .pageheader .logo-link, body:not(.front) .logo-link').on('click', function () {
     var that = this
-    $('body').addClass('has-loading-state')
-    $(this).addClass('active')
-
-    $('.wrapper').one('transitionend', function () {
-      window.location = $(that).attr('href')
-    })
-
-    return false
-  })
-
-  $('.menubutton, .logo-link').on('click', function () {
-    var that = this
-    $('body').addClass('has-loading-state')
-
     $('.menubutton').removeClass().addClass('menubutton').addClass('menubutton--active')
+    $('body').addClass('has-loading-state')
 
-    $('.wrapper').one('transitionend', function () {
-      window.location = $(that).attr('href')
+    $('.menubutton').one('transitionend', function () {
+      setTimeout(function () {
+        window.location = $(that).attr('href')
+      }, 200)
     })
 
     return false
   })
 
-  $('.scroll-to-top').on('click', function () {
+  $('.scroll-to-top, .front .logo-link').on('click', function () {
     $('body,html').animate({scrollTop: 0 }, 400)
     return false
   })
 
+  $('.closebutton').on('click', function () {
+    var that = this
+
+    $('body').addClass('case-full-transition')
+
+    setTimeout(function () {
+      $('body').addClass('has-case-loading-state')
+
+      $('.page-introduction').one('transitionend', function () {
+        setTimeout(function () {
+          window.location = $(that).attr('href')
+        }, 300)
+      })
+    }, 200)
+
+    return false
+  })
 
   $('.frontpage-item-link.contact').on('click', function () {
     $('body,html').animate({scrollTop: $(window).height()}, 400)
     return false
   })
 
-  $('.frontpage-item-link:not(.contact)').on('click', function () {
+  $('.overview a').on('click', function () {
+    var that = this
+    $(this).addClass('active')
+    $('body').addClass('has-loading-state').addClass('has-case-loading-state')
 
+    var clone = $(this)[0].outerHTML
+
+    var offset = $(this).offset()
+    var width = $(this).outerWidth()
+    var height = $(this).outerHeight()
+    $('body').append(clone)
+
+    var clonedItem = $('body > .case--teaser')
+
+    clonedItem.css({
+      top: offset.top - $(window).scrollTop(),
+      left: offset.left,
+      bottom: 'auto',
+      right: 'auto',
+      width: width,
+      height: height
+    })
+
+    var goToLeft = $('.casesoverview').offset().left
+    var goToWidth = $('.casesoverview').outerWidth()
+
+    clonedItem.animate({
+      width: goToWidth,
+      left: goToLeft,
+      top: '120px',
+      height: '308px'
+    }, function () {
+      window.location = $(that).attr('href')
+    })
+
+    return false
+  })
+
+
+  $('.frontpage-item-link:not(.contact)').on('click', function () {
     $('body,html').animate({scrollTop: 0}, 400)
 
     var that = this
+    // Prevent multiple clicks.
     if (!$('body').hasClass('has-loading-state')) {
       var index = $(this).parents('.frontpage-item').index() + 1
 
@@ -80,12 +168,20 @@ $(function() {
   var scroll = 0,
       pageTitle = $('.page-title')
 
-  if (pageTitle.length) {
-    var pageTitleHeight = pageTitle.innerHeight(),
-    pageTitlePos = pageTitle.offset().top,
-    header = $('.pageheader'),
-    headerHeight = header.innerHeight(),
-    headerTitle = $('.pageheader-title')
+  var pageTitleHeight,
+    pageTitlePos,
+    header,
+    headerHeight,
+    headerTitle
+
+  function initTitle() {
+    if ($('.page-title').length) {
+      pageTitleHeight = pageTitle.innerHeight()
+      pageTitlePos = pageTitle.offset().top
+      header = $('.pageheader')
+      headerHeight = header.innerHeight()
+      headerTitle = $('.pageheader-title')
+    }
   }
 
   var updateDelay;
@@ -98,9 +194,11 @@ $(function() {
           pageTitlePos = pageTitle.offset().top,
           headerHeight = header.innerHeight()
         }
-        scrollFunction();
-      }, 100);
+
+        scrollFunction()
+      }, 100)
   })
+
   var scrollFunction = function() {
     if (pageTitle.length) {
     scroll = window.scrollY
@@ -119,14 +217,17 @@ $(function() {
       }
 
       if (scroll < (pageTitlePos + pageTitleHeight - headerHeight)) {
-        headerTitle.addClass('pageheader-title--hidden');
+        headerTitle.removeClass('pageheader-title--shown')
       } else {
-        headerTitle.removeClass('pageheader-title--hidden');
+        headerTitle.addClass('pageheader-title--shown')
       }
     }
   }
 
   $(window).on('scroll', function () {
-    scrollFunction();
+    scrollFunction()
   })
+
+  initTitle()
+
 });

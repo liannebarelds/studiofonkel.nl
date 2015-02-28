@@ -10,12 +10,20 @@
 
   {% assign page_path_exploded = page.url | remove_first: '/' | split:'/' %}
 
-  <body class="has-loading-state layout-{{ page.layout }} {% if page.url == '/index.html' %} front {% endif %} {{ page_path_exploded | join: '-' }}">
+  {% assign count = page_path_exploded | size %}
+
+  <body class="{% unless page_path_exploded[0] == 'cases' and count > 1 %} has-loading-state {% endunless %}
+  {% if page_path_exploded[0] == 'cases' and count > 1 %} has-case-loading-state case-full-transition {% endif %}
+  layout-{{ page.layout }} {% if page.url == '/index.html' %} front {% endif %} {{ page_path_exploded | join: '-' }}">
   <!-- build:dist:remove -->
   <div class="grid"></div>
   <script src="/js/grid.js"></script>
   <!-- endbuild -->
-  {% include html/menubutton.html %}
+
+  {% if count < 2 %}
+    {% include html/menubutton.html %}
+  {% endif %}
+
 
   <div class="wrapper">
     {{ content }}

@@ -11,6 +11,7 @@
     transform: translateX(-50%);
     z-index: 100000;
     transition: opacity $speed-fast $ease-in-out;
+    pointer-events: none;
 
     svg {
       height: 60px;
@@ -287,20 +288,6 @@ body:not(.has-loading-state) .frontpage-item {
     .frontpage-item-inner:after {
       opacity: 1;
     }
-  }
-  .frontpage-item-inner:after {
-    content: '';
-    opacity: 0;
-    transition: opacity $speed-medium;
-    display: block;
-    background-image: url('../img/grid4x4@2x.png');
-    background-size: 4px 4px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
   }
 }
 

@@ -1,0 +1,24 @@
+.closebutton {
+  height: 40px;
+  @include isolation-span(1, 12, 'right', 12);
+  width: 40px !important;
+  position: relative;
+  margin-top: 17px;
+}
+
+.closebutton-bar {
+  height: 5px;
+  width: 100%;
+  background: $black;
+  transform-origin: 50% 50%;
+  top: 50%;
+  position: absolute;
+
+  &:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  &:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+}
