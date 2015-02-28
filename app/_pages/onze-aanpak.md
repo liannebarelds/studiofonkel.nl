@@ -34,7 +34,7 @@ Om samen met de klant inzicht te krijgen.
     </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">Identiteit en merkkarakter</h3>
-      <p class="convinceblock-item-text"></p>
+      <p class="convinceblock-item-text">Geen sausje eroverheen, maar van binnenuit naar buiten communiceren.</p>
     </div>
   </li>
 
@@ -60,7 +60,7 @@ Om samen met de klant inzicht te krijgen.
 
   <li class="convinceblock-item">
     <div class="convinceblock-item-content">
-      <h3 class="convinceblock-item-title">Cartogratie en data</h3>
+      <h3 class="convinceblock-item-title">Cartografie en datavisualisatie</h3>
       <p class="convinceblock-item-text">data verwerkt in een landkaart, waarbij het ontwerp van de kaart aansluit bij de organisatie-identiteit</p>
     </div>
     <div class="convinceblock-item-image">
