@@ -87,7 +87,7 @@ $(function() {
     return false
   })
 
-  $('.closebutton').on('click', function () {
+  $('.pageheader .closebutton').on('click', function () {
     var that = this
     $('body,html').animate({scrollTop: 0 }, 400)
     $('body').addClass('case-full-transition')

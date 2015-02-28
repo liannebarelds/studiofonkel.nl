@@ -10,6 +10,10 @@
       <section class="teamwidget-members">
       {% for team_member in site.data.team %}
         <article class="teamwidget-member" id="teamwidget-member-member-{{ team_member.key }}">
+          <a class="closebutton" href="#">
+            <div class="closebutton-bar"></div>
+            <div class="closebutton-bar"></div>
+          </a>
           <span class="teamwidget-member-icon-wrapper">{% picture teamwidget_member team_members/{{ team_member.key }}.jpg alt="{{ team_member.name }}" title="{{ team_member.name }}" %}</span>
 
           <div class="teamwidget-member-info">

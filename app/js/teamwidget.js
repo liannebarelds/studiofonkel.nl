@@ -110,4 +110,75 @@ $(function() {
 
   update()
   $(window).scroll()
+
+  $('.teamwidget-member').on('click', function () {
+    var clonedHtml = $(this)[0].outerHTML
+    $('body').append(clonedHtml)
+
+    var oldOffset = $(this).offset()
+    var oldWidth = $(this).outerWidth()
+    var oldHeight = $(this).outerHeight()
+
+    var clonedItem = $('body > .teamwidget-member')
+    clonedItem.attr('style', '')
+    var translateString = 'translate(' + (oldOffset.left + 30) + 'px,' + (oldOffset.top - $(window).scrollTop() + 30) + 'px)'
+
+    $('.teamwidget-member .closebutton').on('click', function () {
+      $(this).parents('.teamwidget-member').removeClass('open')
+
+      var translateString = 'translate(' + (oldOffset.left + 30) + 'px,' + (oldOffset.top - $(window).scrollTop() + 30) + 'px)'
+
+      $('.teamwidget-member-info', clonedItem).remove()
+
+      clonedItem.css({
+        width: oldWidth,
+        height: oldHeight,
+        top: '-30px',
+        left: '-30px',
+        transform: translateString,
+        MozTransform: translateString,
+        WebkitTransform: translateString,
+        msTransform: translateString
+      })
+
+      clonedItem.one('transitionend', function() {
+        setTimeout(function () {
+          clonedItem.remove()
+        }, 400)
+      })
+
+      return false
+    })
+
+
+    clonedItem.css({
+      width: oldWidth,
+      height: oldHeight,
+      transform: translateString,
+      MozTransform: translateString,
+      WebkitTransform: translateString,
+      msTransform: translateString
+    })
+
+    var translateString = 'translate(-50%, -50%)'
+    setTimeout(function () {
+      clonedItem.addClass('clone')
+
+      setTimeout(function () {
+        clonedItem.addClass('open')
+
+        clonedItem.css({
+          left: '50%',
+          top: '50%',
+          transform: translateString,
+          MozTransform: translateString,
+          WebkitTransform: translateString,
+          msTransform: translateString,
+        })
+      }, 200)
+    }, 200)
+
+
+  })
+
 });

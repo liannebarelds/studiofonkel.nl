@@ -1,0 +1,70 @@
+.teamwidget-member {
+  .closebutton {
+    margin-top: 0;
+    position: absolute;
+    right: -2400px;
+    top: 10px;
+    z-index: 30;
+    opacity: 0;
+    transition: opacity .8s .4s !important;
+
+    .closebutton-bar {
+      background: $dark-grey;
+    }
+  }
+
+  .teamwidget-member-info {
+    opacity: 0 !important;
+    transition: opacity .8s .4s !important;
+    float: left;
+  }
+}
+
+.teamwidget-member.clone {
+  position: fixed;
+  z-index: 1000000000;
+  transition: all .4s ease-in-out;
+  // padding: 30px 50px;
+
+  .teamwidget-member-info {
+    overflow: hidden;
+    opacity: 0 !important;
+    z-index: 90;
+    width: 600px;
+    position: relative;
+  }
+
+  .teamwidget-member-name {
+    margin: 20px 0;
+  }
+
+  .teamwidget-member-icon-wrapper:before {
+    transform: translate(-30px, -30px) scale(1, 1);
+  }
+
+  &.open {
+    .teamwidget-member-icon-wrapper:before {
+      transform: translate(-30px, -30px)  scale(9, 9);
+    }
+
+    .closebutton {
+      opacity: 1;
+      right: 0;
+    }
+
+    width: 600px !important;
+    height: 600px !important;
+    max-height: 90%;
+    max-width: 90%;
+    text-align: left;
+
+    .teamwidget-member-info {
+      opacity: 1 !important;
+    }
+
+    .teamwidget-member-icon-wrapper {
+      transition: all .8s 2s !important;
+      float: left;
+    }
+  }
+}

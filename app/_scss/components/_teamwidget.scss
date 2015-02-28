@@ -129,8 +129,6 @@
 
   .teamwidget-member {
     position: absolute;
-    top: 0;
-    left: 0;
     cursor: pointer;
   }
 
@@ -145,12 +143,12 @@
 
 .teamwidget-member {
   $width: 60px;
-  left: -($width / 2) !important;
-  top: -($width / 2) !important;
+  left: -($width / 2);
+  top: -($width / 2);
 
-  &:hover {
-    z-index: 140;
-  }
+  // &:hover {
+  //   z-index: 140;
+  // }
 
   .teamwidget-member-icon-wrapper {
     display: block;
