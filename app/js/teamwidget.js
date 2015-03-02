@@ -124,6 +124,7 @@ $(function() {
     var translateString = 'translate(' + (oldOffset.left + 30) + 'px,' + (oldOffset.top - $(window).scrollTop() + 30) + 'px)'
 
     $('.teamwidget-member .closebutton').on('click', function () {
+      // TODO first add class to close the circle than proceed.
       $(this).parents('.teamwidget-member').removeClass('open')
 
       var translateString = 'translate(' + (oldOffset.left + 30) + 'px,' + (oldOffset.top - $(window).scrollTop() + 30) + 'px)'
