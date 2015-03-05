@@ -132,8 +132,8 @@ $(function() {
       $('.teamwidget-member-info', clonedItem).remove()
 
       clonedItem.css({
-        width: oldWidth,
-        height: oldHeight,
+        width: '1px',
+        height: '1px',
         top: '-30px',
         left: '-30px',
         transform: translateString,
@@ -145,6 +145,7 @@ $(function() {
       clonedItem.one('transitionend', function() {
         setTimeout(function () {
           clonedItem.remove()
+          $('body').removeClass('has-expanded-team-member')
         }, 400)
       })
 
@@ -167,6 +168,8 @@ $(function() {
 
       setTimeout(function () {
         clonedItem.addClass('open')
+
+        $('body').addClass('has-expanded-team-member')
 
         clonedItem.css({
           left: '50%',
