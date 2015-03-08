@@ -25,7 +25,7 @@
   }
 
   .pageheader-title {
-    @include isolation-span(7, 4, 'right', 12);
+    @include isolation-span(6, 4, 'right', 12);
     font-size: 30px;
     margin-top: 26px;
     pointer-events: none;
@@ -37,6 +37,11 @@
     opacity: 0;
     transition: opacity $speed-fast $ease-in-out, transform $speed-fast $ease-in-out;
     transform: translateY(50%);
+    text-align: center;
+
+    @include breakpoint($bp-medium) {
+      text-align: left;
+    }
 
     &.pageheader-title--shown {
       opacity: 1;
