@@ -3,11 +3,17 @@
     position: relative;
     overflow: hidden;
     @include isolation-span(14, 1, 'both');
+    @include clearfix;
   }
 
   .teamwidget {
+    @include isolation-span(8, 4, 'both');
+
+    @include breakpoint($bp-large) {
+      @include isolation-span(5, 4, 'both');
+    }
+
     margin: 120px auto;
-    @include isolation-span(5, 4, 'both');
     position: relative;
 
     &:after {
@@ -18,7 +24,13 @@
   }
 
   .teamwidget-controls {
-    @include isolation-span(3, 11);
+    @include isolation-span(10, 3, 'both');
+
+    @include breakpoint($bp-large) {
+      margin-top: 97px;
+      @include isolation-span(3, 11);
+    }
+
   }
 }
 

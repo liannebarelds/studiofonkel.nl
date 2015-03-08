@@ -185,8 +185,8 @@ module.exports = function (grunt) {
     htmlmin: {
       dist: {
         options: {
-          collapseWhitespace: true,
-          collapseBooleanAttributes: true,
+          collapseWhitespace: false,
+          collapseBooleanAttributes: false,
           removeAttributeQuotes: false,
           removeRedundantAttributes: false
         },
@@ -382,8 +382,8 @@ module.exports = function (grunt) {
     'imagemin',
     'svgmin',
     'filerev',
-    'usemin',
-    'htmlmin'
+    'usemin'
+    // 'htmlmin'
     ]);
 
   grunt.registerTask('deploy', [

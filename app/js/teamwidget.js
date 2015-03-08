@@ -124,6 +124,7 @@ $(function() {
     var translateString = 'translate(' + (oldOffset.left + 30) + 'px,' + (oldOffset.top - $(window).scrollTop() + 30) + 'px)'
 
     $('.teamwidget-member .closebutton').on('click', function () {
+      // TODO first add class to close the circle than proceed.
       $(this).parents('.teamwidget-member').removeClass('open')
 
       var translateString = 'translate(' + (oldOffset.left + 30) + 'px,' + (oldOffset.top - $(window).scrollTop() + 30) + 'px)'
@@ -131,8 +132,8 @@ $(function() {
       $('.teamwidget-member-info', clonedItem).remove()
 
       clonedItem.css({
-        width: oldWidth,
-        height: oldHeight,
+        width: '1px',
+        height: '1px',
         top: '-30px',
         left: '-30px',
         transform: translateString,
@@ -144,6 +145,7 @@ $(function() {
       clonedItem.one('transitionend', function() {
         setTimeout(function () {
           clonedItem.remove()
+          $('body').removeClass('has-expanded-team-member')
         }, 400)
       })
 
@@ -166,6 +168,8 @@ $(function() {
 
       setTimeout(function () {
         clonedItem.addClass('open')
+
+        $('body').addClass('has-expanded-team-member')
 
         clonedItem.css({
           left: '50%',

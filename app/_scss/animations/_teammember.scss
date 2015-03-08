@@ -31,6 +31,7 @@
     opacity: 0 !important;
     z-index: 90;
     width: 600px;
+    max-width: 100%;
     position: relative;
   }
 
@@ -39,12 +40,12 @@
   }
 
   .teamwidget-member-icon-wrapper:before {
-    transform: translate(-30px, -30px) scale(1, 1);
+    transform: translate(0px, 0px) scale(.1, .1);
   }
 
   &.open {
     .teamwidget-member-icon-wrapper:before {
-      transform: translate(-30px, -30px)  scale(9, 9);
+      transform: translate(30px, 30px)  scale(9, 9);
     }
 
     .closebutton {
@@ -66,5 +67,15 @@
       transition: all .8s 2s !important;
       float: left;
     }
+  }
+}
+
+.teamwidget-member.clone .teamwidget-member-icon-wrapper::before {
+  transition: all 0.3s ease-out 2s !important;
+}
+
+body.has-expanded-team-member {
+  .teamwidget-member.clone.open .teamwidget-member-icon-wrapper::before {
+    transition: all 0.3s ease-out 0s !important;
   }
 }

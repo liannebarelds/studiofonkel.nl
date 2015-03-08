@@ -5,6 +5,11 @@
 
   .top {
     margin-bottom: 20px;
+    display: none;
+
+    @include breakpoint($bp-medium) {
+      display: block;
+    }
 
     @include clearfix;
     .logo-wrapper {
@@ -19,16 +24,41 @@
   }
 
   .left {
-    @include isolation-span(5, 2, 'left');
+    @include isolation-span(10, 3, 'both');
+    display: none;
+
+    @include breakpoint($bp-small) {
+      display: block;
+    }
+
+    @include breakpoint($bp-medium) {
+      @include isolation-span(5, 2, 'left');
+    }
+
+
+    h2 {
+      margin-top: 30px;
+      @include breakpoint($bp-medium) {
+        margin-top: 0;
+      }
+    }
 
     h3 {
-      margin-top: 102px;
+      margin-top: 30px;
+
+      @include breakpoint($bp-medium) {
+        margin-top: 102px;
+      }
       color: $yellow;
     }
   }
 
   .right {
-    @include isolation-span(6, 8, 'right');
+    @include isolation-span(10, 3, 'both');
+
+    @include breakpoint($bp-medium) {
+      @include isolation-span(6, 8, 'right');
+    }
 
     svg, path {
       fill: $yellow;
@@ -43,12 +73,14 @@
     }
   }
 
-  .right .column:nth-child(odd) {
-    @include isolation-span(3, 4, 'right', 6);
-  }
+  @include breakpoint($bp-small) {
+    .right .column:nth-child(odd) {
+      @include isolation-span(3, 4, 'right', 6);
+    }
 
-  .right .column:nth-child(even) {
-    @include isolation-span(3, 1, 'left', 6);
+    .right .column:nth-child(even) {
+      @include isolation-span(3, 1, 'left', 6);
+    }
   }
 
   p {

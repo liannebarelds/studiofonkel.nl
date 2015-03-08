@@ -2,7 +2,11 @@
   transition: all $speed-fast $ease-in-out;
   @include clearfix;
   float: left;
+  display: none;
 
+  @include breakpoint($bp-large) {
+    display: block;
+  }
 
   .teamwidget-text {
     overflow: hidden;
@@ -35,12 +39,38 @@
 }
 
 .teamwidget-controls {
-  margin-top: 97px;
-
   .x, .y {
     float: left;
     width: 100%;
     @include clearfix;
+    margin-bottom: 30px;
+
+    @include breakpoint($bp-large) {
+      margin-top: 97px;
+      margin-bottom: 0;
+    }
+  }
+
+
+  .x {
+    @include breakpoint($bp-medium) {
+      @include isolation-span(5, 3);
+    }
+  }
+
+  .y {
+    @include breakpoint($bp-medium) {
+      @include isolation-span(5, 8);
+    }
+  }
+
+  .x, .y {
+    @include breakpoint($bp-large) {
+      width: 100%;
+      float: left;
+      clear: both;
+      margin: 0;
+    }
   }
 }
 
@@ -141,14 +171,15 @@
   }
 }
 
+.teamwidget .teamwidget-member:hover {
+    z-index: 140;
+}
+
 .teamwidget-member {
   $width: 60px;
   left: -($width / 2);
   top: -($width / 2);
 
-  // &:hover {
-  //   z-index: 140;
-  // }
 
   .teamwidget-member-icon-wrapper {
     display: block;
