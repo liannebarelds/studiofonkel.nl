@@ -25,6 +25,11 @@
 
   .left {
     @include isolation-span(10, 3, 'both');
+    display: none;
+
+    @include breakpoint($bp-small) {
+      display: block;
+    }
 
     @include breakpoint($bp-medium) {
       @include isolation-span(5, 2, 'left');
