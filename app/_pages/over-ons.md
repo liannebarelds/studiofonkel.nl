@@ -15,7 +15,7 @@ Wij zijn Studio Fonkel. En lastig in een hokje te plaatsen. Maar noem ons een 'w
 
 {% include misc/teamwidget.html %}
 
-<h2 class="convince-title">4 redenen om met ons te werken</h2>
+<h2 class="convince-title">Vier redenen om met ons te werken</h2>
 <ol class="convinceblock">
 
   <li class="convinceblock-item">
@@ -24,14 +24,14 @@ Wij zijn Studio Fonkel. En lastig in een hokje te plaatsen. Maar noem ons een 'w
     </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">Flexibiliteit in de genen</h3>
-      <p class="convinceblock-item-text">We kijken breder dan de iniële vraag. En voegen waarde toe waar dat het meeste rendement oplevert, ook voor de langere termijn.</p>
+      <p class="convinceblock-item-text">We kijken breder dan de initiële vraag. En voegen waarde toe waar dat het meeste rendement oplevert, ook voor de langere termijn.</p>
     </div>
   </li>
 
   <li class="convinceblock-item">
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We zijn vakidioten</h3>
-      <p class="convinceblock-item-text">We besteden ruim tijd aan kennisontwikkeling.</p>
+      <p class="convinceblock-item-text">We besteden veel tijd aan kennisontwikkeling.</p>
     </div>
     <div class="convinceblock-item-image">
       {% picture convince case/webdesign2.jpg %}
@@ -44,14 +44,14 @@ Wij zijn Studio Fonkel. En lastig in een hokje te plaatsen. Maar noem ons een 'w
     </div>
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We zijn betrokken</h3>
-      <p class="convinceblock-item-text">Onze commitment gaat verder dan de scope van de opdracht.</p>
+      <p class="convinceblock-item-text">Ons commitment gaat verder dan de scope van de opdracht.</p>
     </div>
   </li>
 
   <li class="convinceblock-item">
     <div class="convinceblock-item-content">
       <h3 class="convinceblock-item-title">We gaan voor de relatie</h3>
-      <p class="convinceblock-item-text">Een goede verstandhouding is één van de belangrijkste voorwaarden om waarde toe te voegen.</p>
+      <p class="convinceblock-item-text">Een goede verstandhouding is een belangrijkste voorwaarde om waarde toe te kunnen voegen.</p>
     </div>
     <div class="convinceblock-item-image">
       {% picture convince case/luchtballon.jpeg %}
